@@ -1947,7 +1947,7 @@
             { path: "/clients", name: "ClientsContent", component: fA },
             { path: "/contact", name: "ContactContent", component: SA },
           ],
-          ZA = new v.ZP({ mode: "hash", base: "/", routes: QA });
+          ZA = new v.ZP({ mode: "hash", base: "/my_Portfolio/", routes: QA });
         var JA = ZA,
           RA = s(7749),
           qA = s(3494),
@@ -2094,7 +2094,7 @@
       };
     })(),
     (function () {
-      s.p = "/";
+      s.p = "/my_Portfolio/";
     })(),
     (function () {
       var t = { 143: 0 };
