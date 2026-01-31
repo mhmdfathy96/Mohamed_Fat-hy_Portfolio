@@ -1,0 +1,61 @@
+{
+  "samples": [
+    {
+      "title": "Flutter Architecture Example",
+      "link": "https://github.com/mhmdfathy96/flutter_architecture_example",
+      "description": "A Flutter project template demonstrating clean architecture, modular structure, and scalable state management. Designed as a solid foundation for production-ready Flutter applications.",
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Clean Architecture",
+        "Modular Architecture",
+        "Provider",
+        "BLoC"
+      ]
+    },
+    {
+      "title": "Simple CRUD API (.NET)",
+      "link": "https://github.com/mhmdfathy96/SimpleCrudApi",
+      "description": "A lightweight .NET 8 Web API demonstrating clean CRUD operations using Entity Framework Core and SQL Server. Includes environment-based configuration, secure secrets handling, and CI/CD deployment using GitHub Actions, with Swagger UI for testing.",
+      "technologies": [
+        ".NET 8",
+        "C#",
+        "Entity Framework Core",
+        "SQL Server",
+        "Swagger",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "title": "E-commerce Backend API",
+      "link": "https://github.com/mhmdfathy96/ecommerce-backend",
+      "description": "A RESTful backend application built with Spring Boot for managing products and orders. Demonstrates CRUD operations with pagination, JWT-based authentication, Google OAuth2 login, role-based access control, and order processing with stock validation. Designed as a learning project to practice backend architecture, security, and data modeling.",
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "Spring Data JPA",
+        "PostgreSQL",
+        "JWT",
+        "OAuth2",
+        "Swagger",
+        "Lombok",
+        "Maven"
+      ]
+    },
+    {
+      "title": "E-commerce Frontend",
+      "link": "https://github.com/mhmdfathy96/ecommerce-frontend",
+      "description": "A frontend training project built with React and Vite for consuming a Spring Boot e-commerce backend API. Includes product browsing, search with pagination, cart management, order tracking, and responsive UI. Developed by adapting and customizing an existing template to meet backend integration and learning requirements.",
+      "technologies": [
+        "React",
+        "Vite",
+        "JavaScript",
+        "React Router",
+        "Axios",
+        "Bootstrap 5",
+        "Infinite Scroll",
+        "REST API Integration"
+      ]
+    }
+  ]
+}

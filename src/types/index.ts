@@ -79,3 +79,16 @@ export interface TechnicalHighlight {
   result: string;
   link?: string;
 }
+
+export interface PublicSample {
+  title: string;
+  link: string;
+  description: string;
+  technologies: string[];
+}
+
+export interface Testimonial {
+  text: string;
+  name: string;
+  role: string;
+}

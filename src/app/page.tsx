@@ -6,8 +6,12 @@ import projectsData from "@/data/projects.json";
 import highlightsData from "@/data/highlights.json";
 import companiesData from "@/data/companies.json";
 import skillsData from "@/data/skills.json";
+import publicSamplesData from "@/data/public_samples.json";
+import testimonialsData from "@/data/testimonials.json";
+import PublicSampleCard from "@/components/PublicSampleCard";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
 import Link from "next/link";
-import { SkillCategory } from "@/types";
+import { SkillCategory, PublicSample, Testimonial } from "@/types";
 
 export default function Home() {
   const featured = projectsData.featured.map(
@@ -16,6 +20,9 @@ export default function Home() {
 
   const skillsCategories =
     (skillsData as unknown as { categories: SkillCategory[] }).categories || [];
+
+  const publicSamples = publicSamplesData.samples as PublicSample[];
+  const testimonials = testimonialsData.testimonials as Testimonial[];
 
   return (
     <>
@@ -121,6 +128,31 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Public Code Samples */}
+      <section className="py-20 max-w-5xl mx-auto px-6">
+        <h2 className="text-3xl font-bold mb-4">Public Code Samples</h2>
+        <p className="text-gray-600 dark:text-gray-400 mb-10 max-w-2xl text-lg leading-relaxed">
+          Most of my professional work exists within private production systems.
+          Below are small public repositories created to demonstrate my
+          technical skills across different technologies.
+        </p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {publicSamples.map((sample, index) => (
+            <PublicSampleCard key={index} sample={sample} />
+          ))}
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-20 bg-gray-50 dark:bg-zinc-900/30 border-y border-gray-100 dark:border-zinc-800">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl font-bold mb-10">Testimonials</h2>
+          <div className="w-full">
+            <TestimonialCarousel testimonials={testimonials} />
           </div>
         </div>
       </section>
