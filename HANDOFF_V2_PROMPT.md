@@ -1,17 +1,18 @@
-# Mohamed Fathy — Portfolio Final Handoff (v2)
+# Mohamed Fat-hy — Portfolio Final Handoff (v2)
 
 This document replaces the previous handoff.
 It includes clarified leadership roles, backend orientation, technical depth, and complete project storytelling.
 
 IMPORTANT RULES:
+
 - Do NOT redesign UI
 - Do NOT simplify content
 - Do NOT remove sections
 - Only extend functionality and routing
 
 ====================================================
-1. HERO SECTION (UPDATED POSITIONING)
-====================================================
+
+1. # HERO SECTION (UPDATED POSITIONING)
 
 Primary Title:
 Software Engineer
@@ -22,9 +23,7 @@ Mobile & Backend-Oriented • Flutter Specialist
 Description:
 Software Engineer with 4+ years of experience building scalable mobile systems and backend-integrated applications. Experienced across the full product lifecycle, with growing focus on backend engineering and system design using Java and Spring Boot.
 
-====================================================
-2. ABOUT SECTION (OWNERSHIP & DIRECTION)
-====================================================
+# ==================================================== 2. ABOUT SECTION (OWNERSHIP & DIRECTION)
 
 Include the following ideas in paragraph form:
 
@@ -39,17 +38,16 @@ Include the following ideas in paragraph form:
 Tone:
 Professional, confident, human.
 
-====================================================
-3. PROJECT DETAILS PAGES (REQUIRED)
-====================================================
+# ==================================================== 3. PROJECT DETAILS PAGES (REQUIRED)
 
 Fix missing routing:
 All project cards must open dynamic pages.
 
 Route:
- /projects/[slug]
+/projects/[slug]
 
 Each project page must include:
+
 - Overview
 - Market
 - Platforms
@@ -60,9 +58,9 @@ Each project page must include:
 - Tech Stack
 - Links
 
-----------------------------------------------------
-PROJECT CONTENT
-----------------------------------------------------
+---
+
+## PROJECT CONTENT
 
 ========================
 3arabawy App
@@ -81,6 +79,7 @@ Overview:
 A large-scale automotive marketplace supporting car sales, rentals, services, spare parts, and motorcycles, designed to handle heavy media usage and real-time interaction.
 
 Responsibilities:
+
 - Designed and maintained scalable mobile architecture using Clean Architecture
 - Implemented listing systems for cars, services, parts, and motorcycles
 - Integrated real-time chat using Socket.IO
@@ -90,6 +89,7 @@ Responsibilities:
 - Collaborated closely with backend team on API contracts and improvements
 
 Technical Challenges:
+
 - Image compression moved to background isolates to prevent UI freezing
 - Pagination performance optimization by removing heavy blur rendering
 - Memory and rebuild optimization for media-heavy screens
@@ -116,6 +116,7 @@ Overview:
 Medical appointment booking application connecting patients with doctors.
 
 Responsibilities:
+
 - Implemented appointment booking flows
 - Integrated real-time chat
 - Implemented voice calls using Agora RTC
@@ -142,6 +143,7 @@ Overview:
 Service discovery platform connecting users with specialists across multiple categories.
 
 Responsibilities:
+
 - Implemented specialist listing and filtering systems
 - Integrated REST APIs
 - Applied clean and scalable architecture
@@ -167,6 +169,7 @@ Overview:
 Corporate HR management application designed for internal company workflows.
 
 Leadership & Responsibilities:
+
 - Acted as Tech Lead for the project
 - Led Flutter development team
 - Coordinated with backend developers
@@ -195,6 +198,7 @@ Overview:
 Music and media application supporting audio and video playback.
 
 Responsibilities:
+
 - Implemented Flutter application architecture
 - Integrated Firebase backend services
 - Implemented cloud-based logic and real-time features
@@ -216,6 +220,7 @@ Overview:
 Business utility application for managing merchant installment payments.
 
 Responsibilities:
+
 - Implemented installment calculation logic
 - Built merchant workflows
 - Integrated backend APIs
@@ -223,9 +228,7 @@ Responsibilities:
 Tech Stack:
 Flutter, REST APIs
 
-====================================================
-4. TECHNICAL HIGHLIGHTS SECTION
-====================================================
+# ==================================================== 4. TECHNICAL HIGHLIGHTS SECTION
 
 Add homepage section:
 "Technical Highlights"
@@ -233,6 +236,7 @@ Add homepage section:
 Display as horizontal carousel / swipeable cards.
 
 Each card must include:
+
 - Title
 - Context Project (clickable → project page)
 - Problem
@@ -240,7 +244,7 @@ Each card must include:
 - Result
 - Optional external link
 
-----------------------------------------------------
+---
 
 Highlight 1:
 Device Orientation Detection
@@ -260,7 +264,7 @@ Accurate full-screen transitions without changing system rotation settings.
 Link:
 https://pub.dev/packages/device_orientation_detector
 
-----------------------------------------------------
+---
 
 Highlight 2:
 Image Compression Performance
@@ -277,7 +281,7 @@ Moved compression logic to background isolates.
 Result:
 Smooth UI during heavy image operations.
 
-----------------------------------------------------
+---
 
 Highlight 3:
 Pagination Optimization
@@ -294,7 +298,7 @@ Removed heavy blur rendering from list views.
 Result:
 Significant scrolling performance improvement.
 
-----------------------------------------------------
+---
 
 Highlight 4:
 Arabic Search Normalization
@@ -311,14 +315,13 @@ Normalized Arabic characters and removed diacritics.
 Result:
 Accurate and consistent Arabic search behavior.
 
-====================================================
-5. COMPANIES SECTION (STRUCTURED)
-====================================================
+# ==================================================== 5. COMPANIES SECTION (STRUCTURED)
 
 Section title:
 Companies I’ve Worked With
 
 Each item must show:
+
 - Company name
 - Role
 - Start date
@@ -331,7 +334,7 @@ Examples:
 Software Engineer  
 Dec 2024 – Present
 
-Napps 
+Napps
 Software Engineer (Mobile & Backend)  
 May 2024 – Sep 2025
 
@@ -351,11 +354,10 @@ Altakamul
 Contract Software Engineer  
 Apr 2022 – Jun 2022
 
-====================================================
-6. SKILLS SECTION (EXPANDED & BACKEND-FOCUSED)
-====================================================
+# ==================================================== 6. SKILLS SECTION (EXPANDED & BACKEND-FOCUSED)
 
 Programming Languages:
+
 - Dart
 - Java
 - C#
@@ -363,6 +365,7 @@ Programming Languages:
 - Swift
 
 Backend Engineering (Focus Area):
+
 - Java Core
   - Collections API
   - Streams & Parallel Streams
@@ -375,6 +378,7 @@ Backend Engineering (Focus Area):
 - Validation & exception handling
 
 Mobile Engineering:
+
 - Flutter
 - Android (Java / Kotlin)
 - iOS (Swift)
@@ -382,17 +386,20 @@ Mobile Engineering:
 - Native plugin development
 
 Architecture:
+
 - Clean Architecture
 - Feature-based architecture
 - Separation of concerns
 - Scalable system design
 
 State Management:
+
 - BLoC / Cubit
 - Provider
 - Event-driven architecture
 
 Backend Services:
+
 - Firebase Firestore
 - Cloud Functions
 - Firebase Messaging
@@ -401,6 +408,7 @@ Backend Services:
 - Receipt validation
 
 Performance Optimization:
+
 - Flutter isolates
 - Background processing
 - Memory optimization
@@ -408,6 +416,7 @@ Performance Optimization:
 - UI jank elimination
 
 Leadership & Ownership:
+
 - Technical planning
 - Feature ownership
 - Cross-team collaboration
@@ -415,6 +424,7 @@ Leadership & Ownership:
 - Product-oriented thinking
 
 Tools & Workflow:
+
 - Git
 - CI/CD
 - Code review
@@ -427,7 +437,7 @@ FINAL GOAL
 
 The portfolio must clearly communicate:
 
-- Mohamed Fathy is a Software Engineer
+- Mohamed Fat-hy is a Software Engineer
 - Strong mobile foundation with growing backend focus
 - Real production experience across multiple countries
 - Leadership and ownership mindset

@@ -1,16 +1,17 @@
-# Mohamed Fathy — Portfolio Final Handoff
+# Mohamed Fat-hy — Portfolio Final Handoff
 
 This document defines all missing sections and content required to complete the portfolio properly.
 
 IMPORTANT:
+
 - Do NOT redesign UI
 - Do NOT change layout style
 - Only extend content and routing
 - Follow existing component patterns
 
 ====================================================
-1. PROJECT DETAILS PAGES (CRITICAL)
-====================================================
+
+1. # PROJECT DETAILS PAGES (CRITICAL)
 
 Currently, project cards are clickable but return 404.
 This must be fixed by implementing dynamic project pages.
@@ -20,9 +21,9 @@ Route:
 
 Each project must have its own detail page generated from JSON.
 
-----------------------------------------------------
-PROJECT PAGE STRUCTURE
-----------------------------------------------------
+---
+
+## PROJECT PAGE STRUCTURE
 
 Each project page must include the following sections:
 
@@ -47,11 +48,12 @@ Each project page must include the following sections:
 6. Tech Stack
    - Display as list or tags
 
-----------------------------------------------------
-PROJECT CONTENT
-----------------------------------------------------
+---
+
+## PROJECT CONTENT
 
 ### 3arabawy App
+
 Slug: 3arabawy-car-marketplace
 
 Overview:
@@ -61,6 +63,7 @@ My Role:
 Software Engineer (Flutter)
 
 Responsibilities:
+
 - Designed scalable mobile architecture using Clean Architecture
 - Implemented complex listing and search flows
 - Integrated real-time chat using Socket.IO
@@ -72,58 +75,61 @@ Responsibilities:
 Technical Challenges:
 
 1. UI freezing during image selection  
-Problem:
-Image compression was running on the main thread.  
-Solution:
-Moved compression logic to background isolates.  
-Result:
-UI remained responsive during image processing.
+   Problem:
+   Image compression was running on the main thread.  
+   Solution:
+   Moved compression logic to background isolates.  
+   Result:
+   UI remained responsive during image processing.
 
 2. Slow pagination on low-end devices  
-Problem:
-Heavy blur effects behind images caused frame drops.  
-Solution:
-Removed blur from list views and moved rich rendering to preview screens.  
-Result:
-Significant performance improvement.
+   Problem:
+   Heavy blur effects behind images caused frame drops.  
+   Solution:
+   Removed blur from list views and moved rich rendering to preview screens.  
+   Result:
+   Significant performance improvement.
 
 3. Media-heavy performance optimization  
-Solution:
-Reduced rebuilds, optimized loading, and managed memory carefully.  
-Result:
-Smooth performance across device ranges.
+   Solution:
+   Reduced rebuilds, optimized loading, and managed memory carefully.  
+   Result:
+   Smooth performance across device ranges.
 
 4. Growing state complexity  
-Solution:
-Applied modular separation and event-based communication.  
-Result:
-Easier maintenance and scalability.
+   Solution:
+   Applied modular separation and event-based communication.  
+   Result:
+   Easier maintenance and scalability.
 
 5. Arabic search inaccuracies  
-Problem:
-Multiple Unicode representations caused incorrect search results.  
-Solution:
-Applied Arabic normalization and removed diacritics.  
-Result:
-Highly accurate Arabic search behavior.
+   Problem:
+   Multiple Unicode representations caused incorrect search results.  
+   Solution:
+   Applied Arabic normalization and removed diacritics.  
+   Result:
+   Highly accurate Arabic search behavior.
 
 Tech Stack:
 Flutter, Dart, REST APIs, Socket.IO, Firebase, Clean Architecture
 
 Links:
+
 - iOS
 - Android
 - Huawei
 
-----------------------------------------------------
+---
 
 ### MDone App
+
 Slug: mdone-medical-booking
 
 Overview:
 Medical application connecting patients with doctors for appointment booking and communication.
 
 Responsibilities:
+
 - Appointment booking system
 - Real-time chat integration
 - Voice calling using Agora RTC
@@ -133,13 +139,11 @@ Responsibilities:
 Tech Stack:
 Flutter, Firebase, Agora RTC/RTM, REST APIs
 
-----------------------------------------------------
+---
 
 Other projects (Toltura, Biznavi, Party Player, Installment) must follow the same structure with lighter details.
 
-====================================================
-2. TECHNICAL HIGHLIGHTS SECTION
-====================================================
+# ==================================================== 2. TECHNICAL HIGHLIGHTS SECTION
 
 Add a section on the homepage titled:
 
@@ -148,9 +152,9 @@ Add a section on the homepage titled:
 Purpose:
 Show real engineering problem-solving, not marketing.
 
-----------------------------------------------------
-CASE 1 — Flutter Plugin
-----------------------------------------------------
+---
+
+## CASE 1 — Flutter Plugin
 
 Title:
 Device Orientation Detection Plugin
@@ -170,11 +174,9 @@ Accurate and seamless orientation transitions without modifying system rotation 
 Link:
 https://pub.dev/packages/device_orientation_detector
 
-----------------------------------------------------
+---
 
-====================================================
-3. COMPANIES SECTION
-====================================================
+# ==================================================== 3. COMPANIES SECTION
 
 Add a section titled:
 
@@ -193,15 +195,14 @@ Content:
 
 No paragraphs needed.
 
-====================================================
-4. SKILLS SECTION — EXPANDED
-====================================================
+# ==================================================== 4. SKILLS SECTION — EXPANDED
 
 Replace current minimal skills list with the following structured categories.
 
-----------------------------------------------------
+---
 
 Programming Languages:
+
 - Dart
 - Java
 - C#
@@ -209,6 +210,7 @@ Programming Languages:
 - Swift
 
 Mobile Development:
+
 - Flutter
 - Android (Java / Kotlin)
 - iOS (Swift)
@@ -216,6 +218,7 @@ Mobile Development:
 - Native Plugin Development
 
 State Management:
+
 - BLoC
 - Cubit
 - Provider
@@ -223,12 +226,14 @@ State Management:
 - Modular state separation
 
 Architecture:
+
 - Clean Architecture
 - Feature-based architecture
 - Separation of Concerns
 - Scalable system design
 
 Backend & APIs:
+
 - REST APIs
 - Firebase Firestore
 - Firebase Cloud Functions
@@ -238,11 +243,13 @@ Backend & APIs:
 - Receipt validation
 
 Real-Time Systems:
+
 - Real-time chat
 - Push notifications
 - Live updates
 
 Performance Optimization:
+
 - Isolates
 - Background processing
 - Memory optimization
@@ -250,12 +257,14 @@ Performance Optimization:
 - UI performance tuning
 
 Media Handling:
+
 - Image compression
 - Video playback
 - Background audio
 - Orientation handling
 
 Tools & Workflow:
+
 - Git
 - CI/CD
 - Debugging
@@ -273,4 +282,4 @@ FINAL NOTES
 - Project pages provide proof
 
 Final goal:
-When someone reviews this portfolio, they must clearly understand that Mohamed Fathy is a Software Engineer with real production experience, strong problem-solving skills, and deep Flutter and backend integration knowledge.
+When someone reviews this portfolio, they must clearly understand that Mohamed Fat-hy is a Software Engineer with real production experience, strong problem-solving skills, and deep Flutter and backend integration knowledge.
