@@ -1,27 +1,7 @@
 {
   "testimonials": [
     {
-      "text": "Extremely skilled Flutter Developer, solved all our app bugs, developed an amazing interface and quite good with communication and ontime delivery. Will surely recommend to anyone looking for quality mobile App Development. Thanks again Mohammed for your extra help on our project.",
-      "name": "Bolarinwa Oladayo"
-    },
-    {
-      "text": "Extremely skilled flutter Developer, Good communication and patience, even solves errors and bugs not included in milestone. If looking for best service here then I fully recommend him and he always delivers before time.",
-      "name": "Bolarinwa Oladayo"
-    },
-    {
-      "text": "I am pleased to recommend Mohamed fathy for any Flutter projects on Upwork. I had the opportunity to work closely with mohamed on a Flutter project, and I was consistently impressed by his professionalism, technical expertise, and commitment to delivering high-quality results. Mohamed demonstrated exceptional proficiency in Flutter development throughout the project. he possess a deep understanding of Flutter's UI toolkit, widget libraries, and best practices for building cross-platform mobile applications. Their ability to translate complex requirements into elegant and efficient code is truly commendable. One of the standout qualities of Mohamed is their adeptness in handling issues and challenges that arise during the development process. They have a keen eye for detail and a proactive approach to problem-solving, which ensured that the project progressed smoothly and deadlines were met consistently.",
-      "name": "Waleed Elsenoucy"
-    },
-    {
-      "text": "Excellent work, easy to deal with, and understands exactly what the customer wants.",
-      "name": "Abdullah Alhumaid"
-    },
-    {
-      "text": "I'm extremely happy to deal with Mr. Mohammed. He is very smart, honest, heavy-duty programmer and many awesome things i found it in him. i would recommend everyone to work with him. For me i will absolutely return to him for adds and updates.",
-      "name": "Mohamed Saadoon"
-    },
-    {
-      "text": "I had the pleasure of working with Mohamed, and I couldn't be more impressed. From the start, he showcased a deep understanding of Flutter and mobile app development, delivering high-quality work on time and exceeding expectations. His attention to detail, problem-solving skills, and ability to communicate complex technical aspects in a clear and concise way made the entire process smooth and enjoyable. He was proactive in suggesting improvements, quick to implement feedback, and always focused on delivering the best user experience. The final product was not only functional but also polished and user-friendly, reflecting his passion for clean code and great design. I highly recommend Mohamed to anyone in need of a skilled and reliable Flutter developer. I look forward to working with him again in the future!",
+      "text": "I had the pleasure of working with Mohamed before, and thrilled to collaborate with him again! His exceptional skills in Flutter development and dedication to delivering top-notch results left a lasting impression on me. It's always a seamless and enjoyable experience working with him. Highly recommended!",
       "name": "Mokhirukh Eshankhanova"
     },
     {
@@ -29,8 +9,28 @@
       "name": "Denis Platonov"
     },
     {
-      "text": "I had the pleasure of working with Mohamed before, and thrilled to collaborate with him again! His exceptional skills in Flutter development and dedication to delivering top-notch results left a lasting impression on me. It's always a seamless and enjoyable experience working with him. Highly recommended!",
+      "text": "I had the pleasure of working with Mohamed, and I couldn't be more impressed. From the start, he showcased a deep understanding of Flutter and mobile app development, delivering high-quality work on time and exceeding expectations. His attention to detail, problem-solving skills, and ability to communicate complex technical aspects in a clear and concise way made the entire process smooth and enjoyable. He was proactive in suggesting improvements, quick to implement feedback, and always focused on delivering the best user experience. The final product was not only functional but also polished and user-friendly, reflecting his passion for clean code and great design. I highly recommend Mohamed to anyone in need of a skilled and reliable Flutter developer. I look forward to working with him again in the future!",
       "name": "Mokhirukh Eshankhanova"
+    },
+    {
+      "text": "I'm extremely happy to deal with Mr. Mohammed. He is very smart, honest, heavy-duty programmer and many awesome things i found it in him. i would recommend everyone to work with him. For me i will absolutely return to him for adds and updates.",
+      "name": "Mohamed Saadoon"
+    },
+    {
+      "text": "Excellent work, easy to deal with, and understands exactly what the customer wants.",
+      "name": "Abdullah Alhumaid"
+    },
+    {
+      "text": "I am pleased to recommend Mohamed fathy for any Flutter projects on Upwork. I had the opportunity to work closely with mohamed on a Flutter project, and I was consistently impressed by his professionalism, technical expertise, and commitment to delivering high-quality results. Mohamed demonstrated exceptional proficiency in Flutter development throughout the project. he possess a deep understanding of Flutter's UI toolkit, widget libraries, and best practices for building cross-platform mobile applications. Their ability to translate complex requirements into elegant and efficient code is truly commendable. One of the standout qualities of Mohamed is their adeptness in handling issues and challenges that arise during the development process. They have a keen eye for detail and a proactive approach to problem-solving, which ensured that the project progressed smoothly and deadlines were met consistently.",
+      "name": "Waleed Elsenoucy"
+    },
+    {
+      "text": "Extremely skilled flutter Developer, Good communication and patience, even solves errors and bugs not included in milestone. If looking for best service here then I fully recommend him and he always delivers before time.",
+      "name": "Bolarinwa Oladayo"
+    },
+    {
+      "text": "Extremely skilled Flutter Developer, solved all our app bugs, developed an amazing interface and quite good with communication and ontime delivery. Will surely recommend to anyone looking for quality mobile App Development. Thanks again Mohammed for your extra help on our project.",
+      "name": "Bolarinwa Oladayo"
     }
   ]
 }
