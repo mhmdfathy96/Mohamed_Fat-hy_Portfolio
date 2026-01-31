@@ -1,0 +1,40 @@
+{
+  "companies": [
+    {
+      "name": "3arabawy",
+      "role": "Software Engineer",
+      "start": "Dec 2024",
+      "end": "Present"
+    },
+    {
+      "name": "Napps",
+      "role": "Software Engineer | Mobile & Backend (Firebase)",
+      "start": "May 2024",
+      "end": "Sep 2025"
+    },
+    {
+      "name": "Yapoey",
+      "role": "Software Engineer | Flutter",
+      "start": "Aug 2023",
+      "end": "Jul 2024"
+    },
+    {
+      "name": "Extenddev",
+      "role": "Software Engineer | Flutter",
+      "start": "Nov 2023",
+      "end": "Jan 2024"
+    },
+    {
+      "name": "MDone",
+      "role": "Software Engineer | Flutter",
+      "start": "Jul 2022",
+      "end": "Jun 2023"
+    },
+    {
+      "name": "Altakamul",
+      "role": "Software Engineer | Flutter",
+      "start": "Apr 2022",
+      "end": "Jun 2022"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "highlights": [
+    {
+      "id": "orientation",
+      "title": "Device Orientation Detection",
+      "context": "Party Player App",
+      "slug": "party-player-music-app",
+      "problem": "UI locked in portrait mode while video required automatic landscape full-screen.",
+      "solution": "Developed native Flutter plugin using accelerometer and motion sensors to detect real-time orientation.",
+      "result": "Accurate full-screen transitions without changing system rotation settings.",
+      "link": "https://pub.dev/packages/device_orientation_detector"
+    },
+    {
+      "id": "compression",
+      "title": "Image Compression Performance",
+      "context": "3arabawy App",
+      "slug": "3arabawy-car-marketplace",
+      "problem": "UI freezing during multi-image selection.",
+      "solution": "Moved compression logic to background isolates.",
+      "result": "Smooth UI during heavy image operations."
+    },
+    {
+      "id": "pagination",
+      "title": "Pagination Optimization",
+      "context": "3arabawy App",
+      "slug": "3arabawy-car-marketplace",
+      "problem": "Severe performance drops on low-end devices due to heavy blur rendering.",
+      "solution": "Removed heavy blur rendering from list views.",
+      "result": "Significant scrolling performance improvement."
+    },
+    {
+      "id": "arabic-search",
+      "title": "Arabic Search Normalization",
+      "context": "3arabawy App",
+      "slug": "3arabawy-car-marketplace",
+      "problem": "Multiple Unicode representations caused incorrect search results.",
+      "solution": "Normalized Arabic characters and removed diacritics.",
+      "result": "Accurate and consistent Arabic search behavior."
+    }
+  ]
+}

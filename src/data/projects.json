@@ -1,0 +1,241 @@
+{
+  "featured": ["3arabawy", "mdone"],
+  "projects": {
+    "3arabawy": {
+      "slug": "3arabawy-car-marketplace",
+      "name": "3arabawy",
+      "type": "Mobile Application",
+      "market": "Egypt",
+      "shortDescription": "Car marketplace app for buying, selling, and renting vehicles, parts, and services.",
+      "fullDescription": "A large-scale automotive marketplace supporting car sales, rentals, services, spare parts, and motorcycles, designed to handle heavy media usage and real-time interaction.",
+      "platforms": ["iOS", "Android", "Huawei"],
+      "role": "Software Engineer (Flutter)",
+      "responsibilities": [
+        "Designed and maintained scalable mobile architecture using Clean Architecture",
+        "Implemented listing systems for cars, services, parts, and motorcycles",
+        "Integrated real-time chat using Socket.IO",
+        "Built image and media upload pipelines",
+        "Optimized performance for low-end devices",
+        "Refactored global state management into modular event-based structure",
+        "Collaborated closely with backend team on API contracts and improvements"
+      ],
+      "techStack": [
+        "Flutter",
+        "Dart",
+        "REST APIs",
+        "Socket.IO",
+        "Firebase",
+        "Clean Architecture"
+      ],
+      "technicalChallenges": [
+        {
+          "problem": "Image compression moved to background isolates to prevent UI freezing",
+          "solution": "Moved compression logic to background isolates.",
+          "result": "UI remained responsive during image processing."
+        },
+        {
+          "problem": "Pagination performance optimization by removing heavy blur rendering",
+          "solution": "Removed blur from list views and moved rich rendering to preview screens.",
+          "result": "Significant performance improvement."
+        },
+        {
+          "problem": "Memory and rebuild optimization for media-heavy screens",
+          "solution": "Reduced rebuilds, optimized loading, and managed memory carefully.",
+          "result": "Smooth performance across device ranges."
+        },
+        {
+          "problem": "Arabic search normalization to handle Unicode inconsistencies",
+          "solution": "Applied Arabic normalization and removed diacritics.",
+          "result": "Highly accurate and consistent Arabic search behavior."
+        },
+        {
+          "problem": "Background processing for uploads and long-running tasks",
+          "solution": "Implemented background processing strategies.",
+          "result": "Reliable uploads without blocking user interaction."
+        }
+      ],
+      "features": [
+        "Car and motorcycle listings",
+        "Service and parts marketplace",
+        "Real-time chat",
+        "In-app purchases",
+        "Virtual coin system",
+        "Push notifications"
+      ],
+      "links": {
+        "ios": "https://apps.apple.com/us/app/id6746461302",
+        "android": "https://play.google.com/store/apps/details?id=com.al3arabawy",
+        "huawei": "https://appgallery.huawei.com/#/app/C114735347"
+      },
+      "seo": {
+        "title": "3arabawy App | Car Marketplace Platform in Egypt",
+        "description": "3arabawy is a car marketplace mobile application built with Flutter, allowing users to buy, sell, and rent cars, parts, and services across Egypt."
+      }
+    },
+    "mdone": {
+      "slug": "mdone-medical-booking-app",
+      "name": "MDone",
+      "type": "Medical Application",
+      "market": "Iraq",
+      "shortDescription": "Medical booking app connecting patients with doctors.",
+      "fullDescription": "Medical appointment booking application connecting patients with doctors.",
+      "platforms": ["iOS", "Android"],
+      "role": "Software Engineer (Flutter)",
+      "responsibilities": [
+        "Implemented appointment booking flows",
+        "Integrated real-time chat",
+        "Implemented voice calls using Agora RTC",
+        "Integrated push notifications",
+        "Optimized UI flows for medical use cases"
+      ],
+      "techStack": ["Flutter", "Firebase", "Agora RTC/RTM", "REST APIs"],
+      "technicalChallenges": [],
+      "features": [
+        "Doctor appointment booking",
+        "Doctor-patient chat",
+        "Voice calls (Agora RTC)",
+        "Push notifications",
+        "Medical workflow optimization"
+      ],
+      "links": {
+        "ios": "https://apps.apple.com/us/app/mdone/id1591292710",
+        "android": "https://play.google.com/store/apps/details?id=com.pasma.iqdoctor.iqdoctors"
+      },
+      "seo": {
+        "title": "MDone App | Medical Appointment Booking Application",
+        "description": "MDone is a Flutter-based medical appointment application enabling patients to book doctors, chat in real time, and manage healthcare services."
+      }
+    },
+    "toltura": {
+      "slug": "toltura-specialist-discovery",
+      "name": "TOLTURA",
+      "type": "Service Application",
+      "market": "Kyrgyzstan",
+      "shortDescription": "Specialist discovery platform allowing users to find professionals.",
+      "fullDescription": "Service discovery platform connecting users with specialists across multiple categories.",
+      "platforms": ["iOS", "Android"],
+      "role": "Software Engineer (Flutter)",
+      "responsibilities": [
+        "Implemented specialist listing and filtering systems",
+        "Integrated REST APIs",
+        "Applied clean and scalable architecture",
+        "Ensured performance and maintainability"
+      ],
+      "techStack": ["Flutter", "REST APIs"],
+      "technicalChallenges": [],
+      "features": [
+        "Specialist listings",
+        "Category-based search",
+        "API-driven system",
+        "Clean architecture structure"
+      ],
+      "links": {
+        "ios": "https://apps.apple.com/us/app/id6511249961",
+        "android": "https://play.google.com/store/apps/details?id=com.easyliving.bober"
+      },
+      "seo": {
+        "title": "TOLTURA | Specialist Discovery Platform",
+        "description": "TOLTURA is a mobile application for discovering specialists and professionals across various categories in Kyrgyzstan."
+      }
+    },
+    "biznavi": {
+      "slug": "biznavi-hr-management",
+      "name": "Biznavi (Yapoey)",
+      "type": "Business Application",
+      "market": "South Korea",
+      "shortDescription": "Corporate HR management mobile application for internal company workflows.",
+      "fullDescription": "Corporate HR management application designed for internal company workflows.",
+      "platforms": ["iOS", "Android"],
+      "role": "Software Engineer — Tech Lead",
+      "leadership": [
+        "Acted as Tech Lead for the project",
+        "Led Flutter development team",
+        "Coordinated with backend developers",
+        "Collaborated closely with UI/UX designers",
+        "Participated in technical planning and architecture decisions",
+        "Reviewed code and guided implementation standards",
+        "Managed feature delivery and cross-team communication"
+      ],
+      "responsibilities": [],
+      "techStack": ["Flutter", "REST APIs", "Firebase"],
+      "technicalChallenges": [],
+      "features": [
+        "HR workflows",
+        "Secure API integration",
+        "Pixel-perfect UI",
+        "Performance optimization"
+      ],
+      "links": {
+        "ios": "https://apps.apple.com/app/id6504391675",
+        "android": "https://play.google.com/store/apps/details?id=com.yapoey.biz_navi_project"
+      },
+      "seo": {
+        "title": "Biznavi | HR Management Application",
+        "description": "Biznavi is a corporate HR management app built with Flutter for streamlining internal company workflows in South Korea."
+      }
+    },
+    "party-player": {
+      "slug": "party-player-music-app",
+      "name": "Party Player",
+      "type": "Entertainment Application",
+      "market": "USA",
+      "shortDescription": "Music and media application for shared playback and entertainment.",
+      "fullDescription": "Music and media application supporting audio and video playback.",
+      "platforms": ["iOS", "Android"],
+      "role": "Software Engineer (Mobile & Backend Integration)",
+      "responsibilities": [
+        "Implemented Flutter application architecture",
+        "Integrated Firebase backend services",
+        "Implemented cloud-based logic and real-time features",
+        "Handled background audio and media playback",
+        "Built custom native plugin for device orientation detection",
+        "Worked across mobile and backend integration"
+      ],
+      "techStack": ["Flutter", "Firebase", "Cloud Functions", "Native Plugins"],
+      "technicalChallenges": [],
+      "features": [
+        "Media playback",
+        "Streaming logic",
+        "Background audio handling",
+        "Cross-platform optimization"
+      ],
+      "links": {
+        "ios": "https://apps.apple.com/us/app/party-player-pro/id6503223414",
+        "android": "https://play.google.com/store/apps/details?id=com.pw.powernapps.partyplayer"
+      },
+      "seo": {
+        "title": "Party Player | Music & Media App",
+        "description": "Party Player is a Flutter-based music and entertainment application for shared media playback in the USA market."
+      }
+    },
+    "installment-app": {
+      "slug": "installment-app-business",
+      "name": "Installment App",
+      "type": "Business Utility",
+      "market": "Egypt",
+      "shortDescription": "Business utility application for managing merchant installment payments.",
+      "fullDescription": "Business utility application for managing merchant installment payments.",
+      "platforms": ["Android"],
+      "role": "Software Engineer (Flutter)",
+      "responsibilities": [
+        "Implemented installment calculation logic",
+        "Built merchant workflows",
+        "Integrated backend APIs"
+      ],
+      "techStack": ["Flutter", "REST APIs"],
+      "technicalChallenges": [],
+      "features": [
+        "Installment calculations",
+        "Merchant workflows",
+        "Business-focused UI"
+      ],
+      "links": {
+        "android": "https://play.google.com/store/apps/details?id=com.MindToCode.installment_project"
+      },
+      "seo": {
+        "title": "Installment App | Business Payment Utility",
+        "description": "Installment App is a business utility for managing merchant installment payments, built with Flutter."
+      }
+    }
+  }
+}

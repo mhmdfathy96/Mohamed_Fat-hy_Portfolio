@@ -1,0 +1,96 @@
+{
+  "categories": [
+    {
+      "name": "Programming Languages",
+      "skills": ["Dart", "Java", "C#", "Kotlin", "Swift"]
+    },
+    {
+      "name": "Backend Development (.NET)",
+      "skills": [
+        "C#",
+        ".NET Core",
+        "ASP.NET Web APIs",
+        "Entity Framework",
+        "Database integration",
+        "API design and consumption"
+      ]
+    },
+    {
+      "name": "Backend Development (Java)",
+      "skills": [
+        "Java Core",
+        "Collections Framework",
+        "Streams & Parallel Streams",
+        "Multithreading fundamentals",
+        "Spring Boot",
+        "RESTful API development",
+        "Exception handling & validation"
+      ]
+    },
+    {
+      "name": "General Backend Concepts",
+      "skills": [
+        "Layered architecture",
+        "Separation of concerns",
+        "DTO mapping",
+        "Backend integration with mobile applications"
+      ]
+    },
+
+    {
+      "name": "Mobile Engineering",
+      "skills": [
+        "Flutter",
+        "Android (Java/Kotlin)",
+        "iOS (Swift)",
+        "Platform Channels",
+        "Native Plugins"
+      ]
+    },
+    {
+      "name": "Architecture",
+      "skills": [
+        "Clean Architecture",
+        "Feature-based Architecture",
+        "Separation of Concerns",
+        "Scalable System Design"
+      ]
+    },
+    {
+      "name": "State Management",
+      "skills": ["BLoC / Cubit", "Provider", "Event-driven Architecture"]
+    },
+    {
+      "name": "Backend Services",
+      "skills": [
+        "Firebase Firestore",
+        "Cloud Functions",
+        "Firebase Messaging",
+        "Socket.IO",
+        "App Store Server Notifications"
+      ]
+    },
+    {
+      "name": "Performance",
+      "skills": [
+        "Flutter Isolates",
+        "Background Processing",
+        "Memory Optimization",
+        "DevTools Profiling"
+      ]
+    },
+    {
+      "name": "Leadership",
+      "skills": [
+        "Technical Planning",
+        "Feature Ownership",
+        "Cross-team Collaboration",
+        "Mentoring"
+      ]
+    },
+    {
+      "name": "Tools",
+      "skills": ["Git", "CI/CD", "Code Review", "AI-assisted Development"]
+    }
+  ]
+}
