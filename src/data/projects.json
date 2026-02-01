@@ -140,7 +140,7 @@
     },
     "biznavi": {
       "slug": "biznavi-hr-management",
-      "name": "Biznavi (Yapoey)",
+      "name": "Biznavi",
       "type": "Business Application",
       "market": "South Korea",
       "shortDescription": "Corporate HR management mobile application for internal company workflows.",
@@ -201,7 +201,7 @@
       ],
       "links": {
         "ios": "https://apps.apple.com/us/app/party-player-pro/id6503223414",
-        "android": "https://play.google.com/store/apps/details?id=com.pw.powernapps.partyplayer"
+        "android": "https://play.google.com/store/apps/details?id=pw.powernapps.partyplayer"
       },
       "seo": {
         "title": "Party Player | Music & Media App",
