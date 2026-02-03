@@ -90,7 +90,6 @@ Responsibilities:
 
 Technical Challenges:
 
-- Image compression moved to background isolates to prevent UI freezing
 - Pagination performance optimization by removing heavy blur rendering
 - Memory and rebuild optimization for media-heavy screens
 - Arabic search normalization to handle Unicode inconsistencies
@@ -263,23 +262,6 @@ Accurate full-screen transitions without changing system rotation settings.
 
 Link:
 https://pub.dev/packages/device_orientation_detector
-
----
-
-Highlight 2:
-Image Compression Performance
-
-Context:
-3arabawy App
-
-Problem:
-UI freezing during multi-image selection.
-
-Solution:
-Moved compression logic to background isolates.
-
-Result:
-Smooth UI during heavy image operations.
 
 ---
 

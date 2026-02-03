@@ -74,14 +74,6 @@ Responsibilities:
 
 Technical Challenges:
 
-1. UI freezing during image selection  
-   Problem:
-   Image compression was running on the main thread.  
-   Solution:
-   Moved compression logic to background isolates.  
-   Result:
-   UI remained responsive during image processing.
-
 2. Slow pagination on low-end devices  
    Problem:
    Heavy blur effects behind images caused frame drops.  

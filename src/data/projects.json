@@ -29,11 +29,6 @@
       ],
       "technicalChallenges": [
         {
-          "problem": "Image compression moved to background isolates to prevent UI freezing",
-          "solution": "Moved compression logic to background isolates.",
-          "result": "UI remained responsive during image processing."
-        },
-        {
           "problem": "Pagination performance optimization by removing heavy blur rendering",
           "solution": "Removed blur from list views and moved rich rendering to preview screens.",
           "result": "Significant performance improvement."
