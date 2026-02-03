@@ -11,15 +11,6 @@
       "link": "https://pub.dev/packages/device_orientation_detector"
     },
     {
-      "id": "compression",
-      "title": "Image Compression Performance",
-      "context": "3arabawy App",
-      "slug": "3arabawy-car-marketplace",
-      "problem": "UI freezing during multi-image selection.",
-      "solution": "Moved compression logic to background isolates.",
-      "result": "Smooth UI during heavy image operations."
-    },
-    {
       "id": "pagination",
       "title": "Pagination Optimization",
       "context": "3arabawy App",
