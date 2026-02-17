@@ -10,7 +10,7 @@ export default function Navbar() {
         >
           MF
         </Link>
-        <div className="flex gap-6 text-sm font-medium">
+        <div className="flex items-center gap-6 text-sm font-medium">
           <Link
             href="/"
             className="text-gray-600 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white"
@@ -29,6 +29,12 @@ export default function Navbar() {
           >
             Contact
           </a>
+          <Link
+            href="/build-with-me"
+            className="px-4 py-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-md font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
+          >
+            Build Your MVP
+          </Link>
         </div>
       </div>
     </nav>
