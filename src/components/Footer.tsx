@@ -1,7 +1,18 @@
+"use client";
+
 import profile from "@/data/profile.json";
 import Link from "next/link";
+import { trackButtonClick, trackLinkClick } from "@/lib/analytics";
 
 export default function Footer() {
+  const handleCTAClick = () => {
+    trackButtonClick("Book a Free Strategy Session", "footer_cta");
+  };
+
+  const handleSocialClick = (platform: string, url: string) => {
+    trackLinkClick(platform, url, "footer");
+  };
+
   return (
     <footer className="bg-gray-50 border-t border-gray-100 mt-auto dark:bg-zinc-900 dark:border-zinc-800">
       {/* CTA Section */}
@@ -12,6 +23,7 @@ export default function Footer() {
           </h3>
           <Link
             href="/build-with-me"
+            onClick={handleCTAClick}
             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
           >
             Book a Free Strategy Session →
@@ -31,6 +43,7 @@ export default function Footer() {
               href={profile.github}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => handleSocialClick("GitHub", profile.github)}
               className="text-gray-500 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white"
             >
               GitHub
@@ -39,6 +52,7 @@ export default function Footer() {
               href={profile.linkedin}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => handleSocialClick("LinkedIn", profile.linkedin)}
               className="text-gray-500 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white"
             >
               LinkedIn
@@ -47,6 +61,7 @@ export default function Footer() {
               href={profile.upwork}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => handleSocialClick("Upwork", profile.upwork)}
               className="text-gray-500 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white"
             >
               Upwork

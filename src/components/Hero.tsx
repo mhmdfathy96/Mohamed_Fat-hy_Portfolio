@@ -1,7 +1,18 @@
+"use client";
+
 import profile from "@/data/profile.json";
 import Link from "next/link";
+import { trackButtonClick, trackLinkClick } from "@/lib/analytics";
 
 export default function Hero() {
+  const handleViewProjectsClick = () => {
+    trackButtonClick("View Projects", "hero");
+  };
+
+  const handleDownloadCVClick = () => {
+    trackLinkClick("Download CV", profile.cv, "hero");
+  };
+
   return (
     <section className="py-20 md:py-32 max-w-5xl mx-auto px-6">
       <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">
@@ -17,6 +28,7 @@ export default function Hero() {
       <div className="flex gap-4">
         <Link
           href="/projects"
+          onClick={handleViewProjectsClick}
           className="px-6 py-3 bg-black text-white rounded-md font-medium hover:bg-gray-800 transition-colors dark:bg-white dark:text-black dark:hover:bg-gray-200"
         >
           View Projects
@@ -25,6 +37,7 @@ export default function Hero() {
           href={profile.cv}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={handleDownloadCVClick}
           className="px-6 py-3 border border-gray-300 rounded-md font-medium hover:bg-gray-50 transition-colors dark:border-gray-700 dark:hover:bg-zinc-800"
         >
           Download CV

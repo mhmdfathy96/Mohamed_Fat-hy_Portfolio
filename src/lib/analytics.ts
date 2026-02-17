@@ -22,3 +22,26 @@ export const trackScrollDepth = (depth: number) => {
 export const trackCalendlyBooking = () => {
   trackEvent("calendly_booking_completed");
 };
+
+export const trackLinkClick = (
+  linkName: string,
+  linkUrl: string,
+  location: string,
+) => {
+  trackEvent("link_click", {
+    link_name: linkName,
+    link_url: linkUrl,
+    location,
+  });
+};
+
+export const trackButtonClick = (buttonName: string, location: string) => {
+  trackEvent("button_click", { button_name: buttonName, location });
+};
+
+export const trackSampleClick = (sampleTitle: string, sampleUrl: string) => {
+  trackEvent("sample_click", {
+    sample_title: sampleTitle,
+    sample_url: sampleUrl,
+  });
+};

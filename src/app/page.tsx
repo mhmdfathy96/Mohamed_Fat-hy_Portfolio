@@ -1,3 +1,5 @@
+"use client";
+
 import Hero from "@/components/Hero";
 import ProjectCard from "@/components/ProjectCard";
 import TechnicalHighlightCard from "@/components/TechnicalHighlightCard";
@@ -12,8 +14,20 @@ import PublicSampleCard from "@/components/PublicSampleCard";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import Link from "next/link";
 import { SkillCategory, PublicSample, Testimonial } from "@/types";
+import { trackButtonClick, trackLinkClick } from "@/lib/analytics";
 
 export default function Home() {
+  const handleViewAllProjectsClick = () => {
+    trackLinkClick(
+      "View all projects",
+      "/projects",
+      "featured_projects_section",
+    );
+  };
+
+  const handleSayHelloClick = () => {
+    trackButtonClick("Say Hello", "contact_section");
+  };
   const featured = projectsData.featured.map(
     (slug) => projectsData.projects[slug as keyof typeof projectsData.projects],
   );
@@ -46,6 +60,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold">Featured Projects</h2>
           <Link
             href="/projects"
+            onClick={handleViewAllProjectsClick}
             className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white font-medium text-sm"
           >
             View all projects &rarr;
@@ -170,6 +185,7 @@ export default function Home() {
         </p>
         <a
           href={`mailto:${profile.email}`}
+          onClick={handleSayHelloClick}
           className="inline-block px-8 py-4 bg-black text-white rounded-md font-medium text-lg hover:bg-gray-800 transition-colors dark:bg-white dark:text-black dark:hover:bg-gray-200"
         >
           Say Hello

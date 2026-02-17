@@ -1,13 +1,21 @@
+"use client";
+
 import { PublicSample } from "@/types";
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
+import { trackSampleClick } from "@/lib/analytics";
 
 export default function PublicSampleCard({ sample }: { sample: PublicSample }) {
+  const handleClick = () => {
+    trackSampleClick(sample.title, sample.link);
+  };
+
   return (
     <Link
       href={sample.link}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={handleClick}
       className="group flex flex-col h-full border border-gray-100 rounded-lg p-6 hover:border-gray-200 hover:shadow-sm transition-all dark:border-zinc-800 dark:bg-zinc-900/40 dark:hover:border-zinc-700 dark:hover:bg-zinc-800/60 bg-white"
     >
       <div className="flex justify-between items-start mb-4">
