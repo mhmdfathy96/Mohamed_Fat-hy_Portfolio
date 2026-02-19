@@ -27,6 +27,14 @@
       "problem": "Multiple Unicode representations caused incorrect search results.",
       "solution": "Normalized Arabic characters and removed diacritics.",
       "result": "Accurate and consistent Arabic search behavior."
+    },
+    {
+      "id": "installer-source",
+      "title": "Installer Source Detection",
+      "context": "Mobile Infrastructure",
+      "problem": "During force updates, users were redirected to the wrong store due to manufacturer-based detection logic.",
+      "solution": "Replaced manufacturer-based detection with installation source detection using actual installer information.",
+      "result": "Resolved incorrect routing, ensuring users reach the correct store regardless of device brand."
     }
   ]
 }
