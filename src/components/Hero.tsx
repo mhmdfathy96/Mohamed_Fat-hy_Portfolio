@@ -22,7 +22,7 @@ export default function Hero() {
         {profile.title} |{" "}
         <span className="text-gray-500">{profile.subtitle}</span>
       </h2>
-      <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mb-8 leading-relaxed">
+      <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-4xl mb-8 leading-relaxed">
         {profile.summary}
       </p>
       <div className="flex gap-4">

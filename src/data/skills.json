@@ -2,95 +2,52 @@
   "categories": [
     {
       "name": "Programming Languages",
-      "skills": ["Dart", "Java", "C#", "Kotlin", "Swift"]
-    },
-    {
-      "name": "Backend Development (.NET)",
       "skills": [
+        "Dart",
+        "Java",
+        "JavaScript (Node.js)",
         "C#",
-        ".NET Core",
-        "ASP.NET Web APIs",
-        "Entity Framework",
-        "Database integration",
-        "API design and consumption"
+        "Kotlin",
+        "Swift"
       ]
     },
     {
-      "name": "Backend Development (Java)",
+      "name": "Cross-Stack Backend Development",
       "skills": [
-        "Java Core",
-        "Collections Framework",
-        "Streams & Parallel Streams",
-        "Multithreading fundamentals",
-        "Spring Boot",
-        "RESTful API development",
-        "Exception handling & validation"
+        "Spring Boot (Core, Security, Data JPA)",
+        "Spring AI (Generative AI Integration)",
+        "ASP.NET Core & Entity Framework",
+        "Cloud Functions & Cloud Run (JS)",
+        "RESTful API Design & Microservices"
       ]
     },
-    {
-      "name": "General Backend Concepts",
-      "skills": [
-        "Layered architecture",
-        "Separation of concerns",
-        "DTO mapping",
-        "Backend integration with mobile applications"
-      ]
-    },
-
     {
       "name": "Mobile Engineering",
       "skills": [
-        "Flutter",
-        "Android (Java/Kotlin)",
-        "iOS (Swift)",
-        "Platform Channels",
-        "Native Plugins"
+        "Flutter Specialist",
+        "Android (Java/Kotlin) & iOS (Swift)",
+        "Platform Channels & Native Plugins",
+        "Clean Architecture & BLoC/Provider"
       ]
     },
     {
-      "name": "Architecture",
+      "name": "Cloud & Infrastructure",
       "skills": [
-        "Clean Architecture",
-        "Feature-based Architecture",
-        "Separation of Concerns",
-        "Scalable System Design"
+        "Firebase (Firestore, Messaging, Auth)",
+        "Docker Containerization",
+        "CI/CD Pipelines (GitHub Actions)",
+        "Serverless Architecture"
       ]
     },
     {
-      "name": "State Management",
-      "skills": ["BLoC / Cubit", "Provider", "Event-driven Architecture"]
-    },
-    {
-      "name": "Backend Services",
+      "name": "Tools & Methodology",
       "skills": [
-        "Firebase Firestore",
-        "Cloud Functions",
-        "Firebase Messaging",
-        "Socket.IO",
-        "App Store Server Notifications"
+        "Git",
+        "Maven/Gradle",
+        "Postman",
+        "AI-assisted Development",
+        "MVP Iteration"
       ]
-    },
-    {
-      "name": "Performance",
-      "skills": [
-        "Flutter Isolates",
-        "Background Processing",
-        "Memory Optimization",
-        "DevTools Profiling"
-      ]
-    },
-    {
-      "name": "Leadership",
-      "skills": [
-        "Technical Planning",
-        "Feature Ownership",
-        "Cross-team Collaboration",
-        "Mentoring"
-      ]
-    },
-    {
-      "name": "Tools",
-      "skills": ["Git", "CI/CD", "Code Review", "AI-assisted Development"]
     }
   ]
 }
