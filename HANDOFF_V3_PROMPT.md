@@ -3,14 +3,15 @@
 Please apply the following changes ONLY.
 
 ⚠️ Important:
+
 - Do NOT redesign UI
 - Do NOT change layout
 - Do NOT remove any existing sections
 - Only update text content
 
 ====================================================
-1. ABOUT ME — ENHANCE (NOT REMOVE)
-====================================================
+
+1. # ABOUT ME — ENHANCE (NOT REMOVE)
 
 Replace the existing About Me content with the following text:
 
@@ -22,7 +23,7 @@ I started my professional journey with a background in Civil Engineering, which 
 
 Over time, I transitioned into software engineering, driven by a genuine interest in building real systems that solve real problems.
 
-For more than 4 years, I’ve worked on production applications used by real users across multiple countries, focusing primarily on mobile development with Flutter while working closely with backend systems and real-time services.
+For more than 5 years, I’ve worked on production applications used by real users across multiple countries, focusing primarily on mobile development with Flutter while working closely with backend systems and real-time services.
 
 I’m comfortable owning features end-to-end — from planning and architecture to implementation, optimization, and delivery.
 
@@ -40,9 +41,7 @@ Recently, I’ve been using AI tools extensively to accelerate research, debuggi
 
 ---
 
-====================================================
-2. SKILLS SECTION — ADD MISSING BACKEND SKILLS
-====================================================
+# ==================================================== 2. SKILLS SECTION — ADD MISSING BACKEND SKILLS
 
 Do NOT remove existing skills.
 

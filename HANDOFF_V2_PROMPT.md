@@ -21,7 +21,7 @@ Subtitle:
 Mobile & Backend-Oriented • Flutter Specialist
 
 Description:
-Software Engineer with 4+ years of experience building scalable mobile systems and backend-integrated applications. Experienced across the full product lifecycle, with growing focus on backend engineering and system design using Java and Spring Boot.
+Software Engineer with 5+ years of experience building scalable mobile systems and backend-integrated applications. Experienced across the full product lifecycle, with growing focus on backend engineering and system design using Java and Spring Boot.
 
 # ==================================================== 2. ABOUT SECTION (OWNERSHIP & DIRECTION)
 
