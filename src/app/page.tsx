@@ -73,25 +73,33 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Technical Highlights - Horizontal Carousel */}
+      {/* Technical Highlights */}
       <section className="py-20 bg-gray-50 dark:bg-zinc-900/30 border-y border-gray-100 dark:border-zinc-800">
-        <div className="max-w-full overflow-hidden">
-          <div className="max-w-5xl mx-auto px-6 mb-10">
-            <h2 className="text-3xl font-bold">Technical Highlights</h2>
-            <p className="text-gray-500 mt-2">
-              Key technical challenges and solutions.
-            </p>
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="flex justify-between items-end mb-10">
+            <div>
+              <h2 className="text-3xl font-bold">Technical Highlights</h2>
+              <p className="text-gray-500 mt-2">
+                Key technical challenges and solutions.
+              </p>
+            </div>
+            <Link
+              href="/highlights"
+              className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white font-medium text-sm"
+            >
+              View all highlights &rarr;
+            </Link>
           </div>
 
-          <div className="flex overflow-x-auto gap-6 px-6 pb-8 snap-x snap-mandatory max-w-7xl mx-auto scrollbar-hide">
-            {highlightsData.highlights.map((highlight, index) => (
-              <div
-                key={index}
-                className="min-w-[350px] md:min-w-[400px] snap-center"
-              >
-                <TechnicalHighlightCard highlight={highlight} />
-              </div>
-            ))}
+          <div className="grid md:grid-cols-2 gap-6">
+            {highlightsData.highlights
+              .filter((highlight) => highlight.featured)
+              .map((highlight) => (
+                <TechnicalHighlightCard
+                  key={highlight.id}
+                  highlight={highlight}
+                />
+              ))}
           </div>
         </div>
       </section>

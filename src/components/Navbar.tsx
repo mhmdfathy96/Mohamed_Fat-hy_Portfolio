@@ -23,6 +23,12 @@ export default function Navbar() {
           >
             Projects
           </Link>
+          <Link
+            href="/highlights"
+            className="text-gray-600 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white"
+          >
+            Highlights
+          </Link>
           <a
             href="mailto:mhmdfathy96@gmail.com"
             className="text-gray-600 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white"

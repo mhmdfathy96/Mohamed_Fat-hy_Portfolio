@@ -78,6 +78,7 @@ export interface TechnicalHighlight {
   solution: string;
   result: string;
   link?: string;
+  featured?: boolean;
 }
 
 export interface PublicSample {

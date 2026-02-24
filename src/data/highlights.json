@@ -1,23 +1,30 @@
 {
   "highlights": [
     {
-      "id": "orientation",
-      "title": "Device Orientation Detection",
-      "context": "Party Player App",
-      "slug": "party-player-music-app",
-      "problem": "UI locked in portrait mode while video required automatic landscape full-screen.",
-      "solution": "Developed native Flutter plugin using accelerometer and motion sensors to detect real-time orientation.",
-      "result": "Accurate full-screen transitions without changing system rotation settings.",
-      "link": "https://pub.dev/packages/device_orientation_detector"
+      "id": "quiz-randomization",
+      "featured": true,
+      "title": "Deterministic Quiz Randomization",
+      "context": "Educational App",
+      "problem": "Quiz questions needed to be randomized per student attempt while ensuring fairness and reproducibility. A naive shuffle would produce different orderings on each access, breaking consistency.",
+      "solution": "Used seeded randomness (Collections.shuffle with a Random seeded by attemptId) so each attempt always generates the same question order. To address the hidden risk of instructors modifying questions mid-attempt, we blocked structural changes to any quiz with active in-progress attempts.",
+      "result": "Quiz randomization is deterministic per attempt, and in-progress students are protected from structural changes — guaranteeing fairness, reproducibility, and data integrity without snapshot duplication."
     },
     {
-      "id": "pagination",
-      "title": "Pagination Optimization",
-      "context": "3arabawy App",
-      "slug": "3arabawy-car-marketplace",
-      "problem": "Severe performance drops on low-end devices due to heavy blur rendering.",
-      "solution": "Removed heavy blur rendering from list views.",
-      "result": "Significant scrolling performance improvement."
+      "id": "device-lifecycle",
+      "featured": true,
+      "title": "Device Lifecycle Management",
+      "context": "Educational App",
+      "problem": "Students were restricted to one device, but when they changed or lost their phones, they had to contact the admin directly to regain access. This worked at small scale, but with thousands of users it became chaotic and unmanageable.",
+      "solution": "Instead of removing the restriction, we redesigned it into a proper lifecycle. Devices were registered with metadata, refresh tokens were bound to device identifiers, and a device reset request flow was introduced where students submit a reason and admins approve or reject with full context.",
+      "result": "Single-device enforcement remained strict, but the process became scalable, auditable, and no longer dependent on manual back-and-forth communication."
+    },
+    {
+      "id": "installer-source",
+      "title": "Installer Source Detection",
+      "context": "Mobile Infrastructure",
+      "problem": "During force updates, users were redirected to the wrong store due to manufacturer-based detection logic.",
+      "solution": "Replaced manufacturer-based detection with installation source detection using actual installer information.",
+      "result": "Resolved incorrect routing, ensuring users reach the correct store regardless of device brand."
     },
     {
       "id": "arabic-search",
@@ -29,12 +36,23 @@
       "result": "Accurate and consistent Arabic search behavior."
     },
     {
-      "id": "installer-source",
-      "title": "Installer Source Detection",
-      "context": "Mobile Infrastructure",
-      "problem": "During force updates, users were redirected to the wrong store due to manufacturer-based detection logic.",
-      "solution": "Replaced manufacturer-based detection with installation source detection using actual installer information.",
-      "result": "Resolved incorrect routing, ensuring users reach the correct store regardless of device brand."
+      "id": "pagination",
+      "title": "Pagination Optimization",
+      "context": "3arabawy App",
+      "slug": "3arabawy-car-marketplace",
+      "problem": "Severe performance drops on low-end devices due to heavy blur rendering.",
+      "solution": "Removed heavy blur rendering from list views.",
+      "result": "Significant scrolling performance improvement."
+    },
+    {
+      "id": "orientation",
+      "title": "Device Orientation Detection",
+      "context": "Party Player App",
+      "slug": "party-player-music-app",
+      "problem": "UI locked in portrait mode while video required automatic landscape full-screen.",
+      "solution": "Developed native Flutter plugin using accelerometer and motion sensors to detect real-time orientation.",
+      "result": "Accurate full-screen transitions without changing system rotation settings.",
+      "link": "https://pub.dev/packages/device_orientation_detector"
     }
   ]
 }
