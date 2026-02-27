@@ -227,9 +227,7 @@ export default function BuildWithMe() {
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                   <span className="font-semibold">Timeline:</span> 6–8 weeks
                 </p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  <span className="font-semibold">Starting at:</span> $12,000
-                </p>
+
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                   Milestone-based engagement.
                 </p>
