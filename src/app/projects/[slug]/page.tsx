@@ -72,6 +72,14 @@ export default async function ProjectPage({
             <strong className="text-black dark:text-white">Platforms:</strong>{" "}
             {project.platforms.join(", ")}
           </span>
+          {project.environments && project.environments.length > 0 && (
+            <span>
+              <strong className="text-black dark:text-white">
+                Environments:
+              </strong>{" "}
+              {project.environments.join(", ")}
+            </span>
+          )}
         </div>
 
         <div className="flex flex-wrap gap-4 mb-8">

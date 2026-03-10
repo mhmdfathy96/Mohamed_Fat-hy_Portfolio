@@ -1,11 +1,93 @@
 {
-  "featured": ["3arabawy", "mdone"],
+  "featured": ["guruhub", "3arabawy", "mdone"],
   "projects": {
+    "guruhub": {
+      "slug": "guruhub-educational-platform",
+      "name": "GuruHub",
+      "type": "Educational Platform (LMS)",
+      "market": "Global",
+      "environments": ["Staging", "Production"],
+      "shortDescription": "GuruHub is a full-stack Learning Management System (LMS) with backend services, an admin dashboard, and a mobile application.",
+      "fullDescription": "Designed and implemented GuruHub, a full-stack educational platform including backend services, an admin dashboard, and a mobile application. Built backend services using cutting-edge Spring Boot 4.0.1 + PostgreSQL, exposing 168 secure REST APIs. Developed a Flutter mobile application and a web dashboard for administration and analytics. Implemented enterprise-grade mobile security, single-device session enforcement, and role-based access control. Deployed using Docker and CI/CD pipelines.\n\nNote: GuruHub is currently in an internal testing phase. Please get in touch to be invited to the staging environment.",
+      "platforms": ["Web", "iOS", "Android"],
+      "role": "Full-Stack Software Engineer",
+      "responsibilities": [
+        "Designed and implemented GuruHub, a full-stack Learning Management System platform",
+        "Built enterprise-grade mobile security including freeRASP device integrity, Firebase App Check, SSL Pinning, and screenshot prevention",
+        "Built modular backend services using Spring Boot 4.0.1 (Spring Modulith) and PostgreSQL",
+        "Exposed 168 secure REST API endpoints for mobile and web clients",
+        "Implemented a commercial plan system with AOP-based feature gating (@RequiresCapability)",
+        "Built event-driven push notification system using Spring Application Events + Firebase Cloud Messaging",
+        "Designed quiz engine with deterministic randomization, timed attempts, and re-enrollment model",
+        "Implemented student progress tracking with real-time playback position sync and course completion analytics",
+        "Developed a Flutter mobile application following Clean Architecture",
+        "Developed a web dashboard using Vue 3 and Vuetify for administration and analytics",
+        "Implemented authorization with Spring Security roles + AOP plan capability on the backend and CASL on the frontend"
+      ],
+      "techStack": [
+        "Java 21",
+        "Spring Boot 4.0.1",
+        "Spring Modulith",
+        "Spring Security",
+        "PostgreSQL",
+        "Flyway",
+        "MapStruct",
+        "Vue 3",
+        "Vuetify",
+        "Flutter",
+        "Firebase Cloud Messaging",
+        "Codemagic",
+        "Docker"
+      ],
+      "technicalChallenges": [
+        {
+          "problem": "Quiz integrity during concurrent attempts",
+          "solution": "Deterministic shuffle using attempt ID as seed + unpublish guard blocking while live attempts exist",
+          "result": "Students always see consistent question order on resume"
+        },
+        {
+          "problem": "Single-device enforcement for students taking quizzes",
+          "solution": "Built a device registration and validation flow using X-Device-Id headers and admin-approved device resets.",
+          "result": "Prevented unauthorized account sharing and ensured academic integrity."
+        },
+        {
+          "problem": "Feature gating across 4 commercial plans",
+          "solution": "Built AOP aspect with @RequiresCapability annotation + plan resolution chain (agency → user → denied)",
+          "result": "Zero-code feature toggling per plan tier"
+        },
+        {
+          "problem": "Cross-module data access in modular monolith",
+          "solution": "Enforced module boundaries via PublicService interfaces + Spring Modulith dependency rules",
+          "result": "Clean architecture with testable module contracts"
+        },
+        {
+          "problem": "App performance and update management",
+          "solution": "Integrated Shorebird for continuous OTA updates and freeRASP for device integrity checks.",
+          "result": "Secure application with zero-downtime updates for critical fixes."
+        }
+      ],
+      "features": [
+        "168 API Endpoints",
+        "Course Builder with hierarchical sections/lessons + standalone & lesson-attached quiz engine",
+        "Admin home screen curation with featured content management",
+        "Admin, Agency & Instructor analytics dashboards",
+        "OAuth student authentication with single-device enforcement",
+        "Enterprise-grade mobile security (SSL Pinning, freeRASP, App Check)",
+        "i18n support (English + Arabic)",
+        "Modular Monolith Backend"
+      ],
+      "links": {},
+      "seo": {
+        "title": "GuruHub | Full-Stack LMS Platform",
+        "description": "GuruHub is a comprehensive Learning Management System built with Spring Boot 4.0.1, Vue 3, and Flutter. Features multi-role capabilities, scalable architecture, and secure APIs."
+      }
+    },
     "3arabawy": {
       "slug": "3arabawy-car-marketplace",
       "name": "3arabawy",
-      "type": "Mobile Application",
+      "type": "Automotive Marketplace & Service Platform",
       "market": "Egypt",
+      "environments": ["Staging", "Production"],
       "shortDescription": "Car marketplace app for buying, selling, and renting vehicles, parts, and services.",
       "fullDescription": "A large-scale automotive marketplace supporting car sales, rentals, services, spare parts, and motorcycles, designed to handle heavy media usage and real-time interaction.",
       "platforms": ["iOS", "Android", "Huawei"],
@@ -70,8 +152,9 @@
     "mdone": {
       "slug": "mdone-medical-booking-app",
       "name": "MDone",
-      "type": "Medical Application",
+      "type": "Medical Booking & Telehealth Platform",
       "market": "Iraq",
+      "environments": ["Production"],
       "shortDescription": "Medical booking app connecting patients with doctors.",
       "fullDescription": "Medical appointment booking application connecting patients with doctors.",
       "platforms": ["iOS", "Android"],
@@ -104,8 +187,9 @@
     "toltura": {
       "slug": "toltura-specialist-discovery",
       "name": "TOLTURA",
-      "type": "Service Application",
+      "type": "Specialist Discovery Platform",
       "market": "Kyrgyzstan",
+      "environments": ["Production"],
       "shortDescription": "Specialist discovery platform allowing users to find professionals.",
       "fullDescription": "Service discovery platform connecting users with specialists across multiple categories.",
       "platforms": ["iOS", "Android"],
@@ -136,8 +220,9 @@
     "biznavi": {
       "slug": "biznavi-hr-management",
       "name": "Biznavi",
-      "type": "Business Application",
+      "type": "Corporate HR Management Platform",
       "market": "South Korea",
+      "environments": ["Production"],
       "shortDescription": "Corporate HR management mobile application for internal company workflows.",
       "fullDescription": "Corporate HR management application designed for internal company workflows.",
       "platforms": ["iOS", "Android"],
@@ -172,8 +257,9 @@
     "party-player": {
       "slug": "party-player-music-app",
       "name": "Party Player",
-      "type": "Entertainment Application",
+      "type": "Music & Media Streaming App",
       "market": "USA",
+      "environments": ["Production"],
       "shortDescription": "Music and media application for shared playback and entertainment.",
       "fullDescription": "Music and media application supporting audio and video playback.",
       "platforms": ["iOS", "Android"],
@@ -206,8 +292,9 @@
     "installment-app": {
       "slug": "installment-app-business",
       "name": "Installment App",
-      "type": "Business Utility",
+      "type": "Merchant Installment Payment Utility",
       "market": "Egypt",
+      "environments": ["Production"],
       "shortDescription": "Business utility application for managing merchant installment payments.",
       "fullDescription": "Business utility application for managing merchant installment payments.",
       "platforms": ["Android"],

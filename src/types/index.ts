@@ -16,6 +16,9 @@ export interface ProjectLinks {
   android?: string;
   huawei?: string;
   web?: string;
+  website?: string;
+  dashboard?: string;
+  swagger?: string;
 }
 
 export interface ProjectSEO {
@@ -38,6 +41,7 @@ export interface Project {
   fullDescription: string;
   platforms: string[];
   role: string;
+  environments?: string[];
   responsibilities?: string[];
   leadership?: string[];
   techStack: string[];
