@@ -4,15 +4,16 @@
       "title": "Software Engineer",
       "company": "3arabawy",
       "industry": "Automotive E-commerce",
-      "location": "Egypt (Remote)",
+      "location": "USA (Remote)",
       "type": "job",
       "start": "Dec 2024",
       "end": "Present",
-      "description": "Primary technical consultant for backend architecture; spearheaded event-driven architecture migration achieving a 30% performance boost on low-end devices.",
+      "description": "Guided backend architecture and API contract design; spearheaded the transition to a modular, event-driven Flutter architecture and optimized resource allocation for low-end devices.",
       "highlights": [
-        "Led backend architecture & API contract design",
-        "Migrated to modular event-driven architecture — 30% perf boost",
-        "Integrated Socket.IO microservice for real-time communication"
+        "Guided backend architecture & API contract design for optimal mobile-to-server synchronization",
+        "Migrated from global state to a modular, event-driven architecture to improve maintainability",
+        "Optimized resource allocation, achieving a 30% performance boost on low-end devices",
+        "Led the integration of a Socket.IO microservice for real-time communication"
       ]
     },
     {
