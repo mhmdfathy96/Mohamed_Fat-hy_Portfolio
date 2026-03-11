@@ -193,20 +193,26 @@
       "shortDescription": "Specialist discovery platform allowing users to find professionals.",
       "fullDescription": "Service discovery platform connecting users with specialists across multiple categories.",
       "platforms": ["iOS", "Android"],
-      "role": "Software Engineer (Flutter)",
+      "role": "Software Engineer",
       "responsibilities": [
-        "Implemented specialist listing and filtering systems",
-        "Integrated REST APIs",
-        "Applied clean and scalable architecture",
-        "Ensured performance and maintainability"
+        "Expanded role beyond mobile development to influence core business decisions and directly optimize user flows",
+        "Collaborated on the .NET backend to implement and troubleshoot SignalR, ensuring a flawless real-time chat integration",
+        "Managed the end-to-end deployment lifecycle via CI/CD pipelines, publishing to the App Store and Google Play",
+        "Implemented specialist listing and filtering systems applying clean architecture"
       ],
-      "techStack": ["Flutter", "REST APIs"],
-      "technicalChallenges": [],
+      "techStack": ["Flutter", "REST APIs", ".NET", "SignalR", "CI/CD"],
+      "technicalChallenges": [
+        {
+          "problem": "Cross-platform real-time communication synchronization",
+          "solution": "Collaborated directly on the .NET backend to implement and demonstrate SignalR functionality.",
+          "result": "Flawless real-time chat integration between the server and the Flutter client."
+        }
+      ],
       "features": [
         "Specialist listings",
         "Category-based search",
-        "API-driven system",
-        "Clean architecture structure"
+        "Real-time chat (SignalR)",
+        "CI/CD deployment pipeline"
       ],
       "links": {
         "ios": "https://apps.apple.com/us/app/id6511249961",
@@ -298,25 +304,33 @@
       "shortDescription": "Business utility application for managing merchant installment payments.",
       "fullDescription": "Business utility application for managing merchant installment payments.",
       "platforms": ["Android"],
-      "role": "Software Engineer (Flutter)",
+      "role": "Software Engineer",
       "responsibilities": [
-        "Implemented installment calculation logic",
-        "Built merchant workflows",
-        "Integrated backend APIs"
+        "Directed a cross-functional team, acting as the primary liaison between UI/UX design, backend, and mobile development",
+        "Architected and developed the backend infrastructure using C# and .NET with Entity Framework and MSSQL",
+        "Deployed backend services via SmarterASP and launched the Android-exclusive client using Flutter",
+        "Implemented complex merchant workflows and installment calculation logic"
       ],
-      "techStack": ["Flutter", "REST APIs"],
-      "technicalChallenges": [],
+      "techStack": ["Flutter", "REST APIs", "C#", ".NET", "MSSQL", "Entity Framework", "SmarterASP"],
+      "technicalChallenges": [
+        {
+          "problem": "End-to-end product delivery across multiple stacks",
+          "solution": "Managed full-stack architecture, building the Flutter client while simultaneously architecting and deploying the .NET/MSSQL backend.",
+          "result": "Successful delivery and deployment of a cohesive merchant application."
+        }
+      ],
       "features": [
         "Installment calculations",
         "Merchant workflows",
-        "Business-focused UI"
+        "Business-focused UI",
+        "Full-stack custom backend integration"
       ],
       "links": {
         "android": "https://play.google.com/store/apps/details?id=com.MindToCode.installment_project"
       },
       "seo": {
         "title": "Installment App | Business Payment Utility",
-        "description": "Installment App is a business utility for managing merchant installment payments, built with Flutter."
+        "description": "Installment App is a business utility for managing merchant installment payments, built with Flutter and a custom .NET backend."
       }
     }
   }
