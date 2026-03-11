@@ -3,17 +3,18 @@
 import Hero from "@/components/Hero";
 import ProjectCard from "@/components/ProjectCard";
 import TechnicalHighlightCard from "@/components/TechnicalHighlightCard";
+import CareerTimeline from "@/components/CareerTimeline";
 import profile from "@/data/profile.json";
 import projectsData from "@/data/projects.json";
 import highlightsData from "@/data/highlights.json";
-import companiesData from "@/data/companies.json";
 import skillsData from "@/data/skills.json";
 import publicSamplesData from "@/data/public_samples.json";
 import testimonialsData from "@/data/testimonials.json";
+import careerTimelineData from "@/data/career_timeline.json";
 import PublicSampleCard from "@/components/PublicSampleCard";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import Link from "next/link";
-import { SkillCategory, PublicSample, Testimonial } from "@/types";
+import { SkillCategory, PublicSample, Testimonial, CareerEntry } from "@/types";
 import { trackButtonClick, trackLinkClick } from "@/lib/analytics";
 
 export default function Home() {
@@ -37,6 +38,7 @@ export default function Home() {
 
   const publicSamples = publicSamplesData.samples as PublicSample[];
   const testimonials = testimonialsData.testimonials as Testimonial[];
+  const careerEntries = careerTimelineData.entries as CareerEntry[];
 
   return (
     <>
@@ -54,80 +56,67 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Projects */}
-      <section className="py-20 max-w-5xl mx-auto px-6" id="projects">
-        <div className="flex justify-between items-end mb-10">
-          <h2 className="text-3xl font-bold">Featured Projects</h2>
-          <Link
-            href="/projects"
-            onClick={handleViewAllProjectsClick}
-            className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white font-medium text-sm"
-          >
-            View all projects &rarr;
-          </Link>
+      {/* Career Journey */}
+      <section className="py-20 max-w-5xl mx-auto px-6" id="career">
+        <div className="mb-10">
+          <h2 className="text-3xl font-bold">Career Journey</h2>
+          <p className="text-gray-500 dark:text-gray-400 mt-2">
+            5+ years of building across mobile, backend, and full-stack — from freelance roots to production systems at scale.
+          </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-6">
-          {featured.map((project) => (
-            <ProjectCard key={project.slug} project={project} />
-          ))}
+        <CareerTimeline entries={careerEntries} />
+      </section>
+
+      {/* Featured Projects */}
+      <section className="py-20 bg-gray-50 dark:bg-zinc-900/30 border-y border-gray-100 dark:border-zinc-800" id="projects">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="flex justify-between items-end mb-10">
+            <h2 className="text-3xl font-bold">Featured Projects</h2>
+            <Link
+              href="/projects"
+              onClick={handleViewAllProjectsClick}
+              className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white font-medium text-sm"
+            >
+              View all projects &rarr;
+            </Link>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {featured.map((project) => (
+              <ProjectCard key={project.slug} project={project} />
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Technical Highlights */}
-      <section className="py-20 bg-gray-50 dark:bg-zinc-900/30 border-y border-gray-100 dark:border-zinc-800">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="flex justify-between items-end mb-10">
-            <div>
-              <h2 className="text-3xl font-bold">Technical Highlights</h2>
-              <p className="text-gray-500 mt-2">
-                Key technical challenges and solutions.
-              </p>
-            </div>
-            <Link
-              href="/highlights"
-              className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white font-medium text-sm"
-            >
-              View all highlights &rarr;
-            </Link>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {highlightsData.highlights
-              .filter((highlight) => highlight.featured)
-              .map((highlight) => (
-                <TechnicalHighlightCard
-                  key={highlight.id}
-                  highlight={highlight}
-                />
-              ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Companies */}
       <section className="py-20 max-w-5xl mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-10">
-          Companies I&apos;ve Worked With
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {companiesData.companies.map((company, index) => (
-            <div
-              key={index}
-              className="p-6 bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-lg"
-            >
-              <div className="flex justify-between items-start">
-                <h3 className="font-bold text-lg">{company.name}</h3>
-              </div>
-              <p className="text-sm font-medium text-gray-700 dark:text-gray-300 mt-2">
-                {company.role}
-              </p>
-              <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                {company.start} – {company.end}
-              </p>
-            </div>
-          ))}
+        <div className="flex justify-between items-end mb-10">
+          <div>
+            <h2 className="text-3xl font-bold">Technical Highlights</h2>
+            <p className="text-gray-500 mt-2">
+              Key technical challenges and solutions.
+            </p>
+          </div>
+          <Link
+            href="/highlights"
+            className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white font-medium text-sm"
+          >
+            View all highlights &rarr;
+          </Link>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6">
+          {highlightsData.highlights
+            .filter((highlight) => highlight.featured)
+            .map((highlight) => (
+              <TechnicalHighlightCard
+                key={highlight.id}
+                highlight={highlight}
+              />
+            ))}
         </div>
       </section>
+
 
       {/* Skills */}
       <section className="py-20 bg-gray-50 dark:bg-zinc-900/30 border-y border-gray-100 dark:border-zinc-800">

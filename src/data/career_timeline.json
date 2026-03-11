@@ -1,0 +1,95 @@
+{
+  "entries": [
+    {
+      "title": "Software Engineer",
+      "company": "3arabawy",
+      "industry": "Automotive E-commerce",
+      "location": "Egypt (Remote)",
+      "type": "job",
+      "start": "Dec 2024",
+      "end": "Present",
+      "description": "Primary technical consultant for backend architecture; spearheaded event-driven architecture migration achieving a 30% performance boost on low-end devices.",
+      "highlights": [
+        "Led backend architecture & API contract design",
+        "Migrated to modular event-driven architecture — 30% perf boost",
+        "Integrated Socket.IO microservice for real-time communication"
+      ]
+    },
+    {
+      "title": "Career Break",
+      "company": null,
+      "industry": null,
+      "location": "Al Zahiyah, Abu Dhabi, UAE",
+      "type": "career-break",
+      "start": "Oct 2024",
+      "end": "Nov 2024",
+      "description": "Relocated to the UAE to explore global tech opportunities. Pursued rigorous self-study focused on algorithm problems in Java and the broader AI landscape.",
+      "highlights": [
+        "Self-directed relocation to assess global tech opportunities",
+        "Intensive algorithm problem-solving in Java",
+        "Explored Generative AI landscape"
+      ]
+    },
+    {
+      "title": "Full Stack Engineer",
+      "company": "Napps",
+      "industry": "Startup / SaaS",
+      "location": "USA (Remote)",
+      "type": "contract",
+      "start": "May 2024",
+      "end": "Sep 2025",
+      "description": "Designed serverless backend with Firebase Cloud Functions & Google Cloud Run; architected a secure in-app purchase system with 100% transactional integrity.",
+      "highlights": [
+        "Scalable serverless backend: Firebase Cloud Functions & Cloud Run",
+        "Secure in-app purchase system with server-side receipt validation",
+        "Responsive Flutter UI from complex Figma designs"
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Yapoey",
+      "industry": "Startup",
+      "location": "South Korea (Remote)",
+      "type": "job",
+      "start": "Aug 2023",
+      "end": "Jul 2024",
+      "description": "Orchestrated full-cycle delivery of multiple high-stakes projects; enforced Clean Architecture & BLoC achieving a 98% crash-free rate.",
+      "highlights": [
+        "Full-cycle delivery of multiple corporate & consumer apps",
+        "Clean Architecture + BLoC — 98% crash-free rate",
+        "Led technical liaison between South Korean stakeholders & dev teams",
+        "Reduced onboarding time by 30% via documentation standards"
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "MDone",
+      "industry": "Healthcare / Telehealth",
+      "location": "Iraq (Remote)",
+      "type": "contract",
+      "start": "Jul 2022",
+      "end": "Jun 2023",
+      "description": "Led UI development for patient-doctor booking workflows; achieved 25% API latency reduction and 99% connectivity reliability for medical consultations.",
+      "highlights": [
+        "Responsive UI for complex medical booking workflows",
+        "25% API latency reduction through query optimisation",
+        "99% connectivity reliability for video consultations (Agora RTC/RTM)"
+      ]
+    },
+    {
+      "title": "Freelance Mobile Engineer",
+      "company": "Upwork",
+      "industry": "Freelance",
+      "location": "Remote",
+      "type": "freelance",
+      "start": "May 2021",
+      "end": "Present",
+      "description": "End-to-end delivery of 10+ cross-platform apps for international clients — from requirements gathering to live deployment on Google Play, AppGallery & App Store.",
+      "highlights": [
+        "10+ projects through full product delivery lifecycle",
+        "Cross-platform apps with Clean Architecture & BLoC",
+        "CI/CD pipelines via Codemagic — automated build, test & deploy"
+      ]
+    }
+  ]
+}

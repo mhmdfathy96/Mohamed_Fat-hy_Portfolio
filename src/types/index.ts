@@ -97,3 +97,15 @@ export interface Testimonial {
   name: string;
   role: string;
 }
+
+export interface CareerEntry {
+  title: string;
+  company: string | null;
+  industry: string | null;
+  location?: string;
+  type: "job" | "contract" | "freelance" | "career-break";
+  start: string;
+  end: string;
+  description: string;
+  highlights?: string[];
+}
