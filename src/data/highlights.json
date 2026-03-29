@@ -1,10 +1,21 @@
 {
   "highlights": [
     {
+      "id": "native-image-compression",
+      "featured": true,
+      "title": "Native Image Compression & Streaming",
+      "context": "3arabawy App",
+      "slug": "3arabawy-car-marketplace",
+      "problem": "Extracting bytes via readAsBytes() pulled heavy visual files directly onto the Dart heap, where decoding 8MB JPEGs into uncompressed bitmaps consumed 50MB–100MB of RAM per file, leading to OOM crashes and UI thread blocking.",
+      "solution": "Refactored the image pipeline to use dart:ui for native sizing and FlutterImageCompress for path-based native encoding. Substituted Uint8List tracking with native file paths and transitioned to file streaming via Dio's MultipartFile.fromFile.",
+      "result": "Reduced RAM usage by ~98% (from 500MB to <5MB for 10 images), eliminated OOM crashes, and restored a stable 120 FPS by moving processing to native C++/Objective-C sub-workers."
+    },
+    {
       "id": "quiz-randomization",
       "featured": true,
       "title": "Deterministic Quiz Randomization",
-      "context": "Educational App",
+      "context": "GuruHub Educational Platform",
+      "slug": "guruhub-educational-platform",
       "problem": "Quiz questions needed to be randomized per student attempt while ensuring fairness and reproducibility. A naive shuffle would produce different orderings on each access, breaking consistency.",
       "solution": "Used seeded randomness (Collections.shuffle with a Random seeded by attemptId) so each attempt always generates the same question order. To address the hidden risk of instructors modifying questions mid-attempt, we blocked structural changes to any quiz with active in-progress attempts.",
       "result": "Quiz randomization is deterministic per attempt, and in-progress students are protected from structural changes — guaranteeing fairness, reproducibility, and data integrity without snapshot duplication."
@@ -13,7 +24,8 @@
       "id": "device-lifecycle",
       "featured": true,
       "title": "Device Lifecycle Management",
-      "context": "Educational App",
+      "context": "GuruHub Educational Platform",
+      "slug": "guruhub-educational-platform",
       "problem": "Students were restricted to one device, but when they changed or lost their phones, they had to contact the admin directly to regain access. This worked at small scale, but with thousands of users it became chaotic and unmanageable.",
       "solution": "Instead of removing the restriction, we redesigned it into a proper lifecycle. Devices were registered with metadata, refresh tokens were bound to device identifiers, and a device reset request flow was introduced where students submit a reason and admins approve or reject with full context.",
       "result": "Single-device enforcement remained strict, but the process became scalable, auditable, and no longer dependent on manual back-and-forth communication."

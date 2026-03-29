@@ -95,11 +95,13 @@
       "responsibilities": [
         "Designed and maintained scalable mobile architecture using Clean Architecture",
         "Implemented listing systems for cars, services, parts, and motorcycles",
-        "Integrated real-time chat using Socket.IO",
-        "Built image and media upload pipelines",
         "Optimized performance for low-end devices",
-        "Refactored global state management into modular event-based structure",
-        "Collaborated closely with backend team on API contracts and improvements"
+        "Collaborated closely with backend team on API contracts and improvements",
+        "Refactored image compression and networking to use native file streams, reducing RAM usage by ~98% and eliminating OOM crashes",
+        "Drastically reduced overall CPU/RAM overhead, ensuring a stable 60/120 FPS and a 30% smoother experience on low-end hardware",
+        "Guided backend architecture and API contract design to ensure optimal mobile-to-server data synchronization",
+        "Spearheaded the transition to a modular, event-driven Flutter architecture to handle complex app states more efficiently",
+        "Led the integration of a Socket.IO microservice"
       ],
       "techStack": [
         "Flutter",
@@ -111,24 +113,24 @@
       ],
       "technicalChallenges": [
         {
-          "problem": "Pagination performance optimization by removing heavy blur rendering",
-          "solution": "Removed blur from list views and moved rich rendering to preview screens.",
-          "result": "Significant performance improvement."
+          "problem": "OOM crashes and UI thread blocking during heavy image uploads.",
+          "solution": "Refactored image pipeline to use native file streams and path-based compression (C++/Objective-C sub-workers) instead of Dart-side byte processing.",
+          "result": "Reduced RAM usage by ~98% and eliminated synchronous jank, maintaining stable 60/120 FPS."
         },
         {
-          "problem": "Memory and rebuild optimization for media-heavy screens",
-          "solution": "Reduced rebuilds, optimized loading, and managed memory carefully.",
-          "result": "Smooth performance across device ranges."
+          "problem": "Memory and rebuild optimization for media-heavy screens.",
+          "solution": "Implemented modular event-driven architecture and optimized resource allocation.",
+          "result": "30% smoother experience on low-end hardware."
         },
         {
-          "problem": "Arabic search normalization to handle Unicode inconsistencies",
+          "problem": "Arabic search normalization to handle Unicode inconsistencies.",
           "solution": "Applied Arabic normalization and removed diacritics.",
           "result": "Highly accurate and consistent Arabic search behavior."
         },
         {
-          "problem": "Background processing for uploads and long-running tasks",
-          "solution": "Implemented background processing strategies.",
-          "result": "Reliable uploads without blocking user interaction."
+          "problem": "Pagination performance optimization.",
+          "solution": "Removed heavy blur rendering from list views and moved rich rendering to preview screens.",
+          "result": "Significant scrolling performance improvement."
         }
       ],
       "features": [
@@ -311,7 +313,15 @@
         "Deployed backend services via SmarterASP and launched the Android-exclusive client using Flutter",
         "Implemented complex merchant workflows and installment calculation logic"
       ],
-      "techStack": ["Flutter", "REST APIs", "C#", ".NET", "MSSQL", "Entity Framework", "SmarterASP"],
+      "techStack": [
+        "Flutter",
+        "REST APIs",
+        "C#",
+        ".NET",
+        "MSSQL",
+        "Entity Framework",
+        "SmarterASP"
+      ],
       "technicalChallenges": [
         {
           "problem": "End-to-end product delivery across multiple stacks",

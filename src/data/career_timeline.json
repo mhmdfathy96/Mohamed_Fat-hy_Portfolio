@@ -8,12 +8,13 @@
       "type": "job",
       "start": "Dec 2024",
       "end": "Present",
-      "description": "Guided backend architecture and API contract design; spearheaded the transition to a modular, event-driven Flutter architecture and optimized resource allocation for low-end devices.",
+      "description": "Led high-impact architectural refactors including a native image compression system that reduced RAM usage by ~98% and a transition to modular, event-driven Flutter architecture, ensuring stable 120 FPS performance on low-end hardware.",
       "highlights": [
-        "Guided backend architecture & API contract design for optimal mobile-to-server synchronization",
-        "Migrated from global state to a modular, event-driven architecture to improve maintainability",
-        "Optimized resource allocation, achieving a 30% performance boost on low-end devices",
-        "Led the integration of a Socket.IO microservice for real-time communication"
+        "Refactored image compression and networking to use native file streams, reducing RAM usage by ~98% and eliminating OOM crashes",
+        "Drastically reduced overall CPU/RAM overhead, ensuring a stable 60/120 FPS and a 30% smoother experience on low-end hardware",
+        "Guided backend architecture and API contract design to ensure optimal mobile-to-server data synchronization",
+        "Spearheaded the transition to a modular, event-driven Flutter architecture to handle complex app states more efficiently",
+        "Led the integration of a Socket.IO microservice"
       ]
     },
     {
