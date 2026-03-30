@@ -10,7 +10,7 @@
       "shortDescription": "GuruHub is a full-stack Learning Management System (LMS) with backend services, an admin dashboard, and a mobile application.",
       "fullDescription": "Designed and implemented GuruHub, a full-stack educational platform including backend services, an admin dashboard, and a mobile application. Built backend services using cutting-edge Spring Boot 4.0.1 + PostgreSQL, exposing 168 secure REST APIs. Developed a Flutter mobile application and a web dashboard for administration and analytics. Implemented enterprise-grade mobile security, single-device session enforcement, and role-based access control. Deployed using Docker and CI/CD pipelines.\n\nNote: GuruHub is currently in an internal testing phase. Please get in touch to be invited to the staging environment.",
       "platforms": ["Web", "iOS", "Android"],
-      "role": "Full-Stack Software Engineer",
+      "role": "Software Engineer",
       "responsibilities": [
         "Designed and implemented GuruHub, a full-stack Learning Management System platform",
         "Built enterprise-grade mobile security including freeRASP device integrity, Firebase App Check, SSL Pinning, and screenshot prevention",
@@ -78,7 +78,7 @@
       ],
       "links": {},
       "seo": {
-        "title": "GuruHub | Full-Stack LMS Platform",
+        "title": "GuruHub | Educational / LMS Platform",
         "description": "GuruHub is a comprehensive Learning Management System built with Spring Boot 4.0.1, Vue 3, and Flutter. Features multi-role capabilities, scalable architecture, and secure APIs."
       }
     },
@@ -91,7 +91,7 @@
       "shortDescription": "Car marketplace app for buying, selling, and renting vehicles, parts, and services.",
       "fullDescription": "A large-scale automotive marketplace supporting car sales, rentals, services, spare parts, and motorcycles, designed to handle heavy media usage and real-time interaction.",
       "platforms": ["iOS", "Android", "Huawei"],
-      "role": "Software Engineer (Flutter)",
+      "role": "Software Engineer",
       "responsibilities": [
         "Designed and maintained scalable mobile architecture using Clean Architecture",
         "Implemented listing systems for cars, services, parts, and motorcycles",
@@ -160,7 +160,7 @@
       "shortDescription": "Medical booking app connecting patients with doctors.",
       "fullDescription": "Medical appointment booking application connecting patients with doctors.",
       "platforms": ["iOS", "Android"],
-      "role": "Software Engineer (Flutter)",
+      "role": "Software Engineer",
       "responsibilities": [
         "Implemented appointment booking flows",
         "Integrated real-time chat",
@@ -234,7 +234,7 @@
       "shortDescription": "Corporate HR management mobile application for internal company workflows.",
       "fullDescription": "Corporate HR management application designed for internal company workflows.",
       "platforms": ["iOS", "Android"],
-      "role": "Software Engineer — Tech Lead",
+      "role": "Software Engineer",
       "leadership": [
         "Acted as Tech Lead for the project",
         "Led Flutter development team",
@@ -271,7 +271,7 @@
       "shortDescription": "Music and media application for shared playback and entertainment.",
       "fullDescription": "Music and media application supporting audio and video playback.",
       "platforms": ["iOS", "Android"],
-      "role": "Software Engineer (Mobile & Backend Integration)",
+      "role": "Software Engineer",
       "responsibilities": [
         "Implemented Flutter application architecture",
         "Integrated Firebase backend services",
