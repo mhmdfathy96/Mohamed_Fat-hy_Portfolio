@@ -1,6 +1,7 @@
 "use client";
 
 import profile from "@/data/profile.json";
+import contactChannels from "@/data/contact_channels.json";
 import Link from "next/link";
 import { trackButtonClick, trackLinkClick } from "@/lib/analytics";
 
@@ -22,7 +23,7 @@ export default function Footer() {
             Ready to launch your SaaS product?
           </h3>
           <Link
-            href="/build-with-me"
+            href="/contact#book"
             onClick={handleCTAClick}
             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
           >
@@ -38,7 +39,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} {profile.name}. All rights
             reserved.
           </div>
-          <div className="flex gap-6 text-sm font-medium">
+          <div className="flex gap-6 text-sm font-medium flex-wrap justify-center">
             <a
               href={profile.github}
               target="_blank"
@@ -66,6 +67,24 @@ export default function Footer() {
             >
               Upwork
             </a>
+            {contactChannels.telegram.show && (
+              <a
+                href={contactChannels.telegram.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => handleSocialClick("Telegram", contactChannels.telegram.url)}
+                className="text-gray-500 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white"
+              >
+                Telegram
+              </a>
+            )}
+            <Link
+              href="/contact"
+              onClick={() => handleSocialClick("Contact", "/contact")}
+              className="text-gray-500 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white"
+            >
+              Contact
+            </Link>
           </div>
         </div>
       </div>

@@ -1,0 +1,108 @@
+{
+  "hero": {
+    "headline": "Software That Ships",
+    "subheadline": "Whether you need a mobile app, a backend rebuild, or AI features in your product — you work with one accountable lead who plugs in design, QA, and DevOps only when the project actually needs them.",
+    "primaryCta": {
+      "label": "Send a Project Brief",
+      "href": "/contact#form"
+    },
+    "secondaryCta": {
+      "label": "Book a Call",
+      "href": "/contact#book"
+    }
+  },
+  "intro": {
+    "title": "What I actually build",
+    "body": "I don't pick projects by tech stack — I pick them by outcome. Tell me what you want shipped and I'll tell you the shortest credible path to get there. If a project needs a designer, a QA engineer, or a DevOps specialist, I bring in people I've worked with before. You still talk to one person."
+  },
+  "outcomes": [
+    {
+      "icon": "Rocket",
+      "title": "Launch a SaaS MVP",
+      "description": "Validated idea → production app in 6–8 weeks. Mobile + backend + admin + deployment, all under one roof.",
+      "bestFor": "Founders past the validation stage who need to ship without building a team.",
+      "cta": { "label": "See engagement phases", "href": "/build-with-me" }
+    },
+    {
+      "icon": "Smartphone",
+      "title": "Build a Mobile App",
+      "description": "iOS and Android from a single Flutter codebase. Clean architecture, offline support, native performance — production-grade from day one.",
+      "bestFor": "Companies that need a mobile presence without doubling engineering cost.",
+      "cta": { "label": "Send a brief", "href": "/contact#form" }
+    },
+    {
+      "icon": "Server",
+      "title": "Modernize & Scale a Backend",
+      "description": "Take a backend from \"works for 100 users\" to \"works for 100,000.\" Spring Boot, .NET, PostgreSQL, cloud-native deployment, observability built in.",
+      "bestFor": "Teams hitting performance, reliability, or cost ceilings on their current backend.",
+      "cta": { "label": "Send a brief", "href": "/contact#form" }
+    },
+    {
+      "icon": "Sparkles",
+      "title": "Add AI Features",
+      "description": "Plug GenAI into an existing product — chat, summarization, classification, RAG over your data — using Spring AI and modern LLM patterns. Done with production cost, latency, and quality controls.",
+      "bestFor": "Existing products that want a real AI feature, not a demo.",
+      "cta": { "label": "Send a brief", "href": "/contact#form" }
+    },
+    {
+      "icon": "Globe",
+      "title": "Ship a Web Platform",
+      "description": "Next.js / React frontend with a typed backend and a real database. Built to be maintained, not just demoed.",
+      "bestFor": "B2B companies, marketplaces, internal platforms — anything beyond a marketing site.",
+      "cta": { "label": "Send a brief", "href": "/contact#form" }
+    },
+    {
+      "icon": "LifeBuoy",
+      "title": "Rescue a Stuck Project",
+      "description": "Honest technical audit of code, architecture, and team — then a concrete plan to unstick the project. I can take over delivery or hand the plan to your team.",
+      "bestFor": "Founders or CTOs whose project is over budget, over time, or showing instability in production.",
+      "cta": { "label": "Send a brief", "href": "/contact#form" }
+    }
+  ],
+  "process": {
+    "title": "How working together looks",
+    "steps": [
+      {
+        "label": "Brief",
+        "description": "You send a one-line idea via the form or email. I reply within 24 business hours."
+      },
+      {
+        "label": "Strategy call",
+        "description": "30 min. Scope, top risks, a starting recommendation. No pitch."
+      },
+      {
+        "label": "Proposal",
+        "description": "Within 2–3 days I send back a written scope, timeline, and milestone-based price."
+      },
+      {
+        "label": "Build",
+        "description": "Weekly demos, async daily updates, code in your repo from day one."
+      },
+      {
+        "label": "Ship",
+        "description": "Production deployment, handoff docs, and a roadmap for what comes next."
+      }
+    ]
+  },
+  "notFor": {
+    "title": "Not the right fit if",
+    "items": [
+      "Your scope keeps shifting weekly — milestone-based work needs each milestone defined before it starts.",
+      "You want a fixed total price before the scope is clear — I fix-price per milestone, not the whole project sight-unseen.",
+      "You want the cheapest option — I'm not the cheapest and won't try to be."
+    ]
+  },
+  "finalCta": {
+    "headline": "Have a project? Tell me about it.",
+    "body": "Send a short brief — stage, budget range, timeline — and I'll reply with whether I can help and what makes sense as a next step.",
+    "primaryCta": {
+      "label": "Send a Project Brief",
+      "href": "/contact#form"
+    },
+    "secondaryCta": {
+      "label": "book a 30-min strategy call",
+      "href": "/contact#book"
+    }
+  },
+  "_note": "TODO: review outcomes — remove any you don't actually want to take on, or rewrite descriptions to match how you'd pitch each one. 'notFor' items 1–3 were rewritten as operational disqualifiers (not personality judgments). Icons are lucide-react names; valid set: Rocket, Smartphone, Server, Sparkles, Globe, LifeBuoy, Target, Zap, Users, Code, Cloud, Brain, Wrench."
+}

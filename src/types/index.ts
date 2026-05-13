@@ -109,3 +109,24 @@ export interface CareerEntry {
   description: string;
   highlights?: string[];
 }
+
+export type ContactFormFieldType = "text" | "email" | "select" | "textarea";
+
+export interface ContactFormField {
+  id: string;
+  label: string;
+  type: ContactFormFieldType;
+  required: boolean;
+  placeholder?: string;
+  options?: string[];
+}
+
+export interface ContactFormConfig {
+  endpoint: string;
+  heading: string;
+  subheading: string;
+  successMessage: string;
+  errorMessage: string;
+  submitLabel: string;
+  fields: ContactFormField[];
+}

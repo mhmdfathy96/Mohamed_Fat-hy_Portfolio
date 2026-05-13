@@ -1,0 +1,8 @@
+{
+  "show": true,
+  "label": "Starting from",
+  "amount": "$8,000",
+  "phase": "Phase 1 — MVP Foundation",
+  "footnote": "Final scope and price confirmed after a free 30-min strategy session.",
+  "_note": "Set by Claude as a defensible mid-anchor for a 6–8 week MVP. Edit 'amount' to your real number or set 'show' to false to hide pricing."
+}

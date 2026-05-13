@@ -5,6 +5,14 @@ import Link from "next/link";
 import { trackButtonClick, trackLinkClick } from "@/lib/analytics";
 
 export default function Hero() {
+  const handleBuildMvpClick = () => {
+    trackButtonClick("Build Your MVP", "hero");
+  };
+
+  const handleServicesClick = () => {
+    trackButtonClick("Services", "hero");
+  };
+
   const handleViewProjectsClick = () => {
     trackButtonClick("View Projects", "hero");
   };
@@ -25,11 +33,28 @@ export default function Hero() {
       <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-4xl mb-8 leading-relaxed">
         {profile.summary}
       </p>
-      <div className="flex gap-4">
+      <div className="flex flex-wrap gap-3 sm:gap-4">
+        {/* Commercial CTAs (primary) */}
+        <Link
+          href="/build-with-me"
+          onClick={handleBuildMvpClick}
+          className="px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-md font-medium hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          Build Your MVP
+        </Link>
+        <Link
+          href="/work-with-me"
+          onClick={handleServicesClick}
+          className="px-6 py-3 bg-black text-white rounded-md font-medium hover:bg-gray-800 transition-colors dark:bg-white dark:text-black dark:hover:bg-gray-200"
+        >
+          Services
+        </Link>
+
+        {/* Portfolio actions (secondary) */}
         <Link
           href="/projects"
           onClick={handleViewProjectsClick}
-          className="px-6 py-3 bg-black text-white rounded-md font-medium hover:bg-gray-800 transition-colors dark:bg-white dark:text-black dark:hover:bg-gray-200"
+          className="px-6 py-3 border border-gray-300 rounded-md font-medium hover:bg-gray-50 transition-colors dark:border-gray-700 dark:hover:bg-zinc-800"
         >
           View Projects
         </Link>

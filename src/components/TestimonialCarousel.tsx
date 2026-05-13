@@ -11,15 +11,15 @@ export default function TestimonialCarousel({
   testimonials: Testimonial[];
 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
-  // Auto-slide effect
   useEffect(() => {
+    if (isPaused) return;
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % testimonials.length);
-    }, 5000); // 5 seconds interval
-
+    }, 5000);
     return () => clearInterval(timer);
-  }, [testimonials.length]);
+  }, [testimonials.length, isPaused]);
 
   const prevSlide = () => {
     setCurrentIndex((prev) =>
@@ -34,7 +34,11 @@ export default function TestimonialCarousel({
   if (!testimonials.length) return null;
 
   return (
-    <div className="relative w-full group">
+    <div
+      className="relative w-full group"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
       {/* Slides Container - Grid Stack for auto-height based on tallest item */}
       <div className="grid grid-cols-1">
         {testimonials.map((testimonial, index) => (

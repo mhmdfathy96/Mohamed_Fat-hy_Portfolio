@@ -15,7 +15,7 @@ import PublicSampleCard from "@/components/PublicSampleCard";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import Link from "next/link";
 import { SkillCategory, PublicSample, Testimonial, CareerEntry } from "@/types";
-import { trackButtonClick, trackLinkClick } from "@/lib/analytics";
+import { trackLinkClick } from "@/lib/analytics";
 
 export default function Home() {
   const handleViewAllProjectsClick = () => {
@@ -27,7 +27,7 @@ export default function Home() {
   };
 
   const handleSayHelloClick = () => {
-    trackButtonClick("Say Hello", "contact_section");
+    trackLinkClick("Say Hello", "/contact", "contact_section");
   };
   const featured = projectsData.featured.map(
     (slug) => projectsData.projects[slug as keyof typeof projectsData.projects],
@@ -180,13 +180,13 @@ export default function Home() {
           question or just want to say hi, I&apos;ll try my best to get back to
           you!
         </p>
-        <a
-          href={`mailto:${profile.email}`}
+        <Link
+          href="/contact"
           onClick={handleSayHelloClick}
           className="inline-block px-8 py-4 bg-black text-white rounded-md font-medium text-lg hover:bg-gray-800 transition-colors dark:bg-white dark:text-black dark:hover:bg-gray-200"
         >
           Say Hello
-        </a>
+        </Link>
       </section>
     </>
   );

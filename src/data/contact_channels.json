@@ -1,0 +1,14 @@
+{
+  "email": "mhmdfathy96@gmail.com",
+  "telegram": {
+    "show": true,
+    "handle": "@mhmdfathy96",
+    "url": "https://t.me/mhmdfathy96"
+  },
+  "calendly": {
+    "url": "https://calendly.com/mhmdfathy96/30min",
+    "embedUrl": "https://calendly.com/mhmdfathy96/30min?hide_gdpr_banner=1&primary_color=6366f1"
+  },
+  "responseSLA": "I reply within 24 hours on business days.",
+  "_note": "TODO: replace 'telegram.handle' and 'telegram.url' with your real Telegram. Set 'telegram.show' to false to hide the Telegram link site-wide."
+}

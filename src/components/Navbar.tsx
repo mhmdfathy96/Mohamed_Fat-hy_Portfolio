@@ -18,6 +18,12 @@ export default function Navbar() {
             Home
           </Link>
           <Link
+            href="/work-with-me"
+            className="text-gray-600 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white"
+          >
+            Services
+          </Link>
+          <Link
             href="/projects"
             className="text-gray-600 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white"
           >
@@ -29,12 +35,12 @@ export default function Navbar() {
           >
             Highlights
           </Link>
-          <a
-            href="mailto:mhmdfathy96@gmail.com"
+          <Link
+            href="/contact"
             className="text-gray-600 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white"
           >
             Contact
-          </a>
+          </Link>
           <Link
             href="/build-with-me"
             className="px-4 py-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-md font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"

@@ -1,0 +1,21 @@
+{
+  "stats": [
+    {
+      "value": "5+",
+      "label": "Years shipping production software"
+    },
+    {
+      "value": "9",
+      "label": "Countries served — USA, EU, KSA, Qatar, UAE, Iraq, South Korea, South Africa, Egypt"
+    },
+    {
+      "value": "10+",
+      "label": "Production apps and platforms delivered"
+    },
+    {
+      "value": "1",
+      "label": "Accountable lead per project — not a handoff chain"
+    }
+  ],
+  "_note": "Numbers anchored to your actual client geography (UAE, KSA, Qatar, Iraq, South Africa, South Korea, EU) and projects.json (7 documented + freelance). Edit any value."
+}

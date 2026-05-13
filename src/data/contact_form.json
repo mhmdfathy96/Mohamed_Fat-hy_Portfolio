@@ -1,0 +1,85 @@
+{
+  "endpoint": "https://formspree.io/f/mjglzdyn",
+  "heading": "Send a Project Brief",
+  "subheading": "Fill this in and I'll reply within 24 hours on business days. Nothing here is binding — it just gives me enough to give you a useful first reply.",
+  "successMessage": "Thanks — your brief is in. I'll reply within 24 hours on business days.",
+  "errorMessage": "Something went wrong. Please email mhmdfathy96@gmail.com directly.",
+  "submitLabel": "Send Brief",
+  "fields": [
+    {
+      "id": "name",
+      "label": "Your name",
+      "type": "text",
+      "required": true,
+      "placeholder": "Jane Doe"
+    },
+    {
+      "id": "email",
+      "label": "Email",
+      "type": "email",
+      "required": true,
+      "placeholder": "you@company.com"
+    },
+    {
+      "id": "company",
+      "label": "Company (optional)",
+      "type": "text",
+      "required": false,
+      "placeholder": ""
+    },
+    {
+      "id": "stage",
+      "label": "What stage are you at?",
+      "type": "select",
+      "required": true,
+      "options": [
+        "Idea — validating",
+        "Idea — validated, ready to build",
+        "Already building — need help",
+        "Launched — need to scale",
+        "Other"
+      ]
+    },
+    {
+      "id": "budget",
+      "label": "Rough budget",
+      "type": "select",
+      "required": true,
+      "options": [
+        "Under $5,000",
+        "$5,000 – $15,000",
+        "$15,000 – $30,000",
+        "$30,000 – $60,000",
+        "$60,000+",
+        "Not sure yet"
+      ]
+    },
+    {
+      "id": "timeline",
+      "label": "When do you want to start?",
+      "type": "select",
+      "required": true,
+      "options": [
+        "ASAP",
+        "Within 1 month",
+        "1–3 months out",
+        "Flexible / exploring"
+      ]
+    },
+    {
+      "id": "idea",
+      "label": "One-line idea or scope",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "A B2B SaaS for X that does Y for Z customers."
+    },
+    {
+      "id": "details",
+      "label": "Anything else I should know? (optional)",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "Existing code, design assets, deadlines, anything that matters."
+    }
+  ],
+  "_note": "TODO: replace 'endpoint' with your real Formspree endpoint. Sign up at formspree.io, create a form, copy its endpoint URL (looks like https://formspree.io/f/abcd1234)."
+}

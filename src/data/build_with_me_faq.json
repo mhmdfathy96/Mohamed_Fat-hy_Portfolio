@@ -1,0 +1,41 @@
+{
+  "faqs": [
+    {
+      "question": "Who owns the code and IP?",
+      "answer": "You do. Full ownership of source code, designs, and assets transfers to you on final milestone payment. I keep no rights."
+    },
+    {
+      "question": "Do you sign an NDA?",
+      "answer": "Yes — happy to sign a mutual NDA before sharing scope details. Send yours, or I can provide a standard one."
+    },
+    {
+      "question": "What's your default tech stack?",
+      "answer": "Mobile: Flutter (single codebase for iOS + Android). Backend: Spring Boot or .NET. Database: PostgreSQL. Auth & cloud functions: Firebase. AI features: Spring AI. Stack is adjusted per project — I won't push tech you don't need."
+    },
+    {
+      "question": "Timezone and working hours?",
+      "answer": "Based in Egypt (GMT+2 / GMT+3 in summer). Daily overlap with Europe and most of Asia, and morning overlap with US East Coast. Flexible on key meetings."
+    },
+    {
+      "question": "Communication cadence?",
+      "answer": "Weekly demo call plus async updates on Slack, Telegram, or whichever channel you already use. I respond to messages within 24 hours on business days."
+    },
+    {
+      "question": "Do you offer post-launch maintenance?",
+      "answer": "Yes — optional monthly retainer for bug fixes, small features, and infrastructure care. Discussed near the end of Phase 1."
+    },
+    {
+      "question": "Are you taking new clients right now?",
+      "answer": "I run 1–2 MVPs at a time to keep quality high. Book a strategy call to check current availability."
+    },
+    {
+      "question": "What if I only need backend, only mobile, or only AI features?",
+      "answer": "Single-scope engagements are welcome. See work-with-me for backend, mobile-only, AI integration, and full web platform options."
+    },
+    {
+      "question": "Can I cancel mid-engagement?",
+      "answer": "Yes. Engagements are milestone-based — once a milestone is paid and delivered, you can walk away cleanly with the code. No long lock-ins."
+    }
+  ],
+  "_note": "TODO: review each answer. These are sensible defaults based on your profile — edit any to match how you actually work."
+}
