@@ -1,8 +1,14 @@
 {
   "name": "Mohamed Fat-hy",
-  "title": "Software Engineer",
-  "subtitle": "Polyglot Developer • Flutter & Cross-Stack Engineer",
-  "summary": "Software Engineer with over 5 years of experience building scalable, high-performance applications. I am a versatile, multi-stack developer with a strong foundation in Flutter, now delivering robust backend solutions using Spring Boot, .NET, and JavaScript (Cloud Functions). I focus on technical adaptability, Clean Architecture, and AI-integrated systems. Open to relocation.",
+  "title": "Senior Software Engineer",
+  "subtitle": "SaaS MVP Builder",
+  "summary": "I help founders ship production-ready SaaS MVPs in 6–8 weeks — mobile, backend, and architecture under one accountable lead.",
+  "trustSignals": [
+    "5+ years shipping production software",
+    "Mobile + backend + AI under one lead",
+    "Milestone-based · Code & IP yours from day 1"
+  ],
+  "professionalSummary": "Software Engineer with over 5 years of experience building scalable, high-performance applications. I am a versatile, multi-stack developer with a strong foundation in Flutter, now delivering robust backend solutions using Spring Boot, .NET, and JavaScript (Cloud Functions). I focus on technical adaptability, Clean Architecture, and AI-integrated systems. Open to relocation.",
   "about": [
     "I started my professional journey in Civil Engineering, which built my foundation in analytical thinking and rapid problem-solving.",
     "Transitioning into software engineering taught me to be a 'polyglot' developer—focusing on architectural patterns that apply across any language or framework.",

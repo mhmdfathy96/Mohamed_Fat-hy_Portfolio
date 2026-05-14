@@ -20,7 +20,7 @@ import {
   Wrench,
   type LucideIcon,
 } from "lucide-react";
-import workWithMe from "@/data/work_with_me.json";
+import servicesData from "@/data/services.json";
 import { trackPageView, trackLinkClick } from "@/lib/analytics";
 
 const ICON_MAP: Record<string, LucideIcon> = {
@@ -39,9 +39,9 @@ const ICON_MAP: Record<string, LucideIcon> = {
   Wrench,
 };
 
-export default function WorkWithMe() {
+export default function Services() {
   useEffect(() => {
-    trackPageView("work-with-me");
+    trackPageView("services");
   }, []);
 
   const handleLinkClick = (label: string, href: string, location: string) => {
@@ -54,38 +54,38 @@ export default function WorkWithMe() {
       <section className="relative overflow-hidden bg-gradient-to-br from-indigo-50 via-white to-purple-50 dark:from-zinc-900 dark:via-black dark:to-indigo-950/20">
         <div className="max-w-5xl mx-auto px-6 py-28 md:py-36 text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent leading-tight">
-            {workWithMe.hero.headline}
+            {servicesData.hero.headline}
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-12 leading-relaxed max-w-3xl mx-auto">
-            {workWithMe.hero.subheadline}
+            {servicesData.hero.subheadline}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
-              href={workWithMe.hero.primaryCta.href}
+              href={servicesData.hero.primaryCta.href}
               onClick={() =>
                 handleLinkClick(
-                  workWithMe.hero.primaryCta.label,
-                  workWithMe.hero.primaryCta.href,
-                  "work_with_me_hero_primary",
+                  servicesData.hero.primaryCta.label,
+                  servicesData.hero.primaryCta.href,
+                  "services_hero_primary",
                 )
               }
               className="group px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center gap-2"
             >
-              {workWithMe.hero.primaryCta.label}
+              {servicesData.hero.primaryCta.label}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
-              href={workWithMe.hero.secondaryCta.href}
+              href={servicesData.hero.secondaryCta.href}
               onClick={() =>
                 handleLinkClick(
-                  workWithMe.hero.secondaryCta.label,
-                  workWithMe.hero.secondaryCta.href,
-                  "work_with_me_hero_secondary",
+                  servicesData.hero.secondaryCta.label,
+                  servicesData.hero.secondaryCta.href,
+                  "services_hero_secondary",
                 )
               }
               className="px-8 py-4 bg-white dark:bg-zinc-900 text-gray-900 dark:text-white border-2 border-gray-200 dark:border-zinc-700 rounded-lg font-semibold text-lg hover:border-indigo-600 dark:hover:border-indigo-500 hover:shadow-lg transition-all duration-300"
             >
-              {workWithMe.hero.secondaryCta.label}
+              {servicesData.hero.secondaryCta.label}
             </Link>
           </div>
         </div>
@@ -94,10 +94,10 @@ export default function WorkWithMe() {
       {/* INTRO */}
       <section className="py-20 max-w-4xl mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          {workWithMe.intro.title}
+          {servicesData.intro.title}
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-          {workWithMe.intro.body}
+          {servicesData.intro.body}
         </p>
       </section>
 
@@ -105,7 +105,7 @@ export default function WorkWithMe() {
       <section className="py-20 bg-gray-50 dark:bg-zinc-900/30 border-y border-gray-200 dark:border-zinc-800">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {workWithMe.outcomes.map((outcome, index) => {
+            {servicesData.outcomes.map((outcome, index) => {
               const Icon = ICON_MAP[outcome.icon] || Rocket;
               return (
                 <div
@@ -131,7 +131,7 @@ export default function WorkWithMe() {
                       handleLinkClick(
                         outcome.cta.label,
                         outcome.cta.href,
-                        `work_with_me_outcome_${index}`,
+                        `services_outcome_${index}`,
                       )
                     }
                     className="inline-flex items-center gap-1 text-indigo-600 dark:text-indigo-400 font-semibold hover:gap-2 transition-all"
@@ -149,12 +149,12 @@ export default function WorkWithMe() {
       <section className="py-20 max-w-5xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            {workWithMe.process.title}
+            {servicesData.process.title}
           </h2>
         </div>
         <div className="relative">
           <div className="grid md:grid-cols-5 gap-4">
-            {workWithMe.process.steps.map((step, index) => (
+            {servicesData.process.steps.map((step, index) => (
               <div key={index} className="relative">
                 <div className="p-5 bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-xl h-full">
                   <div className="flex items-center justify-center w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-600 text-white rounded-full font-bold text-sm mb-3">
@@ -178,11 +178,11 @@ export default function WorkWithMe() {
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              {workWithMe.notFor.title}
+              {servicesData.notFor.title}
             </h2>
           </div>
           <ul className="space-y-3">
-            {workWithMe.notFor.items.map((item, index) => (
+            {servicesData.notFor.items.map((item, index) => (
               <li
                 key={index}
                 className="flex items-start gap-3 p-4 bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-xl"
@@ -199,39 +199,39 @@ export default function WorkWithMe() {
       <section className="py-24 bg-gradient-to-br from-indigo-50 via-white to-purple-50 dark:from-zinc-900 dark:via-black dark:to-indigo-950/20">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            {workWithMe.finalCta.headline}
+            {servicesData.finalCta.headline}
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-10 leading-relaxed">
-            {workWithMe.finalCta.body}
+            {servicesData.finalCta.body}
           </p>
           <Link
-            href={workWithMe.finalCta.primaryCta.href}
+            href={servicesData.finalCta.primaryCta.href}
             onClick={() =>
               handleLinkClick(
-                workWithMe.finalCta.primaryCta.label,
-                workWithMe.finalCta.primaryCta.href,
-                "work_with_me_final_cta",
+                servicesData.finalCta.primaryCta.label,
+                servicesData.finalCta.primaryCta.href,
+                "services_final_cta",
               )
             }
             className="group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
           >
-            {workWithMe.finalCta.primaryCta.label}
+            {servicesData.finalCta.primaryCta.label}
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Link>
           <p className="text-sm text-gray-500 dark:text-gray-500 mt-6">
             Or{" "}
             <Link
-              href={workWithMe.finalCta.secondaryCta.href}
+              href={servicesData.finalCta.secondaryCta.href}
               onClick={() =>
                 handleLinkClick(
-                  workWithMe.finalCta.secondaryCta.label,
-                  workWithMe.finalCta.secondaryCta.href,
-                  "work_with_me_final_cta_secondary",
+                  servicesData.finalCta.secondaryCta.label,
+                  servicesData.finalCta.secondaryCta.href,
+                  "services_final_cta_secondary",
                 )
               }
               className="text-indigo-600 dark:text-indigo-400 hover:underline"
             >
-              {workWithMe.finalCta.secondaryCta.label}
+              {servicesData.finalCta.secondaryCta.label}
             </Link>{" "}
             directly.
           </p>

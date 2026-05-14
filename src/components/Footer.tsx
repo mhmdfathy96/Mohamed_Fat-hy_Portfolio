@@ -16,18 +16,18 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-50 border-t border-gray-100 mt-auto dark:bg-zinc-900 dark:border-zinc-800">
-      {/* CTA Section */}
-      <div className="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 dark:from-zinc-900 dark:via-indigo-950/20 dark:to-purple-950/20 border-b border-gray-200 dark:border-zinc-800 py-16">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
-            Ready to launch your SaaS product?
-          </h3>
+      {/* Soft CTA strip */}
+      <div className="border-b border-gray-200 dark:border-zinc-800 py-6">
+        <div className="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 text-center sm:text-left">
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            Building something? Let&apos;s scope it.
+          </p>
           <Link
             href="/contact#book"
             onClick={handleCTAClick}
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 hover:gap-2 transition-all"
           >
-            Book a Free Strategy Session →
+            Book a free strategy session →
           </Link>
         </div>
       </div>
