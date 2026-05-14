@@ -1,10 +1,15 @@
 import { track } from "@vercel/analytics";
 
-export const trackEvent = (
-  eventName: string,
-  properties?: Record<string, string | number | boolean>,
-) => {
+type EventProps = Record<string, string | number | boolean>;
+
+export const trackEvent = (eventName: string, properties?: EventProps) => {
+  // Vercel Analytics
   track(eventName, properties);
+
+  // Google Analytics 4 (only if loaded)
+  if (typeof window !== "undefined" && typeof window.gtag === "function") {
+    window.gtag("event", eventName, properties || {});
+  }
 };
 
 export const trackPageView = (pageName: string) => {
