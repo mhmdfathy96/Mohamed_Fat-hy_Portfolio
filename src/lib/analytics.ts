@@ -10,6 +10,16 @@ export const trackEvent = (eventName: string, properties?: EventProps) => {
   if (typeof window !== "undefined" && typeof window.gtag === "function") {
     window.gtag("event", eventName, properties || {});
   }
+
+  // Microsoft Clarity (only if loaded)
+  if (typeof window !== "undefined" && typeof window.clarity === "function") {
+    window.clarity("event", eventName);
+    if (properties) {
+      for (const [key, value] of Object.entries(properties)) {
+        window.clarity("set", key, String(value));
+      }
+    }
+  }
 };
 
 export const trackPageView = (pageName: string) => {

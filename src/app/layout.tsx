@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import profile from "@/data/profile.json";
 import { Analytics } from "@vercel/analytics/next";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import MicrosoftClarity from "@/components/MicrosoftClarity";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -41,6 +42,7 @@ export default function RootLayout({
         <SpeedInsights />
         <Analytics />
         <GoogleAnalytics />
+        <MicrosoftClarity />
       </body>
     </html>
   );
