@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/mohamedfat-hy/StudioProjects/Mohamed_Fat-hy_Portfolio ls-files --error-unmatch .DS_Store)",
+      "Bash(git rm *)",
+      "Bash(git *)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(perl -i -pe ' *)",
+      "mcp__codegraph__codegraph_explore",
+      "Bash(echo \"exit=$?\")",
+      "Read(//Users/mohamedfat-hy/Desktop/**)"
+    ]
+  }
+}
