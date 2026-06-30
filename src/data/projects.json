@@ -67,16 +67,24 @@
         }
       ],
       "features": [
-        "168 API Endpoints",
-        "Course Builder with hierarchical sections/lessons + standalone & lesson-attached quiz engine",
-        "Admin home screen curation with featured content management",
-        "Admin, Agency & Instructor analytics dashboards",
-        "OAuth student authentication with single-device enforcement",
-        "Enterprise-grade mobile security (SSL Pinning, freeRASP, App Check)",
-        "i18n support (English + Arabic)",
-        "Modular Monolith Backend"
+        "Expert video courses & comprehensive Course Builder",
+        "Standalone quizzes & reusable question banks",
+        "Offline downloads for on-the-go learning",
+        "Cross-device progress tracking (Resume anywhere)",
+        "Admin, Agency & Instructor analytics dashboards with student management",
+        "In-app direct messaging between instructors and students",
+        "Free course previews before enrollment",
+        "Enterprise-grade mobile security with single-device enforcement",
+        "i18n bilingual support (English + Arabic with RTL layouts)",
+        "Modular Monolith Backend exposing 168 secure API Endpoints"
       ],
-      "links": {},
+      "links": {
+        "dashboard": "https://admin.guruhub.app/",
+        "website": "https://guruhub.app/",
+        "android": "https://play.google.com/store/apps/details?id=app.guruhub",
+        "huawei": "https://appgallery.huawei.com/#/app/C117090393",
+        "ios": "https://apps.apple.com/app/id6784271131"
+      },
       "seo": {
         "title": "GuruHub | Educational / LMS Platform",
         "description": "GuruHub is a comprehensive Learning Management System built with Spring Boot 4.0.1, Vue 3, and Flutter. Features multi-role capabilities, scalable architecture, and secure APIs."
