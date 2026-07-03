@@ -1,5 +1,5 @@
 {
-  "featured": ["guruhub", "3arabawy", "mdone"],
+  "featured": ["guruhub", "agentech", "3arabawy", "mdone"],
   "projects": {
     "guruhub": {
       "slug": "guruhub-educational-platform",
@@ -88,6 +88,100 @@
       "seo": {
         "title": "GuruHub | Educational / LMS Platform",
         "description": "GuruHub is a comprehensive Learning Management System built with Spring Boot 4.0.1, Vue 3, and Flutter. Features multi-role capabilities, scalable architecture, and secure APIs."
+      }
+    },
+    "agentech": {
+      "slug": "agentech-assistant-rag-platform",
+      "name": "Agentech Assistant",
+      "type": "Multi-Tenant RAG Platform (AI Chatbot as a Service)",
+      "market": "Global",
+      "environments": ["Production"],
+      "shortDescription": "A production-grade, multi-tenant Retrieval-Augmented Generation (RAG) platform: a 'Custom AI Chatbot as a Service' that lets businesses build AI assistants trained strictly on their own data.",
+      "fullDescription": "Designed and built Agentech Assistant, a production-grade multi-tenant RAG platform that lets any business deploy an AI assistant grounded strictly in its own proprietary data. Clients upload documents (PDF, Word, PowerPoint, CSV, Excel, JSON), live URLs, images, or audio through a private dashboard; the platform automatically extracts, chunks, embeds, and vectorizes the content, then serves answers with citations via an embeddable chat widget or per-tenant API keys.\n\nThe backend is a Spring Boot 4.0 + Spring Modulith modular monolith with an async Postgres-backed ingestion queue and streaming chat. Strict tenant isolation is enforced in layers: application-level tenant/account context, PostgreSQL Row-Level Security on every tenant- and account-scoped table, and vector-level isolation in Qdrant via payload filtering — so one client's data can never leak into another's. A prepaid, token-metered billing model (message credits billed per token under the hood) protects margin while keeping usage simple for customers.",
+      "platforms": ["Web"],
+      "role": "Full-Stack Software Engineer",
+      "responsibilities": [
+        "Architected and built a multi-tenant RAG platform end-to-end (backend, dashboard, and embeddable widget)",
+        "Built a Spring Boot 4.0 modular monolith using Spring Modulith with per-module domain/persistence/application/web/api/mapper layering over a shared kernel",
+        "Implemented the ingestion pipeline: document extraction, chunking, embedding, and vectorization via an async Postgres-backed job queue",
+        "Built retrieval-augmented streaming chat with source citations to reduce hallucinations",
+        "Enforced strict tenant isolation via PostgreSQL Row-Level Security plus Qdrant payload-filtered vector isolation",
+        "Implemented global identity: accounts + workspace memberships, email-only login, account-scoped RLS, multi-workspace switching, and two-phase OTP registration",
+        "Built per-tenant API keys, rate limiting, and usage quotas for the public widget",
+        "Designed a prepaid, token-metered billing/credit model with per-message usage display billed per token internally",
+        "Added media ingestion (image + audio transcription via vision and Whisper) and observability/hardening",
+        "Built the Next.js dashboard and a vanilla-JS web-component chat widget",
+        "Extended the assistant to social channels (Messenger, WhatsApp, Instagram, Telegram) via a shared ChannelAdapter feeding the existing chat/RAG pipeline",
+        "Implemented per-tenant assistant persona and conversation opener",
+        "Built a platform super-admin back-office for cross-tenant operations"
+      ],
+      "techStack": [
+        "Java 21",
+        "Spring Boot 4.0",
+        "Spring Modulith",
+        "Spring AI",
+        "Spring Security",
+        "PostgreSQL 16",
+        "Row-Level Security (RLS)",
+        "Qdrant",
+        "Redis",
+        "OpenAI (gpt-4o-mini, text-embedding-3-small, Whisper)",
+        "Flyway",
+        "MapStruct",
+        "Lombok",
+        "Next.js 16",
+        "React 19",
+        "TypeScript",
+        "Vanilla JS Web Component",
+        "Meta Graph API",
+        "WhatsApp Cloud API",
+        "Telegram Bot API",
+        "Webhooks",
+        "Docker"
+      ],
+      "technicalChallenges": [
+        {
+          "problem": "Preventing cross-tenant data leakage in a shared-schema multi-tenant platform.",
+          "solution": "Layered isolation: application-level TenantContext/AccountContext derived only from the authenticated principal, PostgreSQL Row-Level Security (deny-by-default) on every tenant- and account-scoped table, and Qdrant payload filtering per tenant.",
+          "result": "A single client's documents and vectors can never surface in another tenant's answers."
+        },
+        {
+          "problem": "Reducing AI hallucination so answers are company-specific and trustworthy.",
+          "solution": "Strict Retrieval-Augmented Generation — the model answers only from retrieved tenant documents and returns citations to the source chunks.",
+          "result": "Factual, grounded answers instead of generic or invented statements."
+        },
+        {
+          "problem": "Heavy, slow document ingestion blocking the request path.",
+          "solution": "Moved extraction, chunking, embedding, and vectorization into an async Postgres-backed job queue supporting docs, structured data, live URLs, images, and audio.",
+          "result": "Zero-coding, near-instant setup for clients while ingestion runs in the background."
+        },
+        {
+          "problem": "Protecting margin on a variable OpenAI cost base without confusing customers.",
+          "solution": "Prepaid message-credit model shown per message but billed per token internally (1 credit = 3,500 tokens), with a deliberately tight free tier and hard caps on image/audio ingestion.",
+          "result": "Predictable, abuse-resistant pricing (~3–5x cost) with simple per-message UX."
+        },
+        {
+          "problem": "Resolving the correct tenant on unauthenticated inbound social webhooks before RLS context exists.",
+          "solution": "Signature-verified webhook per channel resolves (channel, external_id) → tenant via a SECURITY DEFINER function (bypasses RLS for the lookup), sets app.current_tenant, then processes the message async on the existing queue.",
+          "result": "Messenger/WhatsApp/Instagram/Telegram plug into the same RAG pipeline with tenant isolation intact and fast webhook acks."
+        }
+      ],
+      "features": [
+        "Zero-coding setup: upload data and get a ready AI assistant in minutes",
+        "Omnichannel ingestion: PDF, Word, PowerPoint, TXT, CSV, Excel, JSON, live URLs, images, and audio",
+        "Retrieval-Augmented answers with citations to reduce hallucination",
+        "Multi-channel deployment: embeddable web widget, per-tenant API keys, plus Facebook Messenger, WhatsApp, Instagram, and Telegram via a shared adapter",
+        "Customizable per-tenant assistant persona and conversation opener",
+        "Strict multi-tenant isolation (PostgreSQL RLS + Qdrant vector isolation)",
+        "Global identity with multi-workspace switching and OTP registration",
+        "Rate limiting, usage quotas, and prepaid token-metered billing",
+        "Streaming chat responses for real-time interaction",
+        "Platform super-admin back-office for cross-tenant operations"
+      ],
+      "links": {},
+      "seo": {
+        "title": "Agentech Assistant | Multi-Tenant RAG / AI Chatbot Platform",
+        "description": "Agentech Assistant is a production-grade multi-tenant RAG platform (AI Chatbot as a Service) built with Spring Boot 4.0, Spring Modulith, PostgreSQL RLS, Qdrant, and Next.js, letting businesses deploy AI assistants trained on their own data."
       }
     },
     "3arabawy": {
