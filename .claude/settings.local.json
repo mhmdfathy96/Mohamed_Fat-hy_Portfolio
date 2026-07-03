@@ -9,7 +9,17 @@
       "Bash(perl -i -pe ' *)",
       "mcp__codegraph__codegraph_explore",
       "Bash(echo \"exit=$?\")",
-      "Read(//Users/mohamedfat-hy/Desktop/**)"
+      "Read(//Users/mohamedfat-hy/Desktop/**)",
+      "Bash(find / -maxdepth 6 -iname \"*agentech*\" -not -path \"*/node_modules/*\")",
+      "Bash(find / -maxdepth 5 -iname \"*projectsstudio*\" -o -iname \"*ProjectsStudio*\")",
+      "Bash(cd *)",
+      "Read(//Users/mohamedfat-hy/.claude/**)",
+      "Bash(cat settings.json)",
+      "Bash(cat settings.local.json)",
+      "Bash(ls -la plugins/)",
+      "Bash(cat plugins/config.json)",
+      "Bash(claude plugin *)",
+      "Bash(echo \"---EXIT: $?---\")"
     ]
   }
 }
