@@ -178,7 +178,8 @@
         "Streaming chat responses for real-time interaction",
         "Platform super-admin back-office for cross-tenant operations"
       ],
-      "links": {},
+      "links": {
+        "dashboard": "https://admin.agent.agentech.tech"},
       "seo": {
         "title": "Agentech Assistant | Multi-Tenant RAG / AI Chatbot Platform",
         "description": "Agentech Assistant is a production-grade multi-tenant RAG platform (AI Chatbot as a Service) built with Spring Boot 4.0, Spring Modulith, PostgreSQL RLS, Qdrant, and Next.js, letting businesses deploy AI assistants trained on their own data."
