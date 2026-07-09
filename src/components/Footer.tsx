@@ -41,6 +41,15 @@ export default function Footer() {
           </div>
           <div className="flex gap-6 text-sm font-medium flex-wrap justify-center">
             <a
+              href={profile.agency}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => handleSocialClick("Agentech", profile.agency)}
+              className="text-gray-500 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white"
+            >
+              Agentech
+            </a>
+            <a
               href={profile.github}
               target="_blank"
               rel="noopener noreferrer"

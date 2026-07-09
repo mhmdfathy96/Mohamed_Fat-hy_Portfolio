@@ -5,6 +5,7 @@ export interface Profile {
   summary: string;
   about: string[];
   email: string;
+  agency: string;
   github: string;
   linkedin: string;
   upwork: string;

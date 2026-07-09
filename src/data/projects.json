@@ -110,6 +110,7 @@
         "Built per-tenant API keys, rate limiting, and usage quotas for the public widget",
         "Designed a prepaid, token-metered billing/credit model with per-message usage display billed per token internally",
         "Added media ingestion (image + audio transcription via vision and Whisper) and observability/hardening",
+        "Migrated the production vector store from self-hosted Qdrant to managed Qdrant Cloud with zero data loss and near-zero downtime",
         "Built the Next.js dashboard and a vanilla-JS web-component chat widget",
         "Extended the assistant to social channels (Messenger, WhatsApp, Instagram, Telegram) via a shared ChannelAdapter feeding the existing chat/RAG pipeline",
         "Implemented per-tenant assistant persona and conversation opener",
@@ -123,7 +124,7 @@
         "Spring Security",
         "PostgreSQL 16",
         "Row-Level Security (RLS)",
-        "Qdrant",
+        "Qdrant Cloud",
         "Redis",
         "OpenAI (gpt-4o-mini, text-embedding-3-small, Whisper)",
         "Flyway",
@@ -164,6 +165,11 @@
           "problem": "Resolving the correct tenant on unauthenticated inbound social webhooks before RLS context exists.",
           "solution": "Signature-verified webhook per channel resolves (channel, external_id) → tenant via a SECURITY DEFINER function (bypasses RLS for the lookup), sets app.current_tenant, then processes the message async on the existing queue.",
           "result": "Messenger/WhatsApp/Instagram/Telegram plug into the same RAG pipeline with tenant isolation intact and fast webhook acks."
+        },
+        {
+          "problem": "Moving the production vector store off a self-hosted container onto managed Qdrant Cloud without losing vectors or taking the assistant offline.",
+          "solution": "Streamed the live collection with Qdrant's official migration tool in resumable batches while the app kept serving reads, verified the source and target point counts matched along with the tenant_id payload index, then cut over by repointing env and doing a single rolling redeploy — after adding an explicit gRPC use-tls flag that the Cloud endpoint requires. The old container and its volume stayed untouched as a rollback path until decommission.",
+          "result": "Zero data loss, downtime limited to one redeploy, and a managed cluster in production while dev and staging stay on self-hosted Docker."
         }
       ],
       "features": [

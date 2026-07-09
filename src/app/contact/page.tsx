@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { Mail, Send, Calendar, ArrowDown } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
 import contactChannels from "@/data/contact_channels.json";
+import profile from "@/data/profile.json";
 import { trackPageView, trackLinkClick, trackCTAClick } from "@/lib/analytics";
 
 export default function ContactPage() {
@@ -117,6 +118,22 @@ export default function ContactPage() {
             .
           </p>
         )}
+
+        <p className="text-center text-sm text-gray-500 dark:text-gray-500 mt-2">
+          Need a team rather than a contractor? I also build through my agency,{" "}
+          <a
+            href={profile.agency}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() =>
+              trackLinkClick("Agentech inline", profile.agency, "contact_page_channels")
+            }
+            className="text-indigo-600 dark:text-indigo-400 hover:underline font-semibold"
+          >
+            Agentech
+          </a>
+          .
+        </p>
       </section>
 
       {/* BOOK A CALL - CALENDLY EMBED */}
