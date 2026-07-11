@@ -21,7 +21,8 @@
       "Bash(claude plugin *)",
       "Bash(echo \"---EXIT: $?---\")",
       "Read(//Users/mohamedfat-hy/StudioProjects/**)",
-      "Bash(awk -F: '{print $1}')"
+      "Bash(awk -F: '{print $1}')",
+      "Bash(npx eslint *)"
     ]
   }
 }

@@ -8,6 +8,8 @@ import profile from "@/data/profile.json";
 import { Analytics } from "@vercel/analytics/next";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import MicrosoftClarity from "@/components/MicrosoftClarity";
+import AgentechWidget from "@/components/AgentechWidget";
+import AgentechAnalytics from "@/components/AgentechAnalytics";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -44,6 +46,8 @@ export default function RootLayout({
         <Analytics />
         <GoogleAnalytics />
         <MicrosoftClarity />
+        <AgentechWidget />
+        <AgentechAnalytics />
       </body>
     </html>
   );
