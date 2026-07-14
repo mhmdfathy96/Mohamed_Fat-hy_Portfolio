@@ -22,7 +22,9 @@
       "Bash(echo \"---EXIT: $?---\")",
       "Read(//Users/mohamedfat-hy/StudioProjects/**)",
       "Bash(awk -F: '{print $1}')",
-      "Bash(npx eslint *)"
+      "Bash(npx eslint *)",
+      "Skill(claude-in-chrome)",
+      "Bash(sips -g pixelWidth -g pixelHeight ~/StudioProjects/agentech/public/work/3arabawy/cover.jpg ~/StudioProjects/agentech/public/work/agentech-assistant/cover.png)"
     ]
   }
 }

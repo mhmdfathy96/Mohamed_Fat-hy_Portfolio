@@ -1,15 +1,38 @@
 {
-  "featured": ["guruhub", "agentech", "3arabawy", "mdone"],
+  "featured": [
+    "guruhub",
+    "agentech",
+    "3arabawy",
+    "mdone"
+  ],
   "projects": {
     "guruhub": {
       "slug": "guruhub-educational-platform",
       "name": "GuruHub",
       "type": "Educational Platform (LMS)",
       "market": "Global",
-      "environments": ["Staging", "Production"],
+      "industry": "EdTech",
+      "tags": [
+        "LMS",
+        "Mobile App",
+        "Admin Dashboard"
+      ],
+      "metric": {
+        "value": "Offline",
+        "label": "Learning Built-in"
+      },
+      "coverImage": "/projects/guruhub.jpg",
+      "environments": [
+        "Staging",
+        "Production"
+      ],
       "shortDescription": "GuruHub is a full-stack Learning Management System (LMS) with backend services, an admin dashboard, and a mobile application.",
       "fullDescription": "Designed and implemented GuruHub, a full-stack educational platform including backend services, an admin dashboard, and a mobile application. Built backend services using cutting-edge Spring Boot 4.0.1 + PostgreSQL, exposing 168 secure REST APIs. Developed a Flutter mobile application and a web dashboard for administration and analytics. Implemented enterprise-grade mobile security, single-device session enforcement, and role-based access control. Deployed using Docker and CI/CD pipelines.\n\nNote: GuruHub is currently in an internal testing phase. Please get in touch to be invited to the staging environment.",
-      "platforms": ["Web", "iOS", "Android"],
+      "platforms": [
+        "Web",
+        "iOS",
+        "Android"
+      ],
       "role": "Software Engineer",
       "responsibilities": [
         "Designed and implemented GuruHub, a full-stack Learning Management System platform",
@@ -95,10 +118,25 @@
       "name": "Agentech Assistant",
       "type": "Multi-Tenant RAG Platform (AI Chatbot as a Service)",
       "market": "Global",
-      "environments": ["Production"],
+      "industry": "AI & SaaS",
+      "tags": [
+        "RAG",
+        "Multi-Tenant SaaS",
+        "Chat Widget"
+      ],
+      "metric": {
+        "value": "80%",
+        "label": "Tickets Deflected"
+      },
+      "coverImage": "/projects/agentech.png",
+      "environments": [
+        "Production"
+      ],
       "shortDescription": "A production-grade, multi-tenant Retrieval-Augmented Generation (RAG) platform: a 'Custom AI Chatbot as a Service' that lets businesses build AI assistants trained strictly on their own data.",
       "fullDescription": "Designed and built Agentech Assistant, a production-grade multi-tenant RAG platform that lets any business deploy an AI assistant grounded strictly in its own proprietary data. Clients upload documents (PDF, Word, PowerPoint, CSV, Excel, JSON), live URLs, images, or audio through a private dashboard; the platform automatically extracts, chunks, embeds, and vectorizes the content, then serves answers with citations via an embeddable chat widget or per-tenant API keys.\n\nThe backend is a Spring Boot 4.0 + Spring Modulith modular monolith with an async Postgres-backed ingestion queue and streaming chat. Strict tenant isolation is enforced in layers: application-level tenant/account context, PostgreSQL Row-Level Security on every tenant- and account-scoped table, and vector-level isolation in Qdrant via payload filtering — so one client's data can never leak into another's. A prepaid, token-metered billing model (message credits billed per token under the hood) protects margin while keeping usage simple for customers.",
-      "platforms": ["Web"],
+      "platforms": [
+        "Web"
+      ],
       "role": "Full-Stack Software Engineer",
       "responsibilities": [
         "Architected and built a multi-tenant RAG platform end-to-end (backend, dashboard, and embeddable widget)",
@@ -185,7 +223,8 @@
         "Platform super-admin back-office for cross-tenant operations"
       ],
       "links": {
-        "dashboard": "https://admin.agent.agentech.tech"},
+        "dashboard": "https://admin.agent.agentech.tech"
+      },
       "seo": {
         "title": "Agentech Assistant | Multi-Tenant RAG / AI Chatbot Platform",
         "description": "Agentech Assistant is a production-grade multi-tenant RAG platform (AI Chatbot as a Service) built with Spring Boot 4.0, Spring Modulith, PostgreSQL RLS, Qdrant, and Next.js, letting businesses deploy AI assistants trained on their own data."
@@ -196,10 +235,28 @@
       "name": "3arabawy",
       "type": "Automotive Marketplace & Service Platform",
       "market": "Egypt",
-      "environments": ["Staging", "Production"],
+      "industry": "Marketplace",
+      "tags": [
+        "Marketplace",
+        "Flutter",
+        "Real-time"
+      ],
+      "metric": {
+        "value": "50K+",
+        "label": "Downloads"
+      },
+      "coverImage": "/projects/3arabawy.jpg",
+      "environments": [
+        "Staging",
+        "Production"
+      ],
       "shortDescription": "Car marketplace app for buying, selling, and renting vehicles, parts, and services.",
       "fullDescription": "A large-scale automotive marketplace supporting car sales, rentals, services, spare parts, and motorcycles, designed to handle heavy media usage and real-time interaction.",
-      "platforms": ["iOS", "Android", "Huawei"],
+      "platforms": [
+        "iOS",
+        "Android",
+        "Huawei"
+      ],
       "role": "Software Engineer",
       "responsibilities": [
         "Designed and maintained scalable mobile architecture using Clean Architecture",
@@ -265,10 +322,26 @@
       "name": "MDone",
       "type": "Medical Booking & Telehealth Platform",
       "market": "Iraq",
-      "environments": ["Production"],
+      "industry": "HealthTech",
+      "tags": [
+        "HealthTech",
+        "Booking",
+        "Telehealth"
+      ],
+      "metric": {
+        "value": "10K+",
+        "label": "Downloads"
+      },
+      "coverImage": "/projects/mdone.jpg",
+      "environments": [
+        "Production"
+      ],
       "shortDescription": "Medical booking app connecting patients with doctors.",
       "fullDescription": "Medical appointment booking application connecting patients with doctors.",
-      "platforms": ["iOS", "Android"],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
       "role": "Software Engineer",
       "responsibilities": [
         "Implemented appointment booking flows",
@@ -277,7 +350,12 @@
         "Integrated push notifications",
         "Optimized UI flows for medical use cases"
       ],
-      "techStack": ["Flutter", "Firebase", "Agora RTC/RTM", "REST APIs"],
+      "techStack": [
+        "Flutter",
+        "Firebase",
+        "Agora RTC/RTM",
+        "REST APIs"
+      ],
       "technicalChallenges": [],
       "features": [
         "Doctor appointment booking",
@@ -300,10 +378,26 @@
       "name": "TOLTURA",
       "type": "Specialist Discovery Platform",
       "market": "Kyrgyzstan",
-      "environments": ["Production"],
+      "industry": "Marketplace",
+      "tags": [
+        "Marketplace",
+        "Real-time Chat",
+        "CI/CD"
+      ],
+      "metric": {
+        "value": "2-in-1",
+        "label": "Find & Offer Services"
+      },
+      "coverImage": "/projects/toltura.jpg",
+      "environments": [
+        "Production"
+      ],
       "shortDescription": "Specialist discovery platform allowing users to find professionals.",
       "fullDescription": "Service discovery platform connecting users with specialists across multiple categories.",
-      "platforms": ["iOS", "Android"],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
       "role": "Software Engineer",
       "responsibilities": [
         "Expanded role beyond mobile development to influence core business decisions and directly optimize user flows",
@@ -311,7 +405,13 @@
         "Managed the end-to-end deployment lifecycle via CI/CD pipelines, publishing to the App Store and Google Play",
         "Implemented specialist listing and filtering systems applying clean architecture"
       ],
-      "techStack": ["Flutter", "REST APIs", ".NET", "SignalR", "CI/CD"],
+      "techStack": [
+        "Flutter",
+        "REST APIs",
+        ".NET",
+        "SignalR",
+        "CI/CD"
+      ],
       "technicalChallenges": [
         {
           "problem": "Cross-platform real-time communication synchronization",
@@ -339,10 +439,26 @@
       "name": "Biznavi",
       "type": "Corporate HR Management Platform",
       "market": "South Korea",
-      "environments": ["Production"],
+      "industry": "Enterprise",
+      "tags": [
+        "HR Tech",
+        "Enterprise",
+        "Tech Lead"
+      ],
+      "metric": {
+        "value": "100+",
+        "label": "Workplace Tools"
+      },
+      "coverImage": "/projects/biznavi.jpg",
+      "environments": [
+        "Production"
+      ],
       "shortDescription": "Corporate HR management mobile application for internal company workflows.",
       "fullDescription": "Corporate HR management application designed for internal company workflows.",
-      "platforms": ["iOS", "Android"],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
       "role": "Software Engineer",
       "leadership": [
         "Acted as Tech Lead for the project",
@@ -354,7 +470,11 @@
         "Managed feature delivery and cross-team communication"
       ],
       "responsibilities": [],
-      "techStack": ["Flutter", "REST APIs", "Firebase"],
+      "techStack": [
+        "Flutter",
+        "REST APIs",
+        "Firebase"
+      ],
       "technicalChallenges": [],
       "features": [
         "HR workflows",
@@ -376,10 +496,26 @@
       "name": "Party Player",
       "type": "Music & Media Streaming App",
       "market": "USA",
-      "environments": ["Production"],
+      "industry": "Media",
+      "tags": [
+        "Media",
+        "Streaming",
+        "Firebase"
+      ],
+      "metric": {
+        "value": "Live",
+        "label": "Vote-driven Playback"
+      },
+      "coverImage": "/projects/party-player.jpg",
+      "environments": [
+        "Production"
+      ],
       "shortDescription": "Music and media application for shared playback and entertainment.",
       "fullDescription": "Music and media application supporting audio and video playback.",
-      "platforms": ["iOS", "Android"],
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
       "role": "Software Engineer",
       "responsibilities": [
         "Implemented Flutter application architecture",
@@ -389,7 +525,12 @@
         "Built custom native plugin for device orientation detection",
         "Worked across mobile and backend integration"
       ],
-      "techStack": ["Flutter", "Firebase", "Cloud Functions", "Native Plugins"],
+      "techStack": [
+        "Flutter",
+        "Firebase",
+        "Cloud Functions",
+        "Native Plugins"
+      ],
       "technicalChallenges": [],
       "features": [
         "Media playback",
@@ -411,10 +552,25 @@
       "name": "Installment App",
       "type": "Merchant Installment Payment Utility",
       "market": "Egypt",
-      "environments": ["Production"],
+      "industry": "FinTech",
+      "tags": [
+        "FinTech",
+        "Full-Stack",
+        ".NET"
+      ],
+      "metric": {
+        "value": "10K+",
+        "label": "Downloads"
+      },
+      "coverImage": "/projects/installment-app.jpg",
+      "environments": [
+        "Production"
+      ],
       "shortDescription": "Business utility application for managing merchant installment payments.",
       "fullDescription": "Business utility application for managing merchant installment payments.",
-      "platforms": ["Android"],
+      "platforms": [
+        "Android"
+      ],
       "role": "Software Engineer",
       "responsibilities": [
         "Directed a cross-functional team, acting as the primary liaison between UI/UX design, backend, and mobile development",

@@ -33,11 +33,20 @@ export interface TechnicalChallenge {
   result: string;
 }
 
+export interface ProjectMetric {
+  value: string;
+  label: string;
+}
+
 export interface Project {
   slug: string;
   name: string;
   type: string;
   market: string;
+  industry?: string;
+  tags?: string[];
+  metric?: ProjectMetric;
+  coverImage?: string;
   shortDescription: string;
   fullDescription: string;
   platforms: string[];
