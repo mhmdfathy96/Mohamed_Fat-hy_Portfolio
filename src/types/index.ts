@@ -38,6 +38,12 @@ export interface ProjectMetric {
   label: string;
 }
 
+export interface ProjectImage {
+  src: string;
+  width: number;
+  height: number;
+}
+
 export interface Project {
   slug: string;
   name: string;
@@ -47,6 +53,10 @@ export interface Project {
   tags?: string[];
   metric?: ProjectMetric;
   coverImage?: string;
+  tagline?: string;
+  heroImage?: string;
+  gallery?: ProjectImage[];
+  results?: ProjectMetric[];
   shortDescription: string;
   fullDescription: string;
   platforms: string[];

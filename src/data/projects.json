@@ -22,6 +22,43 @@
         "label": "Learning Built-in"
       },
       "coverImage": "/projects/guruhub.jpg",
+      "tagline": "Learn anything, anywhere — expert video courses, quizzes, and analytics in one platform.",
+      "heroImage": "/projects/guruhub/hero.jpg",
+      "gallery": [
+        {
+          "src": "/projects/guruhub/gallery1.jpg",
+          "width": 900,
+          "height": 1600
+        },
+        {
+          "src": "/projects/guruhub/gallery2.jpg",
+          "width": 900,
+          "height": 1600
+        },
+        {
+          "src": "/projects/guruhub/gallery3.jpg",
+          "width": 900,
+          "height": 1600
+        }
+      ],
+      "results": [
+        {
+          "value": "Offline",
+          "label": "Full courses without internet"
+        },
+        {
+          "value": "Anti-cheat",
+          "label": "Per-student randomized quizzes"
+        },
+        {
+          "value": "4",
+          "label": "Commercial plan tiers, zero-code gating"
+        },
+        {
+          "value": "2",
+          "label": "Languages — English + Arabic (RTL)"
+        }
+      ],
       "environments": [
         "Staging",
         "Production"
@@ -129,6 +166,48 @@
         "label": "Tickets Deflected"
       },
       "coverImage": "/projects/agentech.png",
+      "tagline": "Custom AI Chatbot as a Service — your data, answered with citations.",
+      "heroImage": "/projects/agentech/hero.png",
+      "gallery": [
+        {
+          "src": "/projects/agentech/persona.png",
+          "width": 1640,
+          "height": 827
+        },
+        {
+          "src": "/projects/agentech/usage.png",
+          "width": 1640,
+          "height": 827
+        },
+        {
+          "src": "/projects/agentech/widget.png",
+          "width": 1640,
+          "height": 827
+        },
+        {
+          "src": "/projects/agentech/keys.png",
+          "width": 1640,
+          "height": 827
+        }
+      ],
+      "results": [
+        {
+          "value": "80%",
+          "label": "Tier-1 tickets deflected"
+        },
+        {
+          "value": "24/7",
+          "label": "Automated, grounded answers"
+        },
+        {
+          "value": "6+",
+          "label": "Source types ingested"
+        },
+        {
+          "value": "100%",
+          "label": "Cited, tenant-isolated replies"
+        }
+      ],
       "environments": [
         "Production"
       ],
@@ -246,6 +325,48 @@
         "label": "Downloads"
       },
       "coverImage": "/projects/3arabawy.jpg",
+      "tagline": "All your car needs in one app — silky smooth from flagship 120 Hz screens down to budget phones.",
+      "heroImage": "/projects/3arabawy/hero.jpg",
+      "gallery": [
+        {
+          "src": "/projects/3arabawy/gallery1.jpg",
+          "width": 900,
+          "height": 1600
+        },
+        {
+          "src": "/projects/3arabawy/gallery2.jpg",
+          "width": 900,
+          "height": 1600
+        },
+        {
+          "src": "/projects/3arabawy/gallery3.jpg",
+          "width": 900,
+          "height": 1600
+        },
+        {
+          "src": "/projects/3arabawy/gallery4.jpg",
+          "width": 900,
+          "height": 1600
+        }
+      ],
+      "results": [
+        {
+          "value": "50K+",
+          "label": "Downloads on Google Play"
+        },
+        {
+          "value": "~98%",
+          "label": "RAM usage cut in media pipeline"
+        },
+        {
+          "value": "120/90 FPS",
+          "label": "Stable on high-end and low-end devices alike"
+        },
+        {
+          "value": "30%",
+          "label": "Smoother on low-end hardware"
+        }
+      ],
       "environments": [
         "Staging",
         "Production"
@@ -333,6 +454,44 @@
         "label": "Downloads"
       },
       "coverImage": "/projects/mdone.jpg",
+      "tagline": "Patients and doctors, connected — booking, chat, and voice consultations in one app.",
+      "heroImage": "/projects/mdone/hero.jpg",
+      "gallery": [
+        {
+          "src": "/projects/mdone/gallery1.jpg",
+          "width": 343,
+          "height": 718
+        },
+        {
+          "src": "/projects/mdone/gallery2.jpg",
+          "width": 390,
+          "height": 790
+        },
+        {
+          "src": "/projects/mdone/gallery3.jpg",
+          "width": 386,
+          "height": 795
+        },
+        {
+          "src": "/projects/mdone/gallery4.jpg",
+          "width": 397,
+          "height": 815
+        }
+      ],
+      "results": [
+        {
+          "value": "10K+",
+          "label": "Downloads on Google Play"
+        },
+        {
+          "value": "99%",
+          "label": "Call connectivity reliability"
+        },
+        {
+          "value": "25%",
+          "label": "API latency reduction"
+        }
+      ],
       "environments": [
         "Production"
       ],
@@ -389,6 +548,44 @@
         "label": "Find & Offer Services"
       },
       "coverImage": "/projects/toltura.jpg",
+      "tagline": "Specialists for every need — one click away.",
+      "heroImage": "/projects/toltura/hero.jpg",
+      "gallery": [
+        {
+          "src": "/projects/toltura/gallery1.jpg",
+          "width": 738,
+          "height": 1600
+        },
+        {
+          "src": "/projects/toltura/gallery2.jpg",
+          "width": 738,
+          "height": 1600
+        },
+        {
+          "src": "/projects/toltura/gallery3.jpg",
+          "width": 738,
+          "height": 1600
+        },
+        {
+          "src": "/projects/toltura/gallery4.jpg",
+          "width": 738,
+          "height": 1600
+        }
+      ],
+      "results": [
+        {
+          "value": "Real-time",
+          "label": "Flawless SignalR chat integration"
+        },
+        {
+          "value": "2",
+          "label": "Stores shipped via CI/CD"
+        },
+        {
+          "value": "2-in-1",
+          "label": "Consumer + provider in one app"
+        }
+      ],
       "environments": [
         "Production"
       ],
@@ -450,6 +647,44 @@
         "label": "Workplace Tools"
       },
       "coverImage": "/projects/biznavi.jpg",
+      "tagline": "One app for the whole workday — built pixel-perfect for a demanding enterprise client.",
+      "heroImage": "/projects/biznavi/hero.jpg",
+      "gallery": [
+        {
+          "src": "/projects/biznavi/gallery1.jpg",
+          "width": 738,
+          "height": 1600
+        },
+        {
+          "src": "/projects/biznavi/gallery2.jpg",
+          "width": 738,
+          "height": 1600
+        },
+        {
+          "src": "/projects/biznavi/gallery3.jpg",
+          "width": 738,
+          "height": 1600
+        },
+        {
+          "src": "/projects/biznavi/gallery4.jpg",
+          "width": 738,
+          "height": 1600
+        }
+      ],
+      "results": [
+        {
+          "value": "100+",
+          "label": "Workplace tools in one app"
+        },
+        {
+          "value": "98%",
+          "label": "Crash-free rate"
+        },
+        {
+          "value": "2",
+          "label": "Platforms from one codebase"
+        }
+      ],
       "environments": [
         "Production"
       ],
@@ -507,6 +742,44 @@
         "label": "Vote-driven Playback"
       },
       "coverImage": "/projects/party-player.jpg",
+      "tagline": "The party picks the playlist — propose, vote, play.",
+      "heroImage": "/projects/party-player/hero.jpg",
+      "gallery": [
+        {
+          "src": "/projects/party-player/gallery1.jpg",
+          "width": 414,
+          "height": 910
+        },
+        {
+          "src": "/projects/party-player/gallery2.jpg",
+          "width": 414,
+          "height": 910
+        },
+        {
+          "src": "/projects/party-player/gallery3.jpg",
+          "width": 414,
+          "height": 910
+        },
+        {
+          "src": "/projects/party-player/gallery4.jpg",
+          "width": 414,
+          "height": 910
+        }
+      ],
+      "results": [
+        {
+          "value": "Real-time",
+          "label": "Shared, vote-driven playlists"
+        },
+        {
+          "value": "100%",
+          "label": "IAP transactional integrity"
+        },
+        {
+          "value": "2",
+          "label": "Platforms from one codebase"
+        }
+      ],
       "environments": [
         "Production"
       ],
@@ -563,6 +836,44 @@
         "label": "Downloads"
       },
       "coverImage": "/projects/installment-app.jpg",
+      "tagline": "Installment sales, under control — clients, branches, payments, and stats in one place.",
+      "heroImage": "/projects/installment-app/hero.jpg",
+      "gallery": [
+        {
+          "src": "/projects/installment-app/gallery1.jpg",
+          "width": 720,
+          "height": 1280
+        },
+        {
+          "src": "/projects/installment-app/gallery2.jpg",
+          "width": 720,
+          "height": 1280
+        },
+        {
+          "src": "/projects/installment-app/gallery3.jpg",
+          "width": 720,
+          "height": 1280
+        },
+        {
+          "src": "/projects/installment-app/gallery4.jpg",
+          "width": 720,
+          "height": 1280
+        }
+      ],
+      "results": [
+        {
+          "value": "10K+",
+          "label": "Downloads on Google Play"
+        },
+        {
+          "value": "E2E",
+          "label": "Backend + app, one team"
+        },
+        {
+          "value": "Multi",
+          "label": "Branch operations supported"
+        }
+      ],
       "environments": [
         "Production"
       ],
