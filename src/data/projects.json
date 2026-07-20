@@ -302,7 +302,8 @@
         "Platform super-admin back-office for cross-tenant operations"
       ],
       "links": {
-        "dashboard": "https://admin.assistant.agentech.tech"
+        "dashboard": "https://admin.assistant.agentech.tech",
+        "website": "https://assistant.agentech.tech"
       },
       "seo": {
         "title": "Agentech Assistant | Multi-Tenant RAG / AI Chatbot Platform",
