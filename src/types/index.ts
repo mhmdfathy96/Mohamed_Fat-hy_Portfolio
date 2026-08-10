@@ -115,7 +115,14 @@ export interface PublicSample {
 export interface Testimonial {
   text: string;
   name: string;
-  role: string;
+  /** Optional: no testimonial in the data carries one yet. */
+  role?: string;
+  /**
+   * True when this client hired Mohamed for more than one project. The single
+   * strongest signal on a credibility page — a competitor can copy any claim
+   * on this site except a client choosing to come back.
+   */
+  repeatClient?: boolean;
 }
 
 export interface CareerEntry {

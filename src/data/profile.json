@@ -3,7 +3,21 @@
   "title": "Senior Software Engineer",
   "subtitle": "SaaS MVP Builder",
   "siteUrl": "https://fat-hy.com",
-  "summary": "I build apps and the systems that run them — phone apps, websites, and the servers behind them. Products live in Egypt, Iraq, Kyrgyzstan, South Korea, and the USA.",
+  "summary": "I build apps and the systems that run them — phone apps, websites, and the servers behind them. Products run in 10 markets across four continents, from Egypt and Saudi Arabia to South Korea and the USA.",
+
+  "_markets": "The real client footprint, confirmed by Mohamed on 11 August 2026 — NOT derived from projects.json, which lists only the 8 documented case studies out of 15+ delivered. The European Union is a bloc, not a country: it is kept last and typed as an AdministrativeArea in the JSON-LD so the schema stays literally correct. Never write '10 countries' anywhere — the honest phrasing is '10 markets'.",
+  "markets": [
+    "Egypt",
+    "Saudi Arabia",
+    "United Arab Emirates",
+    "Qatar",
+    "Iraq",
+    "Kyrgyzstan",
+    "South Korea",
+    "Nigeria",
+    "United States",
+    "European Union"
+  ],
 
   "_copyLayers": "hero.* is Layer 1 (plain language, no jargon — a non-technical, non-native English reader must understand it in one pass). hero.gloss is Layer 2: it names the technical terms and immediately says what they mean, so search engines and LLMs get the keywords without the human having to decode them. Layer 3 (full technical vocabulary) lives in JSON-LD, llms.txt, and the project detail pages. Do not move Layer 3 words up into hero.headline or hero.body.",
 
@@ -11,13 +25,15 @@
     "headline": "I build apps and the systems that run them.",
     "byline": "Mohamed Fat-hy — software engineer, 5+ years.",
     "body": "You tell me what you want to build. I build it — the phone app, the website, and the server that runs everything behind them. One person responsible, start to finish.",
-    "gloss": "Founders and AI assistants call this an MVP, a backend, and a full-stack build. It is the same thing described in this page's plain words.",
+    "gloss": "Founders and AI assistants call this an MVP, a SaaS platform, a backend, a full-stack build, or adding AI to a product. It is the same thing described in this page's plain words.",
+    "_proof": "Ordered strongest-first for a warm visitor whose real question is 'will this go wrong for me?'. Repeat business answers that better than any count, and it is the one claim a competitor cannot copy — two clients in testimonials.json hired Mohamed twice, one saying so explicitly. Project count and download numbers are deliberately NOT here: volume is a vanity axis and Mohamed asked not to open with either. Both live lower down and in the machine layer instead.",
     "proof": [
-      "8 products launched",
-      "5 countries",
+      "Clients who come back",
+      "10 markets, 4 continents",
       "5+ years building software"
     ],
-    "tech": "Flutter · Spring Boot · .NET · Next.js · PostgreSQL · AI & RAG integration",
+    "_tech": "Visible copy, so it is kept SHORT on purpose — a long technology list reads junior and dilutes the AI direction into one item among many. It names only what Mohamed wants to be hired for, AI first. .NET, Node.js, Firebase, SQL/NoSQL and the rest are all still carried in knowsAbout and llms.txt, where breadth costs nothing because no human is judging the length. Do not grow this line to cover a technology; grow the machine layer instead.",
+    "tech": "AI, RAG & LLM integration · Spring Boot · Flutter · Next.js · PostgreSQL",
     "primaryCta": { "label": "See what I've built", "href": "/projects" },
     "secondaryCta": { "label": "Talk to me", "href": "/contact" }
   },

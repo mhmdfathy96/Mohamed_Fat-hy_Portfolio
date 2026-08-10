@@ -40,6 +40,16 @@ export default function Home() {
 
   const testimonials = testimonialsData.testimonials as Testimonial[];
 
+  /*
+    Counted from the data rather than written as a number, so the sentence
+    cannot quietly go stale the next time a testimonial is added or removed.
+    Distinct people, not testimonial count — the returning clients left two
+    each, and "4 clients came back" would be false.
+  */
+  const returningClients = new Set(
+    testimonials.filter((t) => t.repeatClient).map((t) => t.name),
+  ).size;
+
   return (
     <>
       <Hero />
@@ -102,7 +112,17 @@ export default function Home() {
 
       {/* Testimonials */}
       <section className="py-20 max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-10">Testimonials</h2>
+        <h2
+          className={`text-3xl font-bold ${returningClients > 0 ? "mb-2" : "mb-10"}`}
+        >
+          Testimonials
+        </h2>
+        {returningClients > 0 && (
+          <p className="text-slate-600 mb-10 text-lg">
+            {returningClients} of these clients came back and hired me for
+            another project.
+          </p>
+        )}
         <div className="w-full">
           <TestimonialCarousel testimonials={testimonials} />
         </div>

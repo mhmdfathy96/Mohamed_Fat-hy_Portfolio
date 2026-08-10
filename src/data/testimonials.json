@@ -1,8 +1,11 @@
 {
+  "_repeatClient": "Set repeatClient on EVERY testimonial by a client who hired Mohamed more than once — currently Mokhirukh Eshankhanova and Bolarinwa Oladayo, who each left two. It renders a 'Returning client' badge and drives the 'Clients who come back' proof line in profile.json. This was evidenced here from the beginning and stated nowhere on the site until 11 August 2026. If you add a testimonial from a returning client, set the flag; if you ever remove the last flagged pair, the hero proof line must change too.",
+
   "testimonials": [
     {
       "text": "I had the pleasure of working with Mohamed before, and thrilled to collaborate with him again! His exceptional skills in Flutter development and dedication to delivering top-notch results left a lasting impression on me. It's always a seamless and enjoyable experience working with him. Highly recommended!",
-      "name": "Mokhirukh Eshankhanova"
+      "name": "Mokhirukh Eshankhanova",
+      "repeatClient": true
     },
     {
       "text": "Mohamed is a truly exceptional developer who brings passion and dedication to every project. His knowledge is extensive, and he consistently demonstrates a proactive approach, often anticipating needs and addressing issues before they arise. Additionally, he works with integrity and transparency, which makes collaborating with him a pleasure. Talented professionals like Mohamed are rare to find, and I highly recommend him to anyone looking for a skilled, reliable, and honest developer",
@@ -10,7 +13,8 @@
     },
     {
       "text": "I had the pleasure of working with Mohamed, and I couldn't be more impressed. From the start, he showcased a deep understanding of Flutter and mobile app development, delivering high-quality work on time and exceeding expectations. His attention to detail, problem-solving skills, and ability to communicate complex technical aspects in a clear and concise way made the entire process smooth and enjoyable. He was proactive in suggesting improvements, quick to implement feedback, and always focused on delivering the best user experience. The final product was not only functional but also polished and user-friendly, reflecting his passion for clean code and great design. I highly recommend Mohamed to anyone in need of a skilled and reliable Flutter developer. I look forward to working with him again in the future!",
-      "name": "Mokhirukh Eshankhanova"
+      "name": "Mokhirukh Eshankhanova",
+      "repeatClient": true
     },
     {
       "text": "I'm extremely happy to deal with Mr. Mohammed. He is very smart, honest, heavy-duty programmer and many awesome things i found it in him. i would recommend everyone to work with him. For me i will absolutely return to him for adds and updates.",
@@ -26,11 +30,13 @@
     },
     {
       "text": "Extremely skilled flutter Developer, Good communication and patience, even solves errors and bugs not included in milestone. If looking for best service here then I fully recommend him and he always delivers before time.",
-      "name": "Bolarinwa Oladayo"
+      "name": "Bolarinwa Oladayo",
+      "repeatClient": true
     },
     {
       "text": "Extremely skilled Flutter Developer, solved all our app bugs, developed an amazing interface and quite good with communication and ontime delivery. Will surely recommend to anyone looking for quality mobile App Development. Thanks again Mohammed for your extra help on our project.",
-      "name": "Bolarinwa Oladayo"
+      "name": "Bolarinwa Oladayo",
+      "repeatClient": true
     }
   ]
 }

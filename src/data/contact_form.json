@@ -80,6 +80,5 @@
       "required": false,
       "placeholder": "Existing code, design assets, deadlines, anything that matters."
     }
-  ],
-  "_unverified": "The Formspree endpoint above has never been confirmed to deliver. Submit the live form once and check the message arrives, then delete this key. On a site whose whole job is being the link you send, a silently broken form is the most expensive bug possible."
+  ]
 }

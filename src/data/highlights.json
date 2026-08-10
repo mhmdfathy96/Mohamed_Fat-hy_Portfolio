@@ -1,5 +1,17 @@
 {
+  "_ordering": "The home page renders highlights.filter(featured).slice(0, 2) — so the FIRST TWO featured entries are the only ones most visitors ever see. Keep one backend/AI entry and one mobile entry in those two slots. Before 11 August 2026 all seven highlights were mobile-side, which left the scaling and AI packages on /services with no technical proof behind them at all, and made a page selling 'apps and the systems that run them' read as evidence for a Flutter developer.",
+
   "highlights": [
+    {
+      "id": "tenant-isolation",
+      "featured": true,
+      "title": "Three-Layer Tenant Isolation",
+      "context": "Agentech Assistant",
+      "slug": "agentech-assistant-rag-platform",
+      "problem": "In a multi-tenant RAG platform every business uploads private documents into shared infrastructure. A single missed filter on any query path — a SQL join, a vector search, a cached embedding — leaks one client's internal data into another client's chat answers. Enforcing that only in application code means one forgotten WHERE clause is a breach.",
+      "solution": "Enforced isolation in three independent layers so no single mistake is sufficient to cause a leak: tenant and account context at the application layer, PostgreSQL Row-Level Security on every tenant- and account-scoped table, and payload filtering at the Qdrant vector layer so embeddings are partitioned per tenant. Built on a Spring Boot 4.0 and Spring Modulith modular monolith with an async Postgres-backed ingestion queue.",
+      "result": "100% of replies are tenant-isolated and citation-backed. Because the database and the vector store enforce isolation independently of application code, a missed check in any one layer still cannot expose another tenant's data."
+    },
     {
       "id": "native-image-compression",
       "featured": true,
@@ -9,6 +21,16 @@
       "problem": "Extracting bytes via readAsBytes() pulled heavy visual files directly onto the Dart heap, where decoding 8MB JPEGs into uncompressed bitmaps consumed 50MB–100MB of RAM per file, leading to OOM crashes and UI thread blocking.",
       "solution": "Refactored the image pipeline to use dart:ui for native sizing and FlutterImageCompress for path-based native encoding. Substituted Uint8List tracking with native file paths and transitioned to file streaming via Dio's MultipartFile.fromFile.",
       "result": "Reduced RAM usage by ~98% (from 500MB to <5MB for 10 images), eliminated OOM crashes, and restored a stable 120 FPS by moving processing to native C++/Objective-C sub-workers."
+    },
+    {
+      "id": "grounded-citations",
+      "featured": true,
+      "title": "Grounded Answers with Citations",
+      "context": "Agentech Assistant",
+      "slug": "agentech-assistant-rag-platform",
+      "problem": "A general-purpose language model answers support questions confidently from its training data, inventing pricing, policy and product details that were never in the client's documents. For a customer-facing support bot, a fluent wrong answer is worse than no bot at all, and there is no way for the customer to tell the difference.",
+      "solution": "Constrained generation to retrieval over the tenant's own uploaded content only — PDF, Word, PowerPoint, CSV, Excel, JSON, live URLs, images and audio — automatically extracted, chunked, embedded and vectorized through an async ingestion queue, with every answer streamed back attached to the source passage it came from.",
+      "result": "80% of tier-1 support tickets deflected, answered 24/7 across 6+ ingested source types, with 100% of replies carrying a citation the customer can open and check."
     },
     {
       "id": "quiz-randomization",

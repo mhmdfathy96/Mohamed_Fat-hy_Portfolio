@@ -1,5 +1,4 @@
 import profile from "@/data/profile.json";
-import projectsData from "@/data/projects.json";
 import faqData from "@/data/faq.json";
 import packages from "@/data/packages.json";
 
@@ -18,42 +17,87 @@ import packages from "@/data/packages.json";
 
 const SITE = profile.siteUrl;
 
-/** Every distinct market a shipped product actually runs in. */
-const areaServed = [
-  ...new Set(
-    Object.values(projectsData.projects)
-      .map((p) => p.market)
-      .filter((m) => m && m !== "Global"),
-  ),
-];
+/*
+ * Every market Mohamed has actually delivered into — read from profile.markets,
+ * not from projects.json.
+ *
+ * This used to be derived from the case studies, which silently undercounted:
+ * projects.json documents 8 projects out of 15+ delivered, so the schema
+ * claimed 5 markets against a real footprint of 10. The confirmed list is now
+ * the single source of truth and the case studies are a subset of it.
+ *
+ * The European Union is a bloc, not a country, so it cannot be typed Country
+ * without making the schema false.
+ */
+const areaServed = profile.markets.map((name) =>
+  name === "European Union"
+    ? { "@type": "AdministrativeArea", name }
+    : { "@type": "Country", name },
+);
 
+/*
+ * The retrieval surface. This is what an assistant matches against when someone
+ * asks it to find "a developer who can build an AI chatbot on our own docs" or
+ * "a SaaS MVP developer" — and Mohamed's stated intent is to be found for AI
+ * and SaaS work, not only mobile. Order is deliberate: AI and SaaS terms lead,
+ * because the list is frequently truncated by consumers and the first entries
+ * are the ones that survive.
+ *
+ * Every entry must be defensible in a technical conversation. Do not add a
+ * technology here to catch a search term if it has never actually shipped.
+ */
 const knowsAbout = [
+  // AI — the direction the practice is being pointed
+  "Generative AI integration",
+  "AI chatbot development",
+  "AI agent development",
+  "Large language model integration",
+  "Retrieval-augmented generation (RAG)",
+  "Spring AI",
+  "Vector databases",
+  "Qdrant",
+  "Embeddings",
+  "Semantic search",
+  // SaaS and product
+  "SaaS MVP development",
+  "SaaS platform development",
+  "B2B SaaS",
+  "Multi-tenant SaaS architecture",
+  "Minimum viable product",
+  // Backend
+  "Backend development",
+  "Spring Boot",
+  "Java",
+  ".NET",
+  "C#",
+  // Scoped deliberately: the Node.js work has been serverless Cloud Functions,
+  // not standalone Node services. Left unqualified it invites an Express or
+  // Nest enquiry that would be a bad fit.
+  "Node.js (serverless Cloud Functions)",
+  "JavaScript",
+  "Cloud Functions",
+  "Serverless architecture",
+  "REST API design",
+  "Cloud deployment",
+  // Data
+  "PostgreSQL",
+  "SQL",
+  "NoSQL databases",
+  "Firebase",
+  "Database design",
+  // Web
+  "Next.js",
+  "React",
+  "TypeScript",
+  "Full-stack development",
+  // Mobile
   "Flutter",
   "Dart",
   "Mobile app development",
   "iOS app development",
   "Android app development",
-  "Spring Boot",
-  "Java",
-  ".NET",
-  "C#",
-  "Next.js",
-  "React",
-  "TypeScript",
-  "PostgreSQL",
-  "Firebase",
-  "Cloud Functions",
-  "REST API design",
+  // Practice
   "Clean Architecture",
-  "Backend development",
-  "Full-stack development",
-  "SaaS MVP development",
-  "Minimum viable product",
-  "Generative AI integration",
-  "Spring AI",
-  "Large language model integration",
-  "Retrieval-augmented generation (RAG)",
-  "Multi-tenant SaaS architecture",
   "Performance optimization",
   "Technical audit",
   "Legacy system takeover",
@@ -86,7 +130,7 @@ export function serviceSchema() {
     url: SITE,
     description: profile.summary,
     provider: { "@id": `${SITE}/#person` },
-    areaServed: areaServed.map((name) => ({ "@type": "Country", name })),
+    areaServed,
     availableLanguage: ["English", "Arabic"],
     knowsAbout,
     hasOfferCatalog: {

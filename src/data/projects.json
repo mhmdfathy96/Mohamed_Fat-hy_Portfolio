@@ -14,6 +14,7 @@
       "industry": "EdTech",
       "tags": [
         "LMS",
+        "AI",
         "Mobile App",
         "Admin Dashboard"
       ],
@@ -318,6 +319,7 @@
       "industry": "Marketplace",
       "tags": [
         "Marketplace",
+        "AI",
         "Flutter",
         "Real-time"
       ],
@@ -920,5 +922,6 @@
         "description": "Installment App is a business utility for managing merchant installment payments, built with Flutter and a custom .NET backend."
       }
     }
-  }
+  },
+  "_aiTags": "3arabawy and GuruHub both ship AI features (confirmed by Mohamed, 11 Aug 2026). Only the tag is set — the specifics were not captured, so nothing describing HOW the AI works may be written into these entries until they are. Client products carrying AI are stronger evidence than Mohamed's own products, so filling this in is worth doing."
 }

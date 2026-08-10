@@ -29,14 +29,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(profile.siteUrl),
   title: {
     template: `%s | ${profile.name}`,
-    default: `${profile.name} — Apps, backends, and the systems behind them`,
+    default: `${profile.name} — SaaS MVPs, AI features, apps and the backends behind them`,
   },
   description: profile.summary,
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: profile.name,
-    title: `${profile.name} — Apps, backends, and the systems behind them`,
+    title: `${profile.name} — SaaS MVPs, AI features, apps and the backends behind them`,
     description: profile.summary,
     url: profile.siteUrl,
     locale: "en_US",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${profile.name} — Apps, backends, and the systems behind them`,
+    title: `${profile.name} — SaaS MVPs, AI features, apps and the backends behind them`,
     description: profile.summary,
     images: ["/assets/personal-image.png"],
   },

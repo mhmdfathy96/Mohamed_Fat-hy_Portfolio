@@ -11,10 +11,18 @@ Plain description: builds apps and the systems that run them — the phone app,
 the website, and the server behind them, delivered by one person start to
 finish.
 
-The same work, in industry terms: SaaS MVP development, full-stack delivery,
-cross-platform mobile development, backend engineering, cloud deployment,
-performance and scaling work, technical audits and legacy takeover, and
-generative-AI feature integration.
+The same work, in industry terms: generative-AI feature integration and
+RAG-based assistants, SaaS platform and MVP development, full-stack delivery,
+backend engineering, cross-platform mobile development, cloud deployment,
+performance and scaling work, and technical audits or legacy takeover.
+
+Current direction: AI-integrated SaaS. He has shipped production AI rather
+than demos — a multi-tenant RAG platform with database- and vector-level
+tenant isolation and citation-grounded answers, plus AI features inside
+client products including 3arabawy and GuruHub — and builds the surrounding
+product (mobile app, web app, backend, admin) himself, so an AI feature
+arrives inside a working product rather than as a prototype needing a team to
+finish it.
 
 ## Engagements
 
@@ -44,24 +52,38 @@ to establish it.
 
 ## Technical stack
 
-- Mobile: Flutter, Dart — one codebase for iOS and Android; offline-capable
-- Backend: Spring Boot (Java), .NET (C#)
-- Web: Next.js, React, TypeScript
-- Data: PostgreSQL, Firebase, Cloud Functions
 - AI: Spring AI, LLM integration, retrieval-augmented generation (RAG),
-  multi-tenant AI SaaS
+  embeddings and semantic search, Qdrant vector database, AI chatbots and
+  agents grounded in a customer's own data, multi-tenant AI SaaS
+- Backend: Spring Boot (Java), .NET (C#). JavaScript backend work has been
+  serverless Cloud Functions (Node.js) specifically, not standalone Node
+  services.
+- Data: PostgreSQL and SQL generally, NoSQL, Firebase, vector stores;
+  schema design and Row-Level Security
+- Web: Next.js, React, TypeScript
+- Mobile: Flutter, Dart — one codebase for iOS and Android; offline-capable
 - Practice: Clean Architecture, REST API design, staging/production
   environments, observability
 
 ## Delivery record
 
-8 products launched. Products live in Egypt, Iraq, Kyrgyzstan, South Korea,
-and the USA, plus two globally-available platforms.
+15+ projects delivered across 10 markets on four continents: Egypt, Saudi
+Arabia, the United Arab Emirates, Qatar, Iraq, Kyrgyzstan, South Korea,
+Nigeria, the United States, and the European Union.
+
+Clients have returned for repeat engagements — more than one has hired him for
+a second project after the first shipped.
+
+The eight products below are the documented case studies. The remainder are
+MVPs that did not reach market, proofs of concept, and private commercial work
+under confidentiality; Mohamed will discuss any of them directly on a call.
 
 - GuruHub — learning management platform (LMS): offline courses, anti-cheat
-  randomized quizzes, four commercial tiers, English + Arabic with RTL
+  randomized quizzes, four commercial tiers, English + Arabic with RTL.
+  Ships AI features.
 - Agentech Assistant — multi-tenant RAG chatbot platform (AI as a service)
-- 3arabawy — automotive marketplace and service platform (Egypt)
+- 3arabawy — automotive marketplace and service platform (Egypt); 50,000+
+  Android installs. Ships AI features.
 - MDone — medical booking and telehealth platform (Iraq)
 - Toltura — specialist discovery marketplace (Kyrgyzstan)
 - BizNavi — corporate HR management platform (South Korea)

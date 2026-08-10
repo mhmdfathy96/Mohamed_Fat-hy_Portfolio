@@ -1,5 +1,5 @@
 import { Testimonial } from "@/types";
-import { Quote } from "lucide-react";
+import { Quote, RotateCcw } from "lucide-react";
 
 export default function TestimonialCard({
   testimonial,
@@ -46,9 +46,25 @@ export default function TestimonialCard({
         <h4 className="font-bold text-gray-900 text-lg">
           {testimonial.name}
         </h4>
-        <p className="text-sm text-gray-500">
-          {testimonial.role}
-        </p>
+        {testimonial.role && (
+          <p className="text-sm text-gray-500">{testimonial.role}</p>
+        )}
+
+        {/*
+          The badge, not the quote, is the persuasive part: praise is easy to
+          find and easy to discount, but a client choosing to pay twice is the
+          one thing on this page a competitor cannot reproduce.
+        */}
+        {testimonial.repeatClient && (
+          <span
+            className={`inline-flex items-center gap-1.5 mt-2 px-2.5 py-1 rounded-full bg-blue-50 text-blue-800 text-xs font-semibold ${
+              isCarouselItem ? "mx-auto" : ""
+            }`}
+          >
+            <RotateCcw className="w-3.5 h-3.5" aria-hidden="true" />
+            Returning client — hired me more than once
+          </span>
+        )}
       </div>
     </div>
   );

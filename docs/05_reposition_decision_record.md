@@ -223,9 +223,8 @@ overriding the Geist font the app loads and pays for. Now uses Geist.
 
 - [ ] **Telegram handle and Calendly link are unverified.** Flagged in
       `contact_channels.json` under `_unverified`.
-- [ ] **Formspree endpoint has never been confirmed to deliver.** Flagged in
-      `contact_form.json`. A silently broken form is the most expensive
-      possible bug on a credibility page.
+- [x] **Formspree endpoint confirmed** — 11 August 2026. Mohamed submitted the
+      live form and the message arrived. `_unverified` key removed.
 - [ ] **OG image is a portrait crop** and will letterbox. A purpose-made
       1200×630 card would be better. `TODO` left in `layout.tsx`.
 - [ ] **Mobile layout not visually verified** — the tooling could not reach
@@ -235,6 +234,159 @@ overriding the Geist font the app loads and pays for. Now uses Geist.
       session can be watched in about 15 minutes. That is real data; everything
       in §2.2 above is inference from aggregate counts. **Anything the
       recordings contradict overrides this document.**
+      Clarity **is** installed and recording — verified 11 August 2026 in
+      `/_next/static/chunks/`. Note for anyone re-checking: it will never
+      appear in the served HTML, because `MicrosoftClarity` renders an *inline*
+      `<Script>` that next/script injects only after hydration. GA is visible
+      in the HTML solely because it has an external `src`. Grepping the page
+      source is not a valid test; grep the JS chunks.
+
+---
+
+## 6a. Correction — the delivery claims understated the record
+
+Added 11 August 2026, after Mohamed challenged the numbers.
+
+**The error.** `hero.proof` claimed *"8 products launched · 5 countries"*.
+Both figures were computed from `projects.json`, which holds only the eight
+documented case studies — so the site was quietly reporting its own content
+inventory as though it were Mohamed's career. `structuredData.ts` derived
+`areaServed` the same way and inherited the same undercount. Meanwhile
+agentech.tech advertised *15+ projects, 10+ countries, 70K+ downloads* for the
+same person. Two of his own sites disagreed about him, and a prospect who
+opened both would have seen it.
+
+**Confirmed footprint** (from Mohamed, 11 August 2026): Egypt, Saudi Arabia,
+UAE, Qatar, Iraq, Kyrgyzstan, South Korea, Nigeria, USA, EU. Now stored in
+`profile.markets` as the single source of truth. Uzbekistan and Russia were
+*inferred from testimonial author names and are wrong* — do not reintroduce
+them. The EU is a bloc: the honest phrasing is **"10 markets"**, never
+"10 countries", and the JSON-LD types it `AdministrativeArea`.
+
+**On "15+ projects".** True and defensible: the balance are MVPs that never
+reached market, proofs of concept, and private commercial work under
+confidentiality. It sits in `llms.txt` with that explanation attached, not in
+the hero — see below.
+
+**What now leads instead.** Neither count. Mohamed asked not to open with
+project volume or download numbers, and he is right to: volume is a vanity
+axis, and for a *warm* visitor the live question is "will this go wrong for
+me?" Repeat business answers exactly that, and it is the one claim a
+competitor cannot copy. `testimonials.json` already evidenced it and nothing
+on the site said so — two clients appear twice, one opening *"I had the
+pleasure of working with Mohamed before, and thrilled to collaborate with him
+again!"* Hence the new strip: **"Clients who come back · 10 markets, 4
+continents · 5+ years building software."**
+
+The 50,000+ Android installs on 3arabawy are real and now recorded in
+`llms.txt`, where the machine layer can use them without the page opening on a
+number.
+
+**Now surfaced on the page.** `repeatClient` was added to `Testimonial` and set
+on all four testimonials by the two returning clients (Mokhirukh Eshankhanova,
+Bolarinwa Oladayo). Each renders a *"Returning client — hired me more than
+once"* badge, and the testimonials section leads with a line counted from the
+data — `2 of these clients came back and hired me for another project` —
+derived rather than hardcoded so it cannot go stale when testimonials change.
+
+Incidental fix found while doing it: `Testimonial.role` was typed as a
+required `string`, but no testimonial in the data has ever had one. The
+`as Testimonial[]` cast in `page.tsx` suppressed the error, and every card was
+rendering an empty `<p>` under the name. `role` is now optional and the
+element is conditional.
+
+---
+
+## 6b. The proof did not match what is being sold
+
+Raised by Mohamed, same session: *"are we forgetting the SaaS and AI work?"*
+He was right, and it was measurable.
+
+| Proof surface | SaaS / AI / backend | Mobile |
+|---|---|---|
+| Technical highlights | **0 of 7** | 7 of 7 |
+| Testimonials | **0 of 8** | 8 of 8 |
+| Featured projects | 2 of 4 | 2 of 4 |
+
+`/services` sells *"Adding AI to what you already have"* and *"Make It Handle
+More Users"*. Neither had a single piece of technical evidence anywhere on the
+site. A visitor weighing the proof concluded **Flutter developer** — a
+lower-priced category than what the packages describe. The repeat-client badges
+added earlier in this session made that *worse*, because all four sit on
+mobile testimonials.
+
+**Fixed for highlights.** Two entries written from material already sitting
+unused in `projects.json`, both from Agentech Assistant: *Three-Layer Tenant
+Isolation* (application context + PostgreSQL RLS + Qdrant payload filtering,
+so no single missed check can leak across tenants) and *Grounded Answers with
+Citations* (retrieval constrained to tenant content, 80% of tier-1 tickets
+deflected, every reply cited). Ordering matters and is documented in
+`highlights.json._ordering`: the home page renders only the first two featured
+entries, which are now deliberately one backend/AI and one mobile.
+
+**On the testimonials, an earlier claim in this session was overstated and is
+withdrawn.** It was argued that Flutter-worded testimonials actively undercut
+the SaaS/AI positioning. Mohamed disagreed, and he is right: what those
+clients actually praise is reliability, communication, anticipating problems,
+and integrity — none of which is category-bound, and none of which a
+non-technical buyer reads as a limit. The word "Flutter" narrows the read only
+for a technical vetter, who is not the buyer this page is written for. Fresh
+testimonials naming platform or AI work would still help, but this is a
+nice-to-have, not the defect it was described as.
+
+---
+
+## 6c. Deliberate reorientation toward AI
+
+Decision by Mohamed, 11 August 2026: point the practice at AI-integrated SaaS.
+*"What is wrong with orienting my career towards AI? I need to hook them, AI
+is now very rich."*
+
+Nothing is wrong with it, and the site was actively obstructing it. The
+`<title>` and OG title read *"Apps, backends, and the systems behind them"* —
+neither "AI" nor "SaaS" appeared in the single most heavily weighted tag on
+the page. `hero.gloss`, the Layer 2 line whose entire job is carrying industry
+vocabulary, listed "MVP, backend, full-stack build" and omitted both.
+
+The claim is also honestly supported, which is what separates it from most AI
+positioning: Agentech Assistant is production multi-tenant RAG with
+database-level and vector-level isolation and citation-grounded answers, and
+3arabawy and GuruHub carry AI features too. The differentiator to press is not
+"builds AI" — everyone says that — but that the AI arrives *inside a finished
+product*, because the same person builds the app, the backend and the admin
+around it.
+
+Changed: titles and OG titles now lead with SaaS MVPs and AI features;
+`hero.gloss` names SaaS and AI; `hero.tech` adds Node.js and Firebase;
+`knowsAbout` grew 29 → 43 terms and is **reordered so AI and SaaS lead**,
+since consumers truncate the list; `llms.txt` gained a "current direction"
+paragraph and an AI-first stack section.
+
+Rule for future edits: an entry may only be added to `knowsAbout` if it has
+actually shipped. The list is a retrieval surface, not a wish list, and the
+first technical call exposes anything padded.
+
+### Breadth belongs in the machine layer, not on the page
+
+Mohamed pushed back on listing every technology — *"do I need to add all techs,
+programming languages and frameworks? I don't think so"* — and the answer is
+no, but it differs by surface, which is a fourth rule sitting alongside the
+three copy layers in §4:
+
+| Surface | Rule | Why |
+|---|---|---|
+| Visible copy (`hero.tech`) | **Short. Only what he wants to be hired for.** | A long list reads junior, and it dissolves the AI direction into one item among many |
+| Machine layer (`knowsAbout`, `llms.txt`) | **Broad.** | Pure retrieval matching. No human judges the length, and a term that is absent cannot match a query |
+
+`hero.tech` was accordingly cut from 8 items to 5 and reordered AI-first:
+`AI, RAG & LLM integration · Spring Boot · Flutter · Next.js · PostgreSQL`.
+Node.js, .NET, Firebase, SQL and NoSQL remain in `knowsAbout` (43 terms) and
+`llms.txt`, so nothing became unfindable — it stopped being *advertised*.
+
+Note this reverses an edit made earlier in the same session, which had grown
+`hero.tech` to eight items immediately after deciding to specialise. Adding
+breadth to visible copy and adding it to the machine layer are not the same
+move, and conflating them works against the positioning.
 
 ---
 
