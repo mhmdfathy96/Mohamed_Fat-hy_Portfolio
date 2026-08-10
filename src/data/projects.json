@@ -156,8 +156,9 @@
       "name": "Agentech Assistant",
       "type": "Multi-Tenant RAG Platform (AI Chatbot as a Service)",
       "market": "Global",
-      "industry": "AI & SaaS",
+      "industry": "SaaS",
       "tags": [
+        "AI",
         "RAG",
         "Multi-Tenant SaaS",
         "Chat Widget"
