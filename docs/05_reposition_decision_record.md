@@ -221,8 +221,10 @@ overriding the Geist font the app loads and pays for. Now uses Geist.
 
 ## 6. Open items
 
-- [ ] **Telegram handle and Calendly link are unverified.** Flagged in
-      `contact_channels.json` under `_unverified`.
+- [ ] **Telegram now points at the bot `@fathywebsitebot`** instead of the
+      personal account — 11 August 2026, at Mohamed's request. Needs a live
+      check that messages sent to the bot actually reach him.
+- [ ] **Calendly link is unverified.**
 - [x] **Formspree endpoint confirmed** — 11 August 2026. Mohamed submitted the
       live form and the message arrived. `_unverified` key removed.
 - [ ] **OG image is a portrait crop** and will letterbox. A purpose-made

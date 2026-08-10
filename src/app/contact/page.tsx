@@ -99,7 +99,7 @@ export default function ContactPage() {
 
         {contactChannels.telegram.show && (
           <p className="text-center text-sm text-gray-500 mt-6">
-            Prefer messaging? Reach me on{" "}
+            Prefer messaging? Start a chat on{" "}
             <a
               href={contactChannels.telegram.url}
               target="_blank"
