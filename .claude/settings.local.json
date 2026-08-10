@@ -29,7 +29,13 @@
       "WebSearch",
       "WebFetch(domain:support.upwork.com)",
       "WebFetch(domain:www.upwork.com)",
-      "Bash(node *)"
+      "Bash(node *)",
+      "Read(//tmp/**)",
+      "Bash(sed -e 's/<[^>]*>/ /g' /tmp/agentech.html)",
+      "Bash(echo \"--- tsc exit: $? ---\")",
+      "Bash(npx next *)",
+      "Bash(echo \"--- tsc: $? ---\")",
+      "Bash(echo \"--- eslint: $? ---\")"
     ]
   }
 }
