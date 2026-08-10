@@ -15,7 +15,7 @@ export default function HighlightsPage() {
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
           Technical Highlights
         </h1>
-        <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl">
+        <p className="text-xl text-gray-600 max-w-2xl">
           Key technical challenges and the solutions I implemented.
         </p>
       </div>

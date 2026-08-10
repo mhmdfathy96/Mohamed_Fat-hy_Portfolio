@@ -1,26 +1,47 @@
 @import "tailwindcss";
 
+/*
+ * Light-only by design.
+ *
+ * This site previously flipped to a dark palette via
+ * `@media (prefers-color-scheme: dark)` with no toggle, which meant every
+ * visitor on a dark-set OS saw a theme that was never designed or reviewed.
+ * That media query is intentionally gone — do not reintroduce it without
+ * also building a real theme toggle and designing the dark palette.
+ *
+ * Accent is a single deep blue. The previous indigo->purple gradient was
+ * removed site-wide: it read as a generic AI-startup template, which is the
+ * wrong signal for a credibility page. One accent, used flat.
+ */
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f172a; /* slate-900 */
+
+  --accent: #1d4ed8; /* blue-700  — primary actions, links, active nav */
+  --accent-hover: #1e40af; /* blue-800 */
+  --accent-tint: #eff6ff; /* blue-50   — section backgrounds */
+
+  --muted: #475569; /* slate-600 — body copy */
+  --border: #e2e8f0; /* slate-200 */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-tint: var(--accent-tint);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  color-scheme: light;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
 }

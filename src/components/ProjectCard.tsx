@@ -8,7 +8,7 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <Link
       href={`/projects/${project.slug}`}
-      className="group block overflow-hidden rounded-2xl border border-gray-200 bg-white hover:border-gray-300 hover:shadow-lg transition-all dark:border-zinc-800 dark:bg-zinc-900/40 dark:hover:border-zinc-700 dark:hover:bg-zinc-800/60"
+      className="group block overflow-hidden rounded-2xl border border-gray-200 bg-white hover:border-gray-300 hover:shadow-lg transition-all"
     >
       {project.coverImage && (
         <div className="relative aspect-[2/1] overflow-hidden">
@@ -43,16 +43,16 @@ export default function ProjectCard({ project }: { project: Project }) {
         </div>
       )}
       <div className="p-6">
-        <div className="text-xs font-semibold text-blue-600 dark:text-blue-400 mb-2 uppercase tracking-wide">
+        <div className="text-xs font-semibold text-blue-600 mb-2 uppercase tracking-wide">
           {project.type}
         </div>
-        <h3 className="text-xl font-bold group-hover:text-blue-600 transition-colors dark:text-white dark:group-hover:text-blue-400">
+        <h3 className="text-xl font-bold group-hover:text-blue-600 transition-colors">
           {project.name}
         </h3>
-        <p className="text-gray-600 dark:text-gray-400 mt-2 mb-4 line-clamp-2 text-sm leading-relaxed">
+        <p className="text-gray-600 mt-2 mb-4 line-clamp-2 text-sm leading-relaxed">
           {project.shortDescription}
         </p>
-        <span className="inline-flex items-center gap-1 text-sm font-semibold text-blue-600 dark:text-blue-400">
+        <span className="inline-flex items-center gap-1 text-sm font-semibold text-blue-600">
           View case study
           <span className="transition-transform group-hover:translate-x-1">
             &rarr;

@@ -67,11 +67,11 @@ export default function ContactForm({ location }: { location: string }) {
 
   if (status === "success") {
     return (
-      <div className="p-8 bg-white dark:bg-zinc-900 border-2 border-green-500 dark:border-green-600 rounded-2xl text-center">
-        <h3 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">
+      <div className="p-8 bg-white border-2 border-green-500 rounded-2xl text-center">
+        <h3 className="text-2xl font-bold mb-2 text-gray-900">
           Got it.
         </h3>
-        <p className="text-gray-600 dark:text-gray-400">
+        <p className="text-gray-600">
           {config.successMessage}
         </p>
       </div>
@@ -81,12 +81,12 @@ export default function ContactForm({ location }: { location: string }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="p-6 md:p-8 bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-2xl shadow-lg"
+      className="p-6 md:p-8 bg-white border border-gray-200 rounded-2xl shadow-lg"
     >
-      <h3 className="text-2xl md:text-3xl font-bold mb-2 text-gray-900 dark:text-white">
+      <h3 className="text-2xl md:text-3xl font-bold mb-2 text-gray-900">
         {config.heading}
       </h3>
-      <p className="text-gray-600 dark:text-gray-400 mb-8">
+      <p className="text-gray-600 mb-8">
         {config.subheading}
       </p>
 
@@ -95,7 +95,7 @@ export default function ContactForm({ location }: { location: string }) {
           <div key={field.id}>
             <label
               htmlFor={field.id}
-              className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+              className="block text-sm font-semibold text-gray-700 mb-2"
             >
               {field.label}
               {field.required && <span className="text-red-500 ml-1">*</span>}
@@ -110,7 +110,7 @@ export default function ContactForm({ location }: { location: string }) {
                 value={values[field.id]}
                 onChange={(e) => handleChange(field.id, e.target.value)}
                 rows={3}
-                className="w-full px-4 py-3 bg-white dark:bg-zinc-800 border border-gray-300 dark:border-zinc-700 rounded-lg text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
               />
             ) : field.type === "select" ? (
               <select
@@ -119,7 +119,7 @@ export default function ContactForm({ location }: { location: string }) {
                 required={field.required}
                 value={values[field.id]}
                 onChange={(e) => handleChange(field.id, e.target.value)}
-                className="w-full px-4 py-3 bg-white dark:bg-zinc-800 border border-gray-300 dark:border-zinc-700 rounded-lg text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
               >
                 <option value="">Select…</option>
                 {(field.options || []).map((opt) => (
@@ -137,7 +137,7 @@ export default function ContactForm({ location }: { location: string }) {
                 placeholder={field.placeholder}
                 value={values[field.id]}
                 onChange={(e) => handleChange(field.id, e.target.value)}
-                className="w-full px-4 py-3 bg-white dark:bg-zinc-800 border border-gray-300 dark:border-zinc-700 rounded-lg text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
               />
             )}
           </div>
@@ -147,14 +147,14 @@ export default function ContactForm({ location }: { location: string }) {
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="mt-8 w-full inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg font-semibold text-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100"
+        className="mt-8 w-full inline-flex items-center justify-center gap-2 px-8 py-4 bg-blue-700 text-white rounded-lg font-semibold text-lg hover:bg-blue-800 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
       >
         <Send className="w-5 h-5" />
         {status === "submitting" ? "Sending…" : config.submitLabel}
       </button>
 
       {status === "error" && (
-        <p className="mt-4 text-center text-sm text-red-600 dark:text-red-400">
+        <p className="mt-4 text-center text-sm text-red-600">
           {config.errorMessage}
         </p>
       )}

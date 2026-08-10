@@ -1,4 +1,0 @@
-{
-  "featuredIndices": [1, 2, 5],
-  "_note": "Indices into src/data/testimonials.json. Picked these three for being outcome / professionalism / process focused (Denis, Mokhirukh #2, Waleed). Edit the array to change which testimonials appear on /build-with-me."
-}

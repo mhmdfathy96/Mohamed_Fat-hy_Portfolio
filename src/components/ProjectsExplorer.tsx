@@ -33,7 +33,7 @@ export default function ProjectsExplorer({
             className={`px-4 py-1.5 rounded-full text-sm font-medium border transition-colors ${
               active === filter
                 ? "bg-blue-600 border-blue-600 text-white"
-                : "bg-white border-gray-200 text-gray-700 hover:border-gray-300 dark:bg-zinc-900 dark:border-zinc-700 dark:text-gray-300 dark:hover:border-zinc-500"
+                : "bg-white border-gray-200 text-gray-700 hover:border-gray-300"
             }`}
           >
             {filter}

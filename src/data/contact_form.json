@@ -81,5 +81,5 @@
       "placeholder": "Existing code, design assets, deadlines, anything that matters."
     }
   ],
-  "_note": "TODO: replace 'endpoint' with your real Formspree endpoint. Sign up at formspree.io, create a form, copy its endpoint URL (looks like https://formspree.io/f/abcd1234)."
+  "_unverified": "The Formspree endpoint above has never been confirmed to deliver. Submit the live form once and check the message arrives, then delete this key. On a site whose whole job is being the link you send, a silently broken form is the most expensive bug possible."
 }

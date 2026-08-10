@@ -60,7 +60,7 @@ export default function TestimonialCarousel({
       {/* Navigation Buttons - Hidden on mobile usually, or keep visible if preferred */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 dark:bg-zinc-800/80 p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity z-20 hover:bg-white dark:hover:bg-zinc-700"
+        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity z-20 hover:bg-white"
         aria-label="Previous testimonial"
       >
         <ChevronLeft className="w-6 h-6" />
@@ -68,7 +68,7 @@ export default function TestimonialCarousel({
 
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 dark:bg-zinc-800/80 p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity z-20 hover:bg-white dark:hover:bg-zinc-700"
+        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity z-20 hover:bg-white"
         aria-label="Next testimonial"
       >
         <ChevronRight className="w-6 h-6" />
@@ -82,8 +82,8 @@ export default function TestimonialCarousel({
             onClick={() => setCurrentIndex(index)}
             className={`w-2.5 h-2.5 rounded-full transition-colors ${
               currentIndex === index
-                ? "bg-black dark:bg-white"
-                : "bg-black/20 dark:bg-white/20 hover:bg-black/40 dark:hover:bg-white/40"
+                ? "bg-black"
+                : "bg-black/20 hover:bg-black/40"
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />

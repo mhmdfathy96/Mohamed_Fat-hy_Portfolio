@@ -1,108 +1,115 @@
 {
+  "_copyLayers": "'headline', 'subheadline', 'description' and 'body' fields are Layer 1 — plain language a non-technical, non-native English reader understands in one pass. 'alsoCalled' is Layer 2: the industry/AI term for the same thing, so search and LLMs match it without the human having to decode it. Keep Layer 3 vocabulary (framework and architecture names) in JSON-LD, llms.txt, and the project pages.",
+
   "hero": {
-    "headline": "Software That Ships",
-    "subheadline": "Whether you need a mobile app, a backend rebuild, or AI features in your product — you work with one accountable lead who plugs in design, QA, and DevOps only when the project actually needs them.",
+    "headline": "How working together goes",
+    "subheadline": "What I can build for you, what happens week by week, and the answers to the questions people ask me most.",
     "primaryCta": {
-      "label": "Send a Project Brief",
+      "label": "Tell me about your project",
       "href": "/contact#form"
     },
     "secondaryCta": {
-      "label": "Book a Call",
+      "label": "Book a free call",
       "href": "/contact#book"
     }
   },
   "intro": {
     "title": "What I actually build",
-    "body": "I don't pick projects by tech stack — I pick them by outcome. Tell me what you want shipped and I'll tell you the shortest credible path to get there. If a project needs a designer, a QA engineer, or a DevOps specialist, I bring in people I've worked with before. You still talk to one person."
+    "body": "I do not choose projects by the tools involved. Tell me what you want to exist, and I will tell you the shortest honest way to get there. If your project needs a designer, a tester, or a server specialist, I bring in people I have worked with before — and you still deal with one person."
   },
   "outcomes": [
     {
       "icon": "Rocket",
-      "title": "Launch a SaaS MVP",
-      "description": "Validated idea → production app in 6–8 weeks. Mobile + backend + admin + deployment, all under one roof.",
-      "bestFor": "Founders past the validation stage who need to ship without building a team.",
-      "cta": { "label": "See engagement phases", "href": "/build-with-me" }
+      "title": "The first real version of your product",
+      "alsoCalled": "SaaS MVP, minimum viable product",
+      "description": "From an idea you have already thought through, to something real customers can use — in about 6 to 8 weeks. Phone app, website, admin screen, and the server behind it.",
+      "bestFor": "You know what you want and you need it working, without hiring a whole team.",
+      "cta": { "label": "See the packages", "href": "#packages" }
     },
     {
       "icon": "Smartphone",
-      "title": "Build a Mobile App",
-      "description": "iOS and Android from a single Flutter codebase. Clean architecture, offline support, native performance — production-grade from day one.",
-      "bestFor": "Companies that need a mobile presence without doubling engineering cost.",
-      "cta": { "label": "Send a brief", "href": "/contact#form" }
+      "title": "A phone app",
+      "alsoCalled": "iOS and Android mobile app, Flutter development",
+      "description": "One app that works on both iPhone and Android, built once instead of twice. Works without internet where it needs to, and feels as fast as any other app on the phone.",
+      "bestFor": "You need to be on people's phones without paying to build the same app twice.",
+      "cta": { "label": "Tell me about it", "href": "/contact#form" }
     },
     {
       "icon": "Server",
-      "title": "Modernize & Scale a Backend",
-      "description": "Take a backend from \"works for 100 users\" to \"works for 100,000.\" Spring Boot, .NET, PostgreSQL, cloud-native deployment, observability built in.",
-      "bestFor": "Teams hitting performance, reliability, or cost ceilings on their current backend.",
-      "cta": { "label": "Send a brief", "href": "/contact#form" }
+      "title": "Making it handle more people",
+      "alsoCalled": "backend modernization, scaling, performance optimization",
+      "description": "Taking something that works for a hundred users and making it work for a hundred thousand — faster, cheaper to run, and with alarms that tell you about problems before your customers do.",
+      "bestFor": "You already have customers, and growth is starting to break things.",
+      "cta": { "label": "Tell me about it", "href": "/contact#form" }
     },
     {
       "icon": "Sparkles",
-      "title": "Add AI Features",
-      "description": "Plug GenAI into an existing product — chat, summarization, classification, RAG over your data — using Spring AI and modern LLM patterns. Done with production cost, latency, and quality controls.",
-      "bestFor": "Existing products that want a real AI feature, not a demo.",
-      "cta": { "label": "Send a brief", "href": "/contact#form" }
+      "title": "Adding AI to what you already have",
+      "alsoCalled": "GenAI features, LLM integration, RAG, chatbot",
+      "description": "A real AI feature inside your product — answering questions from your own documents, summarising, sorting, or chatting with customers. Built with controls on what it costs, how fast it answers, and how often it is right.",
+      "bestFor": "You want AI that actually works in your product, not a demo that impresses once.",
+      "cta": { "label": "Tell me about it", "href": "/contact#form" }
     },
     {
       "icon": "Globe",
-      "title": "Ship a Web Platform",
-      "description": "Next.js / React frontend with a typed backend and a real database. Built to be maintained, not just demoed.",
-      "bestFor": "B2B companies, marketplaces, internal platforms — anything beyond a marketing site.",
-      "cta": { "label": "Send a brief", "href": "/contact#form" }
+      "title": "A website that does real work",
+      "alsoCalled": "web platform, full-stack web application",
+      "description": "Not a brochure — a website people log into and get things done in, with a proper database behind it. Built so it can be maintained for years, by me or by anyone after me.",
+      "bestFor": "Marketplaces, business tools, internal systems — anything past a marketing page.",
+      "cta": { "label": "Tell me about it", "href": "/contact#form" }
     },
     {
       "icon": "LifeBuoy",
-      "title": "Rescue a Stuck Project",
-      "description": "Honest technical audit of code, architecture, and team — then a concrete plan to unstick the project. I can take over delivery or hand the plan to your team.",
-      "bestFor": "Founders or CTOs whose project is over budget, over time, or showing instability in production.",
-      "cta": { "label": "Send a brief", "href": "/contact#form" }
+      "title": "Rescuing a project that went wrong",
+      "alsoCalled": "project rescue, technical audit, legacy takeover",
+      "description": "An honest look at what has been built so far, and a straight answer about where it stands. Then a plan to finish it. I can do the work, or hand the plan to your own team.",
+      "bestFor": "Your project is late, over budget, breaking in front of customers, or your developer left.",
+      "cta": { "label": "Tell me about it", "href": "/contact#form" }
     }
   ],
   "process": {
-    "title": "How working together looks",
+    "title": "What happens, step by step",
     "steps": [
       {
-        "label": "Brief",
-        "description": "You send a one-line idea via the form or email. I reply within 24 business hours."
+        "label": "You write to me",
+        "description": "One or two lines about what you want. Use the form or email. I reply within 24 hours on working days."
       },
       {
-        "label": "Strategy call",
-        "description": "30 min. Scope, top risks, a starting recommendation. No pitch."
+        "label": "We talk",
+        "description": "30 minutes. You explain, I ask questions, and I tell you what I think the risks are. No sales pitch."
       },
       {
-        "label": "Proposal",
-        "description": "Within 2–3 days I send back a written scope, timeline, and milestone-based price."
+        "label": "I send a plan",
+        "description": "Within 2 to 3 days: what gets built, in what order, how long it takes, and the price of each stage in writing."
       },
       {
-        "label": "Build",
-        "description": "Weekly demos, async daily updates, code in your repo from day one."
+        "label": "I build it",
+        "description": "You see working progress every week. Short updates in between. The code sits in your own account from day one."
       },
       {
-        "label": "Ship",
-        "description": "Production deployment, handoff docs, and a roadmap for what comes next."
+        "label": "It goes live",
+        "description": "Published and running for real users, with written instructions and a plan for what comes next."
       }
     ]
   },
   "notFor": {
-    "title": "Not the right fit if",
+    "title": "When I am not the right choice",
     "items": [
-      "Your scope keeps shifting weekly — milestone-based work needs each milestone defined before it starts.",
-      "You want a fixed total price before the scope is clear — I fix-price per milestone, not the whole project sight-unseen.",
-      "You want the cheapest option — I'm not the cheapest and won't try to be."
+      "You change what you want every week. I price work in stages, and a stage has to be decided before it starts.",
+      "You want one final price for everything before anyone has looked at it properly. I price each stage, not the whole project unseen.",
+      "You are looking for the cheapest option. I am not the cheapest and I will not pretend to be."
     ]
   },
   "finalCta": {
-    "headline": "Have a project? Tell me about it.",
-    "body": "Send a short brief — stage, budget range, timeline — and I'll reply with whether I can help and what makes sense as a next step.",
+    "headline": "Tell me what you want to build.",
+    "body": "Send a few lines — what it is, roughly what you can spend, and when you need it. I will tell you honestly whether I can help and what I think the sensible next step is.",
     "primaryCta": {
-      "label": "Send a Project Brief",
+      "label": "Tell me about your project",
       "href": "/contact#form"
     },
     "secondaryCta": {
-      "label": "book a 30-min strategy call",
+      "label": "book a free 30-minute call",
       "href": "/contact#book"
     }
-  },
-  "_note": "TODO: review outcomes — remove any you don't actually want to take on, or rewrite descriptions to match how you'd pitch each one. 'notFor' items 1–3 were rewritten as operational disqualifiers (not personality judgments). Icons are lucide-react names; valid set: Rocket, Smartphone, Server, Sparkles, Globe, LifeBuoy, Target, Zap, Users, Code, Cloud, Brain, Wrench."
+  }
 }

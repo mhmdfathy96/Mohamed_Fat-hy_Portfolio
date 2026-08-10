@@ -1,0 +1,74 @@
+{
+  "_copyLayers": "Every 'name' and 'plain' field is Layer 1 — a non-technical, non-native English reader must understand it without help. 'alsoCalled' is Layer 2: it names the industry/AI term for the same thing so search and LLMs match it, while the human keeps reading plain words. Never move Layer 3 vocabulary into 'name' or 'plain'.",
+
+  "sectionTitle": "What you can buy",
+  "sectionIntro": "Four ways to work together. Each one says what you receive and roughly how long it takes, so you know what you are buying before we talk.",
+
+  "firstStep": {
+    "name": "Scoping Week",
+    "alsoCalled": "discovery sprint, technical scoping",
+    "duration": "1 week",
+    "plain": "A small paid first step, so neither of us has to guess. You explain the idea. I come back with a written plan: what gets built, what it does, in what order, how long each part takes, and what each part costs.",
+    "youReceive": [
+      "A written plan you can hand to any developer — not only me",
+      "A list of every screen and feature, in order of importance",
+      "A timeline broken into stages, with a price for each stage",
+      "The main risks, and what I would do about them"
+    ],
+    "note": "If you decide to build with me afterwards, this fee comes off the first stage. If you walk away, the plan is still yours to keep."
+  },
+
+  "packages": [
+    {
+      "name": "First Working Version",
+      "alsoCalled": "MVP, minimum viable product, v1 launch",
+      "duration": "6–8 weeks",
+      "plain": "The first real version of your product — one that actual customers can use, not a demo. Phone app, website, and the server behind them.",
+      "youReceive": [
+        "A phone app on the App Store and Google Play, or a website — or both",
+        "The server and database that run it",
+        "An admin screen so you can manage things yourself",
+        "It running live, for real users, not on my computer"
+      ],
+      "bestFor": "You know what you want to build and you need it working and in front of people."
+    },
+    {
+      "name": "Fix or Finish What You Have",
+      "alsoCalled": "project rescue, technical audit, handover, legacy takeover",
+      "duration": "2–4 weeks to assess, then agreed per stage",
+      "plain": "Someone already started your product and it is late, broken, or slow — or the developer left. I read the existing work, tell you honestly what state it is in, and give you a plan to finish it.",
+      "youReceive": [
+        "An honest written assessment of what exists and what it is worth keeping",
+        "A clear answer on repair versus rebuild, with the reasoning",
+        "A plan to finish it, priced by stage",
+        "I can do the work, or hand the plan to your own team"
+      ],
+      "bestFor": "You have already paid for something that is not working, and you need to know where you stand."
+    },
+    {
+      "name": "Make It Handle More Users",
+      "alsoCalled": "scaling, performance optimization, backend modernization, cloud migration",
+      "duration": "Agreed per stage",
+      "plain": "Your product works, but it is getting slow, expensive, or falling over as more people use it. I find what is causing it and fix it.",
+      "youReceive": [
+        "A measured report of what is actually slow — not guesses",
+        "The fixes, applied and measured again afterwards",
+        "Lower running costs where the waste is in the setup",
+        "Monitoring, so you find out before your customers do"
+      ],
+      "bestFor": "You already have customers and growth is starting to hurt."
+    }
+  ],
+
+  "pricing": {
+    "title": "How I price",
+    "body": "I do not put one number on this page, because a fair price depends on what you actually need — and I would rather tell you the truth after looking than a number before. Here is exactly how it works.",
+    "points": [
+      "We agree the work in stages. Each stage has its own fixed price, agreed before that stage starts.",
+      "You never get an open-ended bill. If a stage grows, we agree the change first.",
+      "You pay per stage, not everything upfront.",
+      "The code and the rights are yours from the first day, in your own account — not held by me.",
+      "The Scoping Week above is the cheapest way to find out what your project really costs."
+    ]
+  }
+}

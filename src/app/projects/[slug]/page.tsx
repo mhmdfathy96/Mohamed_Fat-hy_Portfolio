@@ -48,10 +48,10 @@ function Fact({ label, value }: { label: string; value?: string }) {
   if (!value) return null;
   return (
     <div>
-      <div className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-500">
+      <div className="text-xs font-semibold uppercase tracking-wide text-gray-500">
         {label}
       </div>
-      <div className="mt-1 text-sm font-medium text-gray-900 dark:text-gray-200">
+      <div className="mt-1 text-sm font-medium text-gray-900">
         {value}
       </div>
     </div>
@@ -90,7 +90,7 @@ export default async function ProjectPage({
     <article className="py-20 md:py-32 max-w-5xl mx-auto px-6">
       <Link
         href="/projects"
-        className="inline-block mb-8 text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors font-medium"
+        className="inline-block mb-8 text-gray-500 hover:text-black transition-colors font-medium"
       >
         &larr; Back to Projects
       </Link>
@@ -98,13 +98,13 @@ export default async function ProjectPage({
       {/* 1. Header */}
       <header className="mb-10">
         <div className="flex flex-wrap items-center gap-2 mb-4">
-          <span className="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wide mr-2">
+          <span className="text-xs font-bold text-blue-600 uppercase tracking-wide mr-2">
             {project.type}
           </span>
           {project.tags?.map((tag) => (
             <span
               key={tag}
-              className="text-xs font-medium bg-gray-100 text-gray-700 px-2.5 py-1 rounded-full dark:bg-zinc-800 dark:text-gray-300"
+              className="text-xs font-medium bg-gray-100 text-gray-700 px-2.5 py-1 rounded-full"
             >
               {tag}
             </span>
@@ -114,7 +114,7 @@ export default async function ProjectPage({
           {project.name}
         </h1>
         {project.tagline && (
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl">
+          <p className="text-xl text-gray-600 max-w-3xl">
             {project.tagline}
           </p>
         )}
@@ -122,7 +122,7 @@ export default async function ProjectPage({
 
       {/* 2. Hero image */}
       {project.heroImage && (
-        <div className="relative aspect-[2.2/1] overflow-hidden rounded-2xl border border-gray-200 dark:border-zinc-800 mb-12">
+        <div className="relative aspect-[2.2/1] overflow-hidden rounded-2xl border border-gray-200 mb-12">
           <Image
             src={project.heroImage}
             alt={`${project.name} — ${project.type}`}
@@ -140,7 +140,7 @@ export default async function ProjectPage({
           {/* Overview */}
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-4">Overview</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed">
               {project.fullDescription || project.shortDescription}
             </p>
           </section>
@@ -149,7 +149,7 @@ export default async function ProjectPage({
           {project.responsibilities && project.responsibilities.length > 0 && (
             <section className="mb-12">
               <h2 className="text-2xl font-bold mb-4">Responsibilities</h2>
-              <ul className="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-400 leading-relaxed">
+              <ul className="list-disc pl-5 space-y-2 text-gray-600 leading-relaxed">
                 {project.responsibilities.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
@@ -163,7 +163,7 @@ export default async function ProjectPage({
               <h2 className="text-2xl font-bold mb-4">
                 Leadership & Ownership
               </h2>
-              <ul className="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-400 leading-relaxed">
+              <ul className="list-disc pl-5 space-y-2 text-gray-600 leading-relaxed">
                 {project.leadership.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
@@ -182,31 +182,31 @@ export default async function ProjectPage({
                   {project.technicalChallenges.map((challenge, index) => (
                     <div
                       key={index}
-                      className="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-xl border border-gray-100 dark:border-zinc-800"
+                      className="bg-gray-50 p-6 rounded-xl border border-gray-100"
                     >
                       {challenge.problem && (
                         <div className="mb-4">
-                          <span className="text-xs font-bold uppercase tracking-wider text-red-600 dark:text-red-400 block mb-1">
+                          <span className="text-xs font-bold uppercase tracking-wider text-red-600 block mb-1">
                             Problem
                           </span>
-                          <p className="text-gray-700 dark:text-gray-300">
+                          <p className="text-gray-700">
                             {challenge.problem}
                           </p>
                         </div>
                       )}
                       <div className="mb-4">
-                        <span className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 block mb-1">
+                        <span className="text-xs font-bold uppercase tracking-wider text-blue-600 block mb-1">
                           Solution
                         </span>
-                        <p className="text-gray-700 dark:text-gray-300">
+                        <p className="text-gray-700">
                           {challenge.solution}
                         </p>
                       </div>
                       <div>
-                        <span className="text-xs font-bold uppercase tracking-wider text-green-600 dark:text-green-400 block mb-1">
+                        <span className="text-xs font-bold uppercase tracking-wider text-green-600 block mb-1">
                           Result
                         </span>
-                        <p className="text-gray-700 dark:text-gray-300">
+                        <p className="text-gray-700">
                           {challenge.result}
                         </p>
                       </div>
@@ -224,12 +224,12 @@ export default async function ProjectPage({
                 {project.results.map((result) => (
                   <div
                     key={result.label}
-                    className="rounded-xl border border-gray-100 bg-gray-50 p-5 dark:border-zinc-800 dark:bg-zinc-900/50"
+                    className="rounded-xl border border-gray-100 bg-gray-50 p-5"
                   >
-                    <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                    <div className="text-2xl font-bold text-blue-600">
                       {result.value}
                     </div>
-                    <div className="mt-1 text-sm text-gray-600 dark:text-gray-400">
+                    <div className="mt-1 text-sm text-gray-600">
                       {result.label}
                     </div>
                   </div>
@@ -245,7 +245,7 @@ export default async function ProjectPage({
               {project.techStack.map((tech) => (
                 <span
                   key={tech}
-                  className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 dark:bg-zinc-800 dark:border-zinc-700 dark:text-gray-300 shadow-sm"
+                  className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 shadow-sm"
                 >
                   {tech}
                 </span>
@@ -266,7 +266,7 @@ export default async function ProjectPage({
                     width={image.width}
                     height={image.height}
                     sizes="(max-width: 768px) 50vw, 25vw"
-                    className="w-full h-auto rounded-xl border border-gray-200 dark:border-zinc-800"
+                    className="w-full h-auto rounded-xl border border-gray-200"
                   />
                 ))}
               </div>
@@ -275,11 +275,11 @@ export default async function ProjectPage({
 
           {/* Key Features */}
           {project.features && project.features.length > 0 && (
-            <section className="pt-12 border-t border-gray-100 dark:border-zinc-800">
-              <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">
+            <section className="pt-12 border-t border-gray-100">
+              <h3 className="text-xl font-bold mb-4 text-gray-900">
                 Key Features
               </h3>
-              <ul className="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-400">
+              <ul className="list-disc pl-5 space-y-2 text-gray-600">
                 {project.features.map((feature, i) => (
                   <li key={i}>{feature}</li>
                 ))}
@@ -289,7 +289,7 @@ export default async function ProjectPage({
         </div>
 
         {/* Quick facts sidebar */}
-        <aside className="lg:sticky lg:top-24 h-fit rounded-2xl border border-gray-200 bg-gray-50 p-6 space-y-5 dark:border-zinc-800 dark:bg-zinc-900/50">
+        <aside className="lg:sticky lg:top-24 h-fit rounded-2xl border border-gray-200 bg-gray-50 p-6 space-y-5">
           <Fact label="Role" value={project.role} />
           <Fact label="Industry" value={project.industry} />
           <Fact label="Market" value={project.market} />
@@ -301,14 +301,14 @@ export default async function ProjectPage({
             />
           )}
           {project.links && Object.keys(project.links).length > 0 && (
-            <div className="pt-2 border-t border-gray-200 dark:border-zinc-800 space-y-2">
+            <div className="pt-2 border-t border-gray-200 space-y-2">
               {Object.entries(project.links).map(([key, url]) => (
                 <a
                   key={key}
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full text-center px-4 py-2 bg-gray-900 text-white rounded-md text-sm font-medium hover:bg-gray-700 transition-colors dark:bg-white dark:text-black dark:hover:bg-gray-200"
+                  className="block w-full text-center px-4 py-2 bg-gray-900 text-white rounded-md text-sm font-medium hover:bg-gray-700 transition-colors"
                 >
                   {linkLabels[key] ?? `View on ${key}`}
                 </a>
@@ -319,12 +319,12 @@ export default async function ProjectPage({
       </div>
 
       {/* More projects */}
-      <section className="mt-16 pt-12 border-t border-gray-100 dark:border-zinc-800">
+      <section className="mt-16 pt-12 border-t border-gray-100">
         <div className="flex justify-between items-end mb-8">
           <h2 className="text-2xl font-bold">More Projects</h2>
           <Link
             href="/projects"
-            className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white font-medium text-sm"
+            className="text-gray-600 hover:text-black font-medium text-sm"
           >
             View all projects &rarr;
           </Link>

@@ -2,7 +2,26 @@
   "name": "Mohamed Fat-hy",
   "title": "Senior Software Engineer",
   "subtitle": "SaaS MVP Builder",
-  "summary": "I help founders ship production-ready SaaS MVPs in 6–8 weeks — mobile, backend, and architecture under one accountable lead.",
+  "siteUrl": "https://fat-hy.com",
+  "summary": "I build apps and the systems that run them — phone apps, websites, and the servers behind them. Products live in Egypt, Iraq, Kyrgyzstan, South Korea, and the USA.",
+
+  "_copyLayers": "hero.* is Layer 1 (plain language, no jargon — a non-technical, non-native English reader must understand it in one pass). hero.gloss is Layer 2: it names the technical terms and immediately says what they mean, so search engines and LLMs get the keywords without the human having to decode them. Layer 3 (full technical vocabulary) lives in JSON-LD, llms.txt, and the project detail pages. Do not move Layer 3 words up into hero.headline or hero.body.",
+
+  "hero": {
+    "headline": "I build apps and the systems that run them.",
+    "byline": "Mohamed Fat-hy — software engineer, 5+ years.",
+    "body": "You tell me what you want to build. I build it — the phone app, the website, and the server that runs everything behind them. One person responsible, start to finish.",
+    "gloss": "Founders and AI assistants call this an MVP, a backend, and a full-stack build. It is the same thing described in this page's plain words.",
+    "proof": [
+      "8 products launched",
+      "5 countries",
+      "5+ years building software"
+    ],
+    "tech": "Flutter · Spring Boot · .NET · Next.js · PostgreSQL · AI & RAG integration",
+    "primaryCta": { "label": "See what I've built", "href": "/projects" },
+    "secondaryCta": { "label": "Talk to me", "href": "/contact" }
+  },
+
   "trustSignals": [
     "5+ years shipping production software",
     "Mobile + backend + AI under one lead",

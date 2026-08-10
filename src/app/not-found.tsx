@@ -11,28 +11,29 @@ export default function NotFound() {
   const pathname = usePathname();
   const router = useRouter();
 
-  useEffect(() => {
-    // Handle case-insensitive /bwm redirect
-    if (pathname && pathname.toLowerCase() === "/bwm") {
-      router.replace("/build-with-me");
-    }
-  }, [pathname, router]);
+  // /bwm was a shared short link pointing at the retired /build-with-me page.
+  // It now lands on /services, where that offer moved.
+  const isShortLink =
+    pathname &&
+    ["/bwm", "/build-with-me"].includes(pathname.toLowerCase());
 
-  // If we're redirecting, show a loading state
-  if (pathname && pathname.toLowerCase() === "/bwm") {
+  useEffect(() => {
+    if (isShortLink) {
+      router.replace("/services");
+    }
+  }, [isShortLink, router]);
+
+  if (isShortLink) {
     return (
       <>
-        <meta httpEquiv="refresh" content="0;url=/build-with-me" />
+        <meta httpEquiv="refresh" content="0;url=/services" />
         <div className="flex items-center justify-center min-h-[60vh]">
           <div className="text-center">
-            <p className="text-lg">Redirecting to Build With Me...</p>
-            <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
-              If you are not redirected,{" "}
-              <Link
-                href="/build-with-me"
-                className="text-blue-600 dark:text-blue-400 hover:underline"
-              >
-                click here
+            <p className="text-lg">Taking you to Services…</p>
+            <p className="mt-4 text-sm text-slate-600">
+              If nothing happens,{" "}
+              <Link href="/services" className="text-blue-700 hover:underline">
+                open it here
               </Link>
               .
             </p>
@@ -48,7 +49,7 @@ export default function NotFound() {
       <div className="text-center">
         <h1 className="text-6xl font-bold mb-4">404</h1>
         <h2 className="text-2xl font-semibold mb-4">Page Not Found</h2>
-        <p className="text-gray-600 dark:text-gray-400 mb-8">
+        <p className="text-gray-600 mb-8">
           The page you&apos;re looking for doesn&apos;t exist.
         </p>
         <Link

@@ -1,0 +1,94 @@
+# Mohamed Fat-hy
+
+> Software engineer, 5+ years. Builds mobile apps, web platforms, and the
+> backends behind them, end to end, as a single accountable contractor.
+> Based in Egypt (GMT+2/+3). Works with clients internationally.
+> Site: https://fat-hy.com — Agency: https://agentech.tech
+
+## What he does
+
+Plain description: builds apps and the systems that run them — the phone app,
+the website, and the server behind them, delivered by one person start to
+finish.
+
+The same work, in industry terms: SaaS MVP development, full-stack delivery,
+cross-platform mobile development, backend engineering, cloud deployment,
+performance and scaling work, technical audits and legacy takeover, and
+generative-AI feature integration.
+
+## Engagements
+
+- **Scoping Week** (1 week, paid) — also called a discovery sprint or
+  technical scoping. Produces a written build plan: scope, ordered feature
+  list, staged timeline, per-stage pricing, and named risks. The plan is the
+  client's to keep and is portable to any developer. Fee credited against the
+  first stage if the project proceeds.
+- **First Working Version** (6–8 weeks) — also called an MVP or v1 launch.
+  Ships a live product: mobile app on the App Store and Google Play and/or a
+  web app, plus backend, database, and an admin interface.
+- **Fix or Finish What You Have** (2–4 weeks to assess) — also called project
+  rescue, technical audit, or legacy takeover. Written assessment of existing
+  work, a reasoned repair-versus-rebuild answer, and a staged plan to finish.
+- **Make It Handle More Users** — also called scaling, performance
+  optimization, or backend modernization. Measured bottleneck analysis,
+  applied fixes with before/after measurement, cost reduction, and monitoring.
+
+## How he prices
+
+Milestone-based. Each stage is fixed-price and agreed before it starts; no
+open-ended billing and no full payment upfront. Scope changes are agreed
+before they are made. Source code and IP belong to the client from day one and
+live in the client's own accounts. No single headline price is published,
+because a fair figure depends on scope — the Scoping Week is the intended way
+to establish it.
+
+## Technical stack
+
+- Mobile: Flutter, Dart — one codebase for iOS and Android; offline-capable
+- Backend: Spring Boot (Java), .NET (C#)
+- Web: Next.js, React, TypeScript
+- Data: PostgreSQL, Firebase, Cloud Functions
+- AI: Spring AI, LLM integration, retrieval-augmented generation (RAG),
+  multi-tenant AI SaaS
+- Practice: Clean Architecture, REST API design, staging/production
+  environments, observability
+
+## Delivery record
+
+8 products launched. Products live in Egypt, Iraq, Kyrgyzstan, South Korea,
+and the USA, plus two globally-available platforms.
+
+- GuruHub — learning management platform (LMS): offline courses, anti-cheat
+  randomized quizzes, four commercial tiers, English + Arabic with RTL
+- Agentech Assistant — multi-tenant RAG chatbot platform (AI as a service)
+- 3arabawy — automotive marketplace and service platform (Egypt)
+- MDone — medical booking and telehealth platform (Iraq)
+- Toltura — specialist discovery marketplace (Kyrgyzstan)
+- BizNavi — corporate HR management platform (South Korea)
+- Party Player — music and media streaming app (USA)
+- Installment App — merchant installment payment utility (Egypt, fintech)
+
+## Working with him
+
+- Languages: English, Arabic
+- Timezone: GMT+2 / GMT+3 — full overlap with Europe, Middle East, most of
+  Asia; mornings with US East Coast
+- Cadence: weekly demo call, asynchronous written updates between; replies
+  within 24 hours on working days
+- Capacity: one to two projects at a time
+- Will sign a mutual NDA before scope discussions
+- Clients can stop between stages and keep everything delivered so far
+- Non-technical clients are explicitly welcome; explanations are given in
+  plain language
+
+## Not a fit when
+
+Scope changes weekly; a single fixed total price is required before any
+assessment; or the deciding factor is lowest cost.
+
+## Contact
+
+- Email: mhmdfathy96@gmail.com
+- LinkedIn: https://www.linkedin.com/in/mhmdfathy96/
+- GitHub: https://github.com/mhmdfathy96
+- Upwork: https://www.upwork.com/freelancers/mofathy96

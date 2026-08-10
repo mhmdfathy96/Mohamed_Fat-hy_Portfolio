@@ -15,17 +15,17 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gray-50 border-t border-gray-100 mt-auto dark:bg-zinc-900 dark:border-zinc-800">
+    <footer className="bg-gray-50 border-t border-gray-100 mt-auto">
       {/* Soft CTA strip */}
-      <div className="border-b border-gray-200 dark:border-zinc-800 py-6">
+      <div className="border-b border-gray-200 py-6">
         <div className="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 text-center sm:text-left">
-          <p className="text-sm text-gray-600 dark:text-gray-400">
+          <p className="text-sm text-gray-600">
             Building something? Let&apos;s scope it.
           </p>
           <Link
             href="/contact#book"
             onClick={handleCTAClick}
-            className="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 hover:gap-2 transition-all"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-700 hover:text-blue-800 hover:gap-2 transition-all"
           >
             Book a free strategy session →
           </Link>
@@ -35,7 +35,7 @@ export default function Footer() {
       {/* Original Footer Content */}
       <div className="py-12">
         <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="text-gray-500 text-sm dark:text-gray-400">
+          <div className="text-gray-500 text-sm">
             &copy; {new Date().getFullYear()} {profile.name}. All rights
             reserved.
           </div>
@@ -45,7 +45,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => handleSocialClick("Agentech", profile.agency)}
-              className="text-gray-500 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white"
+              className="text-gray-500 hover:text-gray-900 transition-colors"
             >
               Agentech
             </a>
@@ -54,7 +54,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => handleSocialClick("GitHub", profile.github)}
-              className="text-gray-500 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white"
+              className="text-gray-500 hover:text-gray-900 transition-colors"
             >
               GitHub
             </a>
@@ -63,7 +63,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => handleSocialClick("LinkedIn", profile.linkedin)}
-              className="text-gray-500 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white"
+              className="text-gray-500 hover:text-gray-900 transition-colors"
             >
               LinkedIn
             </a>
@@ -72,7 +72,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => handleSocialClick("Upwork", profile.upwork)}
-              className="text-gray-500 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white"
+              className="text-gray-500 hover:text-gray-900 transition-colors"
             >
               Upwork
             </a>
@@ -82,7 +82,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => handleSocialClick("Telegram", contactChannels.telegram.url)}
-                className="text-gray-500 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white"
+                className="text-gray-500 hover:text-gray-900 transition-colors"
               >
                 Telegram
               </a>
@@ -90,7 +90,7 @@ export default function Footer() {
             <Link
               href="/contact"
               onClick={() => handleSocialClick("Contact", "/contact")}
-              className="text-gray-500 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white"
+              className="text-gray-500 hover:text-gray-900 transition-colors"
             >
               Contact
             </Link>

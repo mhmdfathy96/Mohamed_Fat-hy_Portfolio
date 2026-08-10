@@ -1,0 +1,48 @@
+{
+  "_copyLayers": "Answers are Layer 1/2: plain language first, with the industry term named where it helps search and AI assistants find this page. These answers are also what an LLM quotes when a prospect asks about working with me — keep them factually exact.",
+
+  "title": "Questions people ask me",
+
+  "faqs": [
+    {
+      "question": "Who owns the code when it is finished?",
+      "answer": "You do. The code, the designs, and the files are all yours once the final stage is paid. I keep no rights to any of it, and it lives in your own account from the first day — not mine."
+    },
+    {
+      "question": "Will you sign an agreement to keep my idea private?",
+      "answer": "Yes. I am happy to sign a confidentiality agreement (an NDA) before you tell me the details. Send me yours, or I can send you a standard one."
+    },
+    {
+      "question": "What do you build things with?",
+      "answer": "Phone apps: Flutter, so one app covers both iPhone and Android. Servers: Spring Boot or .NET. Database: PostgreSQL. Websites: Next.js and React. AI features: Spring AI and modern LLM patterns including RAG. I choose per project and I will not push technology you do not need."
+    },
+    {
+      "question": "Where are you, and do our working hours overlap?",
+      "answer": "I am in Egypt (GMT+2, GMT+3 in summer). That gives a full working-day overlap with Europe, the Middle East, and most of Asia, and mornings with the US East Coast. I am flexible for important calls."
+    },
+    {
+      "question": "How often will I hear from you?",
+      "answer": "A call every week where I show you what is working so far, plus short written updates in between on whichever app you already use — WhatsApp, Slack, Telegram, email. I answer messages within 24 hours on working days."
+    },
+    {
+      "question": "What happens after it launches?",
+      "answer": "You can keep me on a small monthly arrangement for fixing problems, small additions, and keeping the servers healthy. We discuss it near the end, and it is optional."
+    },
+    {
+      "question": "Are you available right now?",
+      "answer": "I take one or two projects at a time so that each one gets proper attention. Book a free call and I will tell you honestly when I could start."
+    },
+    {
+      "question": "What if I only need one part — just the app, or just the server?",
+      "answer": "That is completely fine. A lot of my work is a single piece: only the phone app, only the server, only the AI feature, or only a review of what you already have."
+    },
+    {
+      "question": "What if I want to stop in the middle?",
+      "answer": "You can. Work is agreed in stages. Once a stage is paid and delivered, you can walk away with everything built so far and the rights to it. There is no long contract locking you in."
+    },
+    {
+      "question": "I am not technical. Is that a problem?",
+      "answer": "No, and you should not have to become technical to buy software. I will explain everything in normal words, and if I ever use a term you do not know, ask me and I will rephrase it. You are not expected to know what any of it means."
+    }
+  ]
+}
