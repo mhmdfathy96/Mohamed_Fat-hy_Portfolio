@@ -35,7 +35,9 @@
       "Bash(echo \"--- tsc exit: $? ---\")",
       "Bash(npx next *)",
       "Bash(echo \"--- tsc: $? ---\")",
-      "Bash(echo \"--- eslint: $? ---\")"
+      "Bash(echo \"--- eslint: $? ---\")",
+      "Bash(command -v sips)",
+      "Bash(sips -g pixelWidth -g pixelHeight public/assets/personal-image.png)"
     ]
   }
 }

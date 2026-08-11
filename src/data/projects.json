@@ -164,50 +164,70 @@
         "Chat Widget"
       ],
       "metric": {
-        "value": "80%",
-        "label": "Tickets Deflected"
+        "value": "4",
+        "label": "Channels, One Inbox"
       },
       "coverImage": "/projects/agentech.png",
       "tagline": "Custom AI Chatbot as a Service — your data, answered with citations.",
       "heroImage": "/projects/agentech/hero.png",
       "gallery": [
         {
+          "src": "/projects/agentech/widget.png",
+          "width": 2560,
+          "height": 1600
+        },
+        {
+          "src": "/projects/agentech/inbox.png",
+          "width": 2560,
+          "height": 1600
+        },
+        {
+          "src": "/projects/agentech/leads.png",
+          "width": 2560,
+          "height": 1600
+        },
+        {
+          "src": "/projects/agentech/knowledge-base.png",
+          "width": 2560,
+          "height": 1600
+        },
+        {
           "src": "/projects/agentech/persona.png",
-          "width": 1640,
-          "height": 827
+          "width": 2560,
+          "height": 1600
+        },
+        {
+          "src": "/projects/agentech/products.png",
+          "width": 2560,
+          "height": 1600
         },
         {
           "src": "/projects/agentech/usage.png",
-          "width": 1640,
-          "height": 827
-        },
-        {
-          "src": "/projects/agentech/widget.png",
-          "width": 1640,
-          "height": 827
+          "width": 2560,
+          "height": 1600
         },
         {
           "src": "/projects/agentech/keys.png",
-          "width": 1640,
-          "height": 827
+          "width": 2560,
+          "height": 1600
         }
       ],
       "results": [
         {
-          "value": "80%",
-          "label": "Tier-1 tickets deflected"
+          "value": "4",
+          "label": "Channels on one assistant"
         },
         {
           "value": "24/7",
           "label": "Automated, grounded answers"
         },
         {
-          "value": "6+",
+          "value": "8",
           "label": "Source types ingested"
         },
         {
           "value": "100%",
-          "label": "Cited, tenant-isolated replies"
+          "label": "Conversations in one inbox"
         }
       ],
       "environments": [
@@ -233,7 +253,12 @@
         "Built the Next.js dashboard and a vanilla-JS web-component chat widget",
         "Extended the assistant to social channels (Messenger, WhatsApp, Instagram, Telegram) via a shared ChannelAdapter feeding the existing chat/RAG pipeline",
         "Implemented per-tenant assistant persona and conversation opener",
-        "Built a platform super-admin back-office for cross-tenant operations"
+        "Built a platform super-admin back-office for cross-tenant operations",
+        "Built the unified Inbox: every channel's conversations in one thread list, with an AI/human mode toggle, manual replies, and automatic hand-back",
+        "Built lead capture as a model tool call, split it out of the Inbox into its own page, and wired owner notifications over Telegram",
+        "Built the product catalog so the assistant can send real listing photos as outbound media",
+        "Added whole-site crawling to ingestion, alongside single-URL re-fetching",
+        "Switched API keys to stored publishable keys with an origin allowlist, replacing show-once secrets that made rotation take the widget down"
       ],
       "techStack": [
         "Java 21",
@@ -293,13 +318,17 @@
       ],
       "features": [
         "Zero-coding setup: upload data and get a ready AI assistant in minutes",
-        "Omnichannel ingestion: PDF, Word, PowerPoint, TXT, CSV, Excel, JSON, live URLs, images, and audio",
+        "Omnichannel ingestion: PDF, Word, PowerPoint, TXT, CSV, Excel, JSON, live URLs, whole-site crawl, product listings, images, and audio",
         "Retrieval-Augmented answers with citations to reduce hallucination",
-        "Multi-channel deployment: embeddable web widget, per-tenant API keys, plus Facebook Messenger, WhatsApp, Instagram, and Telegram via a shared adapter",
+        "Multi-channel deployment: embeddable web widget, per-tenant publishable keys, plus Facebook Messenger, Instagram, and Telegram via a shared adapter (WhatsApp built, pending Meta App Review)",
+        "One inbox for every conversation on every channel, with human takeover, manual replies, and automatic hand-back",
+        "Automatic lead capture: the assistant collects contact details when it spots buying intent and pings the owner on Telegram",
+        "Product catalog: the assistant sends the real listing photos when a customer asks to see something",
+        "Inbound media understanding: customer photos are described and voice notes transcribed, so an image is never met with silence",
         "Customizable per-tenant assistant persona and conversation opener",
         "Strict multi-tenant isolation (PostgreSQL RLS + Qdrant vector isolation)",
         "Global identity with multi-workspace switching and OTP registration",
-        "Rate limiting, usage quotas, and prepaid token-metered billing",
+        "Rate limiting, usage quotas, and per-channel usage reporting",
         "Streaming chat responses for real-time interaction",
         "Platform super-admin back-office for cross-tenant operations"
       ],
