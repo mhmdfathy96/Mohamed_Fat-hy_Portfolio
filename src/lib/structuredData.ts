@@ -144,6 +144,17 @@ export function serviceSchema() {
     url: SITE,
     description: profile.summary,
     /*
+     * Rich Results Test flagged four optional LocalBusiness fields as missing:
+     * priceRange, address, telephone and image. Only image is added here.
+     *
+     * The other three are deliberate, not oversights. No price is published
+     * (docs/05 §3: "no number; explain how pricing works instead"), there is no
+     * published phone line — contact runs through the form, email and Telegram
+     * — and no street address, because this is a remote practice serving the
+     * ten markets in areaServed rather than a place customers visit.
+     */
+    image: `${SITE}/assets/headshot.jpg`,
+    /*
      * ProfessionalService is a LocalBusiness, and so an Organization — not a
      * Service. `provider` and `availableLanguage` are Service properties and
      * validator.schema.org warned on all three uses. The Organization-valid
