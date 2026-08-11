@@ -118,7 +118,13 @@ export function personSchema() {
      */
     alternateName: profile.alternateNames,
     url: SITE,
-    image: `${SITE}/assets/personal-image.png`,
+    /*
+     * 899x1200, ~190KB. Was personal-image.png at 1792x2390 and 7.6MB — the
+     * same "far too heavy" problem as the old OG card. Google may fetch this
+     * for a Person rich result, and nothing else on the site renders it, so
+     * there was no reason to serve the full-resolution original here.
+     */
+    image: `${SITE}/assets/headshot.jpg`,
     email: `mailto:${profile.email}`,
     jobTitle: profile.title,
     description: profile.summary,
