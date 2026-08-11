@@ -118,7 +118,13 @@ export function personSchema() {
      */
     alternateName: profile.alternateNames,
     url: SITE,
-    image: `${SITE}/assets/personal-image.png`,
+    /*
+     * 899x1200, ~190KB. Was personal-image.png at 1792x2390 and 7.6MB — the
+     * same "far too heavy" problem as the old OG card. Google may fetch this
+     * for a Person rich result, and nothing else on the site renders it, so
+     * there was no reason to serve the full-resolution original here.
+     */
+    image: `${SITE}/assets/headshot.jpg`,
     email: `mailto:${profile.email}`,
     jobTitle: profile.title,
     description: profile.summary,
@@ -137,9 +143,28 @@ export function serviceSchema() {
     name: `${profile.name} — Software Engineering`,
     url: SITE,
     description: profile.summary,
-    provider: { "@id": `${SITE}/#person` },
+    /*
+     * Rich Results Test flagged four optional LocalBusiness fields as missing:
+     * priceRange, address, telephone and image. Only image is added here.
+     *
+     * The other three are deliberate, not oversights. No price is published
+     * (docs/05 §3: "no number; explain how pricing works instead"), there is no
+     * published phone line — contact runs through the form, email and Telegram
+     * — and no street address, because this is a remote practice serving the
+     * ten markets in areaServed rather than a place customers visit.
+     */
+    image: `${SITE}/assets/headshot.jpg`,
+    /*
+     * ProfessionalService is a LocalBusiness, and so an Organization — not a
+     * Service. `provider` and `availableLanguage` are Service properties and
+     * validator.schema.org warned on all three uses. The Organization-valid
+     * equivalents are `founder` (this is a solo practice, and the Person
+     * already points back with worksFor) and `knowsLanguage`, kept in the same
+     * BCP-47 form the Person uses.
+     */
+    founder: { "@id": `${SITE}/#person` },
     areaServed,
-    availableLanguage: ["English", "Arabic"],
+    knowsLanguage: ["en", "ar"],
     knowsAbout,
     hasOfferCatalog: {
       "@type": "OfferCatalog",

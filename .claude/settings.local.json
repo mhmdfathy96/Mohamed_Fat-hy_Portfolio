@@ -40,7 +40,10 @@
       "Bash(sips -g pixelWidth -g pixelHeight public/assets/personal-image.png)",
       "Bash(command -v magick convert ffmpeg)",
       "Bash(sips -Z 700 -s format jpeg -s formatOptions 82 public/assets/personal-image.png --out /private/tmp/claude-501/-Users-mohamedfat-hy-StudioProjects-Mohamed-Fat-hy-Portfolio/ceb6e1d7-fde6-4806-99a5-2f0ff059d448/scratchpad/og-portrait.jpg)",
-      "Bash(file src/assets/og/*.ttf)"
+      "Bash(file src/assets/og/*.ttf)",
+      "Bash(sips -Z 1200 -s format jpeg -s formatOptions 85 public/assets/personal-image.png --out public/assets/headshot.jpg)",
+      "Bash(sips -g pixelWidth -g pixelHeight public/assets/headshot.jpg)",
+      "Bash(awk '{print $5\" bytes\"}')"
     ]
   }
 }
