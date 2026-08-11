@@ -143,9 +143,17 @@ export function serviceSchema() {
     name: `${profile.name} — Software Engineering`,
     url: SITE,
     description: profile.summary,
-    provider: { "@id": `${SITE}/#person` },
+    /*
+     * ProfessionalService is a LocalBusiness, and so an Organization — not a
+     * Service. `provider` and `availableLanguage` are Service properties and
+     * validator.schema.org warned on all three uses. The Organization-valid
+     * equivalents are `founder` (this is a solo practice, and the Person
+     * already points back with worksFor) and `knowsLanguage`, kept in the same
+     * BCP-47 form the Person uses.
+     */
+    founder: { "@id": `${SITE}/#person` },
     areaServed,
-    availableLanguage: ["English", "Arabic"],
+    knowsLanguage: ["en", "ar"],
     knowsAbout,
     hasOfferCatalog: {
       "@type": "OfferCatalog",
