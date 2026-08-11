@@ -109,6 +109,14 @@ export function personSchema() {
     "@type": "Person",
     "@id": `${SITE}/#person`,
     name: profile.name,
+    /*
+     * Spelling variants, so all three resolve to one entity. "Mohamed Fathy"
+     * is the form most people actually type — the hyphen is invisible to
+     * anyone who heard the name rather than read it — and that query is
+     * contested by nine other software engineers of the same name. Without
+     * this, the site is optimised for the one spelling searchers use least.
+     */
+    alternateName: profile.alternateNames,
     url: SITE,
     image: `${SITE}/assets/personal-image.png`,
     email: `mailto:${profile.email}`,

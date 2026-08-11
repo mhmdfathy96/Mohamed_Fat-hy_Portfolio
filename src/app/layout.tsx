@@ -40,20 +40,14 @@ export const metadata: Metadata = {
     description: profile.summary,
     url: profile.siteUrl,
     locale: "en_US",
-    // TODO: replace with a purpose-made 1200x630 card (name, what you do, one
-    // proof line). This is a portrait crop and will letterbox in link previews.
-    images: [
-      {
-        url: "/assets/personal-image.png",
-        alt: `${profile.name}, software engineer`,
-      },
-    ],
+    // Image comes from src/app/opengraph-image.tsx via the file convention —
+    // a purpose-made 1200x630 card. Do not add an `images` array here; it
+    // would override the generated card with a hand-maintained path.
   },
   twitter: {
     card: "summary_large_image",
     title: `${profile.name} — SaaS MVPs, AI features, apps and the backends behind them`,
     description: profile.summary,
-    images: ["/assets/personal-image.png"],
   },
   robots: { index: true, follow: true },
 };

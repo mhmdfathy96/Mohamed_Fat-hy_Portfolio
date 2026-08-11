@@ -3,6 +3,9 @@
   "title": "Senior Software Engineer",
   "subtitle": "SaaS MVP Builder",
   "siteUrl": "https://fat-hy.com",
+
+  "_alternateNames": "Entity resolution, added 11 August 2026. The site spelled the name ONLY as 'Mohamed Fat-hy' — the hyphenated form appeared in every field and the unhyphenated 'Fathy' appeared nowhere outside the LinkedIn and GitHub URL slugs. But 'Mohamed Fathy' is how most people type it, including anyone who heard the name spoken rather than read it, and a search for it returns nine other software engineers of the same name plus a competing developer portfolio at mohamedfathy.dev. These variants are emitted as schema.org alternateName so Google and LLMs can resolve all three spellings to one person. Order matters: the canonical spelling leads.",
+  "alternateNames": ["Mohamed Fat-hy", "Mohamed Fathy", "Mohamed Fathi"],
   "summary": "I build apps and the systems that run them — phone apps, websites, and the servers behind them. Products run in 10 markets across four continents, from Egypt and Saudi Arabia to South Korea and the USA.",
 
   "_markets": "The real client footprint, confirmed by Mohamed on 11 August 2026 — NOT derived from projects.json, which lists only the 8 documented case studies out of 15+ delivered. The European Union is a bloc, not a country: it is kept last and typed as an AdministrativeArea in the JSON-LD so the schema stays literally correct. Never write '10 countries' anywhere — the honest phrasing is '10 markets'.",
