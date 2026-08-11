@@ -167,47 +167,47 @@
         "value": "4",
         "label": "Channels, One Inbox"
       },
-      "coverImage": "/projects/agentech.png",
+      "coverImage": "/projects/agentech.webp",
       "tagline": "Custom AI Chatbot as a Service — your data, answered with citations.",
-      "heroImage": "/projects/agentech/hero.png",
+      "heroImage": "/projects/agentech/hero.webp",
       "gallery": [
         {
-          "src": "/projects/agentech/widget.png",
+          "src": "/projects/agentech/widget.webp",
           "width": 2560,
           "height": 1600
         },
         {
-          "src": "/projects/agentech/inbox.png",
+          "src": "/projects/agentech/inbox.webp",
           "width": 2560,
           "height": 1600
         },
         {
-          "src": "/projects/agentech/leads.png",
+          "src": "/projects/agentech/leads.webp",
           "width": 2560,
           "height": 1600
         },
         {
-          "src": "/projects/agentech/knowledge-base.png",
+          "src": "/projects/agentech/knowledge-base.webp",
           "width": 2560,
           "height": 1600
         },
         {
-          "src": "/projects/agentech/persona.png",
+          "src": "/projects/agentech/persona.webp",
           "width": 2560,
           "height": 1600
         },
         {
-          "src": "/projects/agentech/products.png",
+          "src": "/projects/agentech/products.webp",
           "width": 2560,
           "height": 1600
         },
         {
-          "src": "/projects/agentech/usage.png",
+          "src": "/projects/agentech/usage.webp",
           "width": 2560,
           "height": 1600
         },
         {
-          "src": "/projects/agentech/keys.png",
+          "src": "/projects/agentech/keys.webp",
           "width": 2560,
           "height": 1600
         }
