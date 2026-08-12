@@ -131,10 +131,15 @@ Checked live on 12 August 2026 after deploy:
 - **agentech.tech does not link to fat-hy.com.** Its rendered HTML links out to
   LinkedIn, Upwork and Facebook only. It is a controlled, topically adjacent
   domain and the easiest relevant backlink available. Lives in another repo.
-- **The GitHub bio contradicts the positioning.** It reads "Flutter | Mobile &
-  Backend-Oriented" with no mention of AI, while LinkedIn and Upwork both lead
-  with it. These three profiles are the `sameAs` set — they are what Google and
-  LLMs read to decide what Mohamed does, and one of them says mobile developer.
+**Closed 12 August 2026:**
+
+- ~~The GitHub bio contradicts the positioning.~~ It read "Flutter | Mobile &
+  Backend-Oriented" with no mention of AI, while LinkedIn and Upwork both led
+  with it — a contradiction inside the `sameAs` set, which is what Google and
+  LLMs read to decide what Mohamed does. Now reads "Software Engineer |
+  Generative AI, RAG & LLM integration | SaaS MVPs | Spring Boot · Flutter ·
+  Next.js | Top Rated @ Upwork", and the `blog` field already pointed at
+  fat-hy.com. All three profiles now agree, and all three lead with AI.
 
 ---
 
