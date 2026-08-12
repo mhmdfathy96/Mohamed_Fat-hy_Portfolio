@@ -43,7 +43,10 @@
       "Bash(file src/assets/og/*.ttf)",
       "Bash(sips -Z 1200 -s format jpeg -s formatOptions 85 public/assets/personal-image.png --out public/assets/headshot.jpg)",
       "Bash(sips -g pixelWidth -g pixelHeight public/assets/headshot.jpg)",
-      "Bash(awk '{print $5\" bytes\"}')"
+      "Bash(awk '{print $5\" bytes\"}')",
+      "Bash(command -v gh)",
+      "Bash(gh auth *)",
+      "Bash(gh api *)"
     ]
   }
 }
