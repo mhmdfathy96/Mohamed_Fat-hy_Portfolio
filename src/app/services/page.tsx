@@ -123,7 +123,7 @@ export default function Services() {
                   {/* Layer 2: the term an AI assistant would have told them to
                       search for, kept next to the plain title rather than
                       replacing it. */}
-                  <p className="text-xs text-slate-400 mb-3">
+                  <p className="text-xs text-slate-500 mb-3">
                     Also called: {outcome.alsoCalled}
                   </p>
                   <p className="text-gray-600 mb-4 leading-relaxed flex-1">

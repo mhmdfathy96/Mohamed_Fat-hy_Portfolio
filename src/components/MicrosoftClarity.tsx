@@ -14,7 +14,9 @@ export default function MicrosoftClarity() {
   if (!CLARITY_ID) return null;
 
   return (
-    <Script id="ms-clarity-init" strategy="afterInteractive">
+    // Session recording has no bearing on first paint — keep it off the
+    // critical path with the rest of the third-party tags.
+    <Script id="ms-clarity-init" strategy="lazyOnload">
       {`
         (function(c,l,a,r,i,t,y){
           c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};

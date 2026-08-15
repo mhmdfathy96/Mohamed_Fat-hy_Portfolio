@@ -36,7 +36,8 @@ export default function PackagesSection({
             Start here · {packages.firstStep.duration}
           </span>
         </div>
-        <p className="text-sm text-slate-500 mb-4">
+        {/* slate-500 clears 4.5:1 on white but not on this blue-50 card. */}
+        <p className="text-sm text-slate-600 mb-4">
           Also called: {packages.firstStep.alsoCalled}
         </p>
         <p className="text-slate-700 mb-5 leading-relaxed max-w-3xl">
@@ -61,7 +62,7 @@ export default function PackagesSection({
           >
             <h3 className="text-xl font-bold mb-1">{pkg.name}</h3>
             <p className="text-sm text-slate-500 mb-1">{pkg.duration}</p>
-            <p className="text-xs text-slate-400 mb-4">
+            <p className="text-xs text-slate-500 mb-4">
               Also called: {pkg.alsoCalled}
             </p>
             <p className="text-slate-700 text-sm mb-4 leading-relaxed">

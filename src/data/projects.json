@@ -22,22 +22,22 @@
         "value": "Offline",
         "label": "Learning Built-in"
       },
-      "coverImage": "/projects/guruhub.jpg",
+      "coverImage": "/projects/guruhub.webp",
       "tagline": "Learn anything, anywhere — expert video courses, quizzes, and analytics in one platform.",
-      "heroImage": "/projects/guruhub/hero.jpg",
+      "heroImage": "/projects/guruhub/hero.webp",
       "gallery": [
         {
-          "src": "/projects/guruhub/gallery1.jpg",
+          "src": "/projects/guruhub/gallery1.webp",
           "width": 900,
           "height": 1600
         },
         {
-          "src": "/projects/guruhub/gallery2.jpg",
+          "src": "/projects/guruhub/gallery2.webp",
           "width": 900,
           "height": 1600
         },
         {
-          "src": "/projects/guruhub/gallery3.jpg",
+          "src": "/projects/guruhub/gallery3.webp",
           "width": 900,
           "height": 1600
         }
@@ -357,27 +357,27 @@
         "value": "50K+",
         "label": "Downloads"
       },
-      "coverImage": "/projects/3arabawy.jpg",
+      "coverImage": "/projects/3arabawy.webp",
       "tagline": "All your car needs in one app — silky smooth from flagship 120 Hz screens down to budget phones.",
-      "heroImage": "/projects/3arabawy/hero.jpg",
+      "heroImage": "/projects/3arabawy/hero.webp",
       "gallery": [
         {
-          "src": "/projects/3arabawy/gallery1.jpg",
+          "src": "/projects/3arabawy/gallery1.webp",
           "width": 900,
           "height": 1600
         },
         {
-          "src": "/projects/3arabawy/gallery2.jpg",
+          "src": "/projects/3arabawy/gallery2.webp",
           "width": 900,
           "height": 1600
         },
         {
-          "src": "/projects/3arabawy/gallery3.jpg",
+          "src": "/projects/3arabawy/gallery3.webp",
           "width": 900,
           "height": 1600
         },
         {
-          "src": "/projects/3arabawy/gallery4.jpg",
+          "src": "/projects/3arabawy/gallery4.webp",
           "width": 900,
           "height": 1600
         }
@@ -486,27 +486,27 @@
         "value": "10K+",
         "label": "Downloads"
       },
-      "coverImage": "/projects/mdone.jpg",
+      "coverImage": "/projects/mdone.webp",
       "tagline": "Patients and doctors, connected — booking, chat, and voice consultations in one app.",
-      "heroImage": "/projects/mdone/hero.jpg",
+      "heroImage": "/projects/mdone/hero.webp",
       "gallery": [
         {
-          "src": "/projects/mdone/gallery1.jpg",
+          "src": "/projects/mdone/gallery1.webp",
           "width": 343,
           "height": 718
         },
         {
-          "src": "/projects/mdone/gallery2.jpg",
+          "src": "/projects/mdone/gallery2.webp",
           "width": 390,
           "height": 790
         },
         {
-          "src": "/projects/mdone/gallery3.jpg",
+          "src": "/projects/mdone/gallery3.webp",
           "width": 386,
           "height": 795
         },
         {
-          "src": "/projects/mdone/gallery4.jpg",
+          "src": "/projects/mdone/gallery4.webp",
           "width": 397,
           "height": 815
         }
@@ -580,27 +580,27 @@
         "value": "2-in-1",
         "label": "Find & Offer Services"
       },
-      "coverImage": "/projects/toltura.jpg",
+      "coverImage": "/projects/toltura.webp",
       "tagline": "Specialists for every need — one click away.",
-      "heroImage": "/projects/toltura/hero.jpg",
+      "heroImage": "/projects/toltura/hero.webp",
       "gallery": [
         {
-          "src": "/projects/toltura/gallery1.jpg",
+          "src": "/projects/toltura/gallery1.webp",
           "width": 738,
           "height": 1600
         },
         {
-          "src": "/projects/toltura/gallery2.jpg",
+          "src": "/projects/toltura/gallery2.webp",
           "width": 738,
           "height": 1600
         },
         {
-          "src": "/projects/toltura/gallery3.jpg",
+          "src": "/projects/toltura/gallery3.webp",
           "width": 738,
           "height": 1600
         },
         {
-          "src": "/projects/toltura/gallery4.jpg",
+          "src": "/projects/toltura/gallery4.webp",
           "width": 738,
           "height": 1600
         }
@@ -679,27 +679,27 @@
         "value": "100+",
         "label": "Workplace Tools"
       },
-      "coverImage": "/projects/biznavi.jpg",
+      "coverImage": "/projects/biznavi.webp",
       "tagline": "One app for the whole workday — built pixel-perfect for a demanding enterprise client.",
-      "heroImage": "/projects/biznavi/hero.jpg",
+      "heroImage": "/projects/biznavi/hero.webp",
       "gallery": [
         {
-          "src": "/projects/biznavi/gallery1.jpg",
+          "src": "/projects/biznavi/gallery1.webp",
           "width": 738,
           "height": 1600
         },
         {
-          "src": "/projects/biznavi/gallery2.jpg",
+          "src": "/projects/biznavi/gallery2.webp",
           "width": 738,
           "height": 1600
         },
         {
-          "src": "/projects/biznavi/gallery3.jpg",
+          "src": "/projects/biznavi/gallery3.webp",
           "width": 738,
           "height": 1600
         },
         {
-          "src": "/projects/biznavi/gallery4.jpg",
+          "src": "/projects/biznavi/gallery4.webp",
           "width": 738,
           "height": 1600
         }
@@ -774,27 +774,27 @@
         "value": "Live",
         "label": "Vote-driven Playback"
       },
-      "coverImage": "/projects/party-player.jpg",
+      "coverImage": "/projects/party-player.webp",
       "tagline": "The party picks the playlist — propose, vote, play.",
-      "heroImage": "/projects/party-player/hero.jpg",
+      "heroImage": "/projects/party-player/hero.webp",
       "gallery": [
         {
-          "src": "/projects/party-player/gallery1.jpg",
+          "src": "/projects/party-player/gallery1.webp",
           "width": 414,
           "height": 910
         },
         {
-          "src": "/projects/party-player/gallery2.jpg",
+          "src": "/projects/party-player/gallery2.webp",
           "width": 414,
           "height": 910
         },
         {
-          "src": "/projects/party-player/gallery3.jpg",
+          "src": "/projects/party-player/gallery3.webp",
           "width": 414,
           "height": 910
         },
         {
-          "src": "/projects/party-player/gallery4.jpg",
+          "src": "/projects/party-player/gallery4.webp",
           "width": 414,
           "height": 910
         }
@@ -868,27 +868,27 @@
         "value": "10K+",
         "label": "Downloads"
       },
-      "coverImage": "/projects/installment-app.jpg",
+      "coverImage": "/projects/installment-app.webp",
       "tagline": "Installment sales, under control — clients, branches, payments, and stats in one place.",
-      "heroImage": "/projects/installment-app/hero.jpg",
+      "heroImage": "/projects/installment-app/hero.webp",
       "gallery": [
         {
-          "src": "/projects/installment-app/gallery1.jpg",
+          "src": "/projects/installment-app/gallery1.webp",
           "width": 720,
           "height": 1280
         },
         {
-          "src": "/projects/installment-app/gallery2.jpg",
+          "src": "/projects/installment-app/gallery2.webp",
           "width": 720,
           "height": 1280
         },
         {
-          "src": "/projects/installment-app/gallery3.jpg",
+          "src": "/projects/installment-app/gallery3.webp",
           "width": 720,
           "height": 1280
         },
         {
-          "src": "/projects/installment-app/gallery4.jpg",
+          "src": "/projects/installment-app/gallery4.webp",
           "width": 720,
           "height": 1280
         }

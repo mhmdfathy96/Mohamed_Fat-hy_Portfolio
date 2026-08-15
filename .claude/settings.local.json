@@ -46,7 +46,16 @@
       "Bash(awk '{print $5\" bytes\"}')",
       "Bash(command -v gh)",
       "Bash(gh auth *)",
-      "Bash(gh api *)"
+      "Bash(gh api *)",
+      "Bash(npx --no-install lighthouse --version)",
+      "Bash(sips -g pixelWidth -g pixelHeight public/projects/*.jpg public/projects/*.webp)",
+      "Bash(npx -y lighthouse@12 https://fat-hy.com --form-factor=mobile --screenEmulation.mobile --throttling-method=simulate --only-categories=performance --output=json --output-path=/private/tmp/claude-501/-Users-mohamedfat-hy-StudioProjects-Mohamed-Fat-hy-Portfolio/3e0e3ed7-bf76-45ba-a30d-262c43507ee3/scratchpad/lh-before.json --chrome-flags=\"--headless=new --no-sandbox\" --quiet)",
+      "Bash(sips --help)",
+      "Bash(sips -g pixelWidth -g pixelHeight public/assets/personal-image.png public/assets/headshot.jpg public/projects/agentech/hero.webp public/projects/3arabawy/hero.jpg)",
+      "Bash(npx -y lighthouse@12 http://127.0.0.1:4321/ --form-factor=mobile --screenEmulation.mobile --throttling-method=simulate --only-categories=performance,accessibility --output=json --output-path=/private/tmp/claude-501/-Users-mohamedfat-hy-StudioProjects-Mohamed-Fat-hy-Portfolio/3e0e3ed7-bf76-45ba-a30d-262c43507ee3/scratchpad/lh-after-local.json --chrome-flags=\"--headless=new --no-sandbox\" --quiet)",
+      "Bash(npx -y lighthouse@12 http://127.0.0.1:4321/ --form-factor=mobile --screenEmulation.mobile --throttling-method=provided --only-categories=performance --output=json --output-path=/private/tmp/claude-501/-Users-mohamedfat-hy-StudioProjects-Mohamed-Fat-hy-Portfolio/3e0e3ed7-bf76-45ba-a30d-262c43507ee3/scratchpad/lh-provided.json --chrome-flags=\"--headless=new --no-sandbox\" --quiet)",
+      "Bash(npx *)",
+      "Bash(echo \"BUILD_EXIT=$?\")"
     ]
   }
 }
