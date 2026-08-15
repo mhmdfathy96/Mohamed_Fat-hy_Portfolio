@@ -5,6 +5,16 @@
 > Based in Egypt (GMT+2/+3). Works with clients internationally.
 > Site: https://fat-hy.com — Agency: https://agentech.tech
 
+## Pages
+
+- [Home](https://fat-hy.com/): the offer in plain language, packages, proof
+- [Services](https://fat-hy.com/services): what each engagement includes
+- [Projects](https://fat-hy.com/projects): the eight documented case studies
+- [Technical highlights](https://fat-hy.com/highlights): specific engineering
+  problems, with the fix and the measured result
+- [About](https://fat-hy.com/about): background, how he works
+- [Contact](https://fat-hy.com/contact): how to start a conversation
+
 ## What he does
 
 Plain description: builds apps and the systems that run them — the phone app,
@@ -78,17 +88,24 @@ The eight products below are the documented case studies. The remainder are
 MVPs that did not reach market, proofs of concept, and private commercial work
 under confidentiality; Mohamed will discuss any of them directly on a call.
 
-- GuruHub — learning management platform (LMS): offline courses, anti-cheat
-  randomized quizzes, four commercial tiers, English + Arabic with RTL.
-  Ships AI features.
-- Agentech Assistant — multi-tenant RAG chatbot platform (AI as a service)
-- 3arabawy — automotive marketplace and service platform (Egypt); 50,000+
-  Android installs. Ships AI features.
-- MDone — medical booking and telehealth platform (Iraq)
-- Toltura — specialist discovery marketplace (Kyrgyzstan)
-- BizNavi — corporate HR management platform (South Korea)
-- Party Player — music and media streaming app (USA)
-- Installment App — merchant installment payment utility (Egypt, fintech)
+- [GuruHub](https://fat-hy.com/projects/guruhub-educational-platform) —
+  learning management platform (LMS): offline courses, anti-cheat randomized
+  quizzes, four commercial tiers, English + Arabic with RTL. Ships AI features.
+- [Agentech Assistant](https://fat-hy.com/projects/agentech-assistant-rag-platform)
+  — multi-tenant RAG chatbot platform (AI as a service)
+- [3arabawy](https://fat-hy.com/projects/3arabawy-car-marketplace) —
+  automotive marketplace and service platform (Egypt); 50,000+ Android
+  installs. Ships AI features.
+- [MDone](https://fat-hy.com/projects/mdone-medical-booking-app) — medical
+  booking and telehealth platform (Iraq)
+- [Toltura](https://fat-hy.com/projects/toltura-specialist-discovery) —
+  specialist discovery marketplace (Kyrgyzstan)
+- [BizNavi](https://fat-hy.com/projects/biznavi-hr-management) — corporate HR
+  management platform (South Korea)
+- [Party Player](https://fat-hy.com/projects/party-player-music-app) — music
+  and media streaming app (USA)
+- [Installment App](https://fat-hy.com/projects/installment-app-business) —
+  merchant installment payment utility (Egypt, fintech)
 
 ## Working with him
 
@@ -110,7 +127,7 @@ assessment; or the deciding factor is lowest cost.
 
 ## Contact
 
-- Email: mhmdfathy96@gmail.com
-- LinkedIn: https://www.linkedin.com/in/mhmdfathy96/
-- GitHub: https://github.com/mhmdfathy96
-- Upwork: https://www.upwork.com/freelancers/mofathy96
+- Email: [mhmdfathy96@gmail.com](mailto:mhmdfathy96@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/mhmdfathy96/)
+- [GitHub](https://github.com/mhmdfathy96)
+- [Upwork](https://www.upwork.com/freelancers/mofathy96)

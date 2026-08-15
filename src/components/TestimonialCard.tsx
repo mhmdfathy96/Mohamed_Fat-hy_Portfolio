@@ -43,9 +43,9 @@ export default function TestimonialCard({
             : "pt-6 border-t border-gray-100"
         }`}
       >
-        <h4 className="font-bold text-gray-900 text-lg">
-          {testimonial.name}
-        </h4>
+        {/* An attribution, not a section heading — as an <h4> under the
+            section's <h2> it read as a skipped heading level. */}
+        <p className="font-bold text-gray-900 text-lg">{testimonial.name}</p>
         {testimonial.role && (
           <p className="text-sm text-gray-500">{testimonial.role}</p>
         )}

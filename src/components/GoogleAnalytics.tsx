@@ -32,11 +32,18 @@ export default function GoogleAnalytics() {
 
   return (
     <>
+      {/*
+        gtag.js is 166 KB — the single heaviest thing the page downloads. On a
+        throttled mobile connection it competes with the CSS and font that the
+        hero headline (the LCP element) is waiting on. lazyOnload holds it until
+        after window load, so it costs nothing before first paint. The trade-off
+        is that a visitor who leaves inside the first second may not be counted.
+      */}
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
-      <Script id="ga-init" strategy="afterInteractive">
+      <Script id="ga-init" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}

@@ -39,7 +39,7 @@ export default function TechnicalHighlightCard({
 
       <div className="space-y-4">
         <div>
-          <span className="text-xs font-bold uppercase tracking-wider text-red-600">
+          <span className="text-xs font-bold uppercase tracking-wider text-red-700">
             Problem
           </span>
           <p className="text-gray-700 mt-1">
@@ -57,7 +57,7 @@ export default function TechnicalHighlightCard({
         </div>
 
         <div>
-          <span className="text-xs font-bold uppercase tracking-wider text-green-600">
+          <span className="text-xs font-bold uppercase tracking-wider text-green-700">
             Result
           </span>
           <p className="text-gray-700 mt-1">
